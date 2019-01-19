@@ -49,6 +49,9 @@ public class Drive extends Command {
         double driveLeftStickY = Robot.oi.getDriveController().getY(Hand.kLeft);
         double driveRightStickX = Robot.oi.getDriveController().getX(Hand.kRight);
 
+        // For Tank Drive
+        // double driveRightStickY = Robot.oi.getDriveController().getY(Hand.kRight);
+
         boolean leftStickButton = Robot.oi.getDriveController().getStickButtonPressed(Hand.kLeft);
         if(leftStickButton)
         {
@@ -59,17 +62,22 @@ public class Drive extends Command {
         
        
         if(precisionMode){
+            System.out.println( "Drive.execute() ARCADE MODE" );
+
             Robot.oi.getDriveController().setRumble(RumbleType.kLeftRumble, 0.5);
             Robot.oi.getDriveController().setRumble(RumbleType.kRightRumble, 0.5);
+            // Robot.driveTrain.tankDrive(driveLeftStickY, driveRightStickY);
+            Robot.driveTrain.arcadeDrive(driveLeftStickY, driveRightStickX);
+
         }
         else{
+            System.out.println( "Drive.execute() CHEESY MODE" );
+
             Robot.oi.getDriveController().setRumble(RumbleType.kLeftRumble, 0);
             Robot.oi.getDriveController().setRumble(RumbleType.kRightRumble, 0);
+            Robot.driveTrain.cheesyDrive(driveLeftStickY, -driveRightStickX, precisionMode);
+
         }
-        // Robot.driveTrain.useFollowMode();
-        Robot.driveTrain.useCheesyDrive(driveLeftStickY, -driveRightStickX, precisionMode);
-        
-        
     }
 
     // Make this return true when this Command no longer needs to run execute()

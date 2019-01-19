@@ -53,18 +53,15 @@ public class DriveTrain extends Subsystem {
         leftBack = new WPI_TalonSRX(4);                    
         rightBack = new WPI_TalonSRX(1);
 
-// uncomment which drive mode we want to use at the moment,
-//if arcade change getRightStick.getY to get X in drive.java
-
-        setNeutralBrake();
-
+        // uncomment which drive mode we want to use at the moment,
         //useFrontWheelsOnly(); //2 motor controllers
         //useSpeedControllerGroups(); //2 speed controller groups
-        //useFollowMode(); //Follow mode, links sameside motors
-         diffDrive = new DifferentialDrive(leftFront, rightFront); // arcade drive
-         
-         leftBack.follow( leftFront );
-         rightBack.follow( rightFront );
+        useFollowMode(); //Follow mode, links sameside motors
+        
+        // Why put these 3 lines here? We can just use the `useFollowMode()` method.
+        // diffDrive = new DifferentialDrive(leftFront, rightFront); // arcade drive
+        // leftBack.follow( leftFront );
+        // rightBack.follow( rightFront );
 
         addChild("DifferentialDrive",diffDrive);
         diffDrive.setSafetyEnabled(true);
@@ -78,9 +75,9 @@ public class DriveTrain extends Subsystem {
     private void setNeutralBrake()
     {
         leftFront.setNeutralMode(NeutralMode.Brake);
-		backLeft.setNeutralMode(NeutralMode.Brake);
+		leftBack.setNeutralMode(NeutralMode.Brake);
 		rightFront.setNeutralMode(NeutralMode.Brake);
-		backRight.setNeutralMode(NeutralMode.Brake);
+		rightBack.setNeutralMode(NeutralMode.Brake);
     }
 
     @Override
@@ -109,9 +106,19 @@ public class DriveTrain extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
-    public void drive(double X, double Y)
+    public void arcadeDrive(double X, double Y)
     {
         diffDrive.arcadeDrive(X, Y);
+    }
+
+    public void cheesyDrive ( double X, double Y, boolean aButton ){ 
+        
+        diffDrive.curvatureDrive( X, Y, aButton);
+    }
+
+    public void tankDrive ( double X, double Y ){ 
+        
+        diffDrive.tankDrive( X, Y );
     }
     
     public void useSpeedControllerGroups() {
@@ -119,7 +126,6 @@ public class DriveTrain extends Subsystem {
         SpeedControllerGroup rightGroup = new SpeedControllerGroup( rightFront, rightBack );
 
         diffDrive = new DifferentialDrive( leftGroup, rightGroup );
-        
     }
 
     public void useFollowMode() {
@@ -132,10 +138,5 @@ public class DriveTrain extends Subsystem {
     public void useFrontWheelsOnly() {
         diffDrive = new DifferentialDrive( leftFront, rightFront );
     }
-
-    public void useCheesyDrive ( double X, double Y, boolean aButton ){ 
-        
-        diffDrive.curvatureDrive( X, Y, aButton);
-    } 
 }
 
