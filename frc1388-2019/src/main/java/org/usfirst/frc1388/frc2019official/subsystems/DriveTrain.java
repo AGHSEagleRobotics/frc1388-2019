@@ -113,36 +113,33 @@ public class DriveTrain extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
-    public void arcadeDrive(double X, double Y)
-    {
-        diffDrive.arcadeDrive(X, Y);
+    public void arcadeDrive(double speed, double rotation) {
+        diffDrive.arcadeDrive(speed, rotation);
     }
 
-    public void cheesyDrive ( double X, double Y, boolean aButton ){ 
-        
-        diffDrive.curvatureDrive( X, Y, aButton);
+    public void cheesyDrive( double speed, double rotation, boolean isQuickTurn ){
+        diffDrive.curvatureDrive( speed, rotation, isQuickTurn);
     }
 
-    public void tankDrive ( double X, double Y ){ 
-        
-        diffDrive.tankDrive( X, Y );
+    public void tankDrive( double leftSpeed, double rightSpeed ){
+        diffDrive.tankDrive( leftSpeed, rightSpeed );
     }
     
-    public void useSpeedControllerGroups() {
+    private void useSpeedControllerGroups() {
         SpeedControllerGroup leftGroup = new SpeedControllerGroup( leftFront, leftBack );
         SpeedControllerGroup rightGroup = new SpeedControllerGroup( rightFront, rightBack );
 
         diffDrive = new DifferentialDrive( leftGroup, rightGroup );
     }
 
-    public void useFollowMode() {
+    private void useFollowMode() {
         leftBack.follow( leftFront );
         rightBack.follow( rightFront );
 
         diffDrive = new DifferentialDrive( leftFront, rightFront );
     }
 
-    public void useFrontWheelsOnly() {
+    private void useFrontWheelsOnly() {
         diffDrive = new DifferentialDrive( leftFront, rightFront );
     }
 }
