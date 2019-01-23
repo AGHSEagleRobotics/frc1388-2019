@@ -13,6 +13,17 @@ public class UsbLogging {
 	private static final String logSuffix = "txt";
 	private static final String className = UsbLogging.class.getSimpleName();
 
+    enum Level {
+        FATAL,
+        ERROR,
+        OFF,
+        WARNING,
+        INFO,
+        DEBUG
+    }
+
+    public static Level logLevel = Level.DEBUG;
+
 	/**
 	 * Open a log file, if possible, to be used by logging statements.
 	 * <p>
@@ -94,4 +105,98 @@ public class UsbLogging {
 			}
 		}
 	}
+
+    private static void printDate()
+    {
+        if ( ! m_today.equals( LocalDate.now() ) ) {
+            m_today = LocalDate.now();
+            m_logStream.print( m_today + "\r\n" );
+        }
+    }
+
+    private static void flushFile()
+    {
+        try {
+            m_OutStream.getFD().sync();
+        } catch ( Exception e ) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Internal generalized log printing method.
+     *
+     * @param msg The message to be printed
+     * @param lvl The Level of the msg
+     */
+    private static void printLogAtLevel( String msg, Level lvl )
+    {
+        if ( logLevel <= lvl || logLevel == Level.FATAL || logLevel == Level.ERROR )
+        {
+            String output = LocalTime.now() + " [" + lvl.name() + "] " + msg;
+
+            // Print to console
+            System.out.println( output );
+
+            // Print to file
+            if ( m_logStream != null )
+            {
+                printDate();
+                m_logStream.print( output );
+                flushFile();
+            }
+        }
+    }
+
+    /**
+     * FATAL.
+     * The robot cannot not continue operation
+     * This level is printed regardless of logLevel.
+     *
+     */
+    public static void fatal( String msg )
+    {
+        printLogAtLevel( msg, Level.FATAL );
+    }
+
+    /**
+     * ERROR.
+     * The robot can continue operation
+     *   but some facility may be broken or unresponsive
+     * A fully functional robot will have no ERROR messages
+     * 
+     * This level is printed regardless of logLevel
+     */
+    public static void error( String msg )
+    {
+        printLogAtLevel( msg, Level.ERROR );
+    }
+
+    /**
+     * WARNING.
+     * The robot is fully operational
+     *   but some facility may act unexpectedly
+     */
+    public static void warning( String msg )
+    {
+        printLogAtLevel( msg, Level.WARNING );
+    }
+
+    /**
+     * INFO.
+     * The robot is fully operational
+     */
+    public static void info( String msg )
+    {
+        printLogAtLevel( msg, Level.INFO );
+    }
+
+    /**
+     * DEBUG.
+     * Used for testing
+     */
+    public static void debug( String msg )
+    {
+        printLogAtLevel( msg, Level.DEBUG );
+    }
 }
