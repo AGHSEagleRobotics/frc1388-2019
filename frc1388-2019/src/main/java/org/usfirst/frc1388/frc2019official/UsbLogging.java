@@ -22,7 +22,7 @@ public class UsbLogging {
         DEBUG
     }
 
-    public static Level logLevel = Level.DEBUG;
+    public static Level logLevel = Level.OFF;
 
     /**
      * Open a log file, if possible, to be used by logging statements.
