@@ -22,10 +22,8 @@ public class UsbLogging {
         DEBUG
     }
 
-    /**
-     * Set the log level once in your application
-     */
-    public static Level logLevel = Level.OFF;
+    private static Level logLevel = Level.OFF;
+    private static boolean levelIsSet = false;
 
     /**
      * Open a log file, if possible, to be used by logging statements.
@@ -148,6 +146,18 @@ public class UsbLogging {
                 flushFile();
             }
         }
+    }
+
+    /**
+     * Only allow the logLevel to be set once.
+     */
+    public static void setLogLevel( Level lvl )
+    {
+        if ( levelIsSet )
+            return;
+
+        logLevel = lvl;
+        levelIsSet = true;
     }
 
     /**
