@@ -22,6 +22,9 @@ public class UsbLogging {
         DEBUG
     }
 
+    /**
+     * Set the log level once in your application
+     */
     public static Level logLevel = Level.OFF;
 
     /**
@@ -130,7 +133,7 @@ public class UsbLogging {
      */
     private static void printLogAtLevel( String msg, Level lvl )
     {
-        if ( logLevel <= lvl || logLevel == Level.FATAL || logLevel == Level.ERROR )
+        if ( lvl <= logLevel || logLevel == Level.FATAL || logLevel == Level.ERROR )
         {
             String output = LocalTime.now() + " [" + lvl.name() + "] " + msg;
 
