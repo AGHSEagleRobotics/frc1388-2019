@@ -131,7 +131,7 @@ public class UsbLogging {
      */
     private static void printLogAtLevel( String msg, Level lvl )
     {
-        if ( lvl <= logLevel || logLevel == Level.FATAL || logLevel == Level.ERROR )
+        if ( lvl.compareTo( logLevel ) <= 0 || logLevel == Level.FATAL || logLevel == Level.ERROR )
         {
             String output = LocalTime.now() + " [" + lvl.name() + "] " + msg;
 
@@ -142,7 +142,7 @@ public class UsbLogging {
             if ( m_logStream != null )
             {
                 printDate();
-                m_logStream.print( output );
+                m_logStream.print( output + "\r\n" );
                 flushFile();
             }
         }

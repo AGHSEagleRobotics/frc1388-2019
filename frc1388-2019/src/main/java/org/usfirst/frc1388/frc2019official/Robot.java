@@ -17,6 +17,8 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
+import org.usfirst.frc1388.frc2019official.UsbLogging.Level;
 import org.usfirst.frc1388.frc2019official.commands.*;
 import org.usfirst.frc1388.frc2019official.subsystems.*;
 
@@ -73,7 +75,9 @@ public class Robot extends TimedRobot {
 
         // Start up USB logging
         UsbLogging.openLog();
-        UsbLogging.printLog("Robot.robotInit()");
+        UsbLogging.setLogLevel( Level.INFO );
+
+        UsbLogging.info( "Robot.robotInit()" );
     }
 
     /**
