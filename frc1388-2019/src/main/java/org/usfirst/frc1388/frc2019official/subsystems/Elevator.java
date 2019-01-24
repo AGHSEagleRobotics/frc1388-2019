@@ -96,6 +96,7 @@ public class Elevator extends Subsystem {
         bottomElevatorSwitch = new DigitalInput(8);
         elevatorMotor = new WPI_VictorSPX(12);
         elevatorMotor.setNeutralMode(NeutralMode.Brake);
+        setMotor(-.01, true);
     }
 
     @Override
@@ -112,6 +113,7 @@ public class Elevator extends Subsystem {
 
     @Override
     public void periodic() {
+        System.out.println("Elevator height: " + getHeight());
         // Put code here to be run every loop
         double currentPwr = elevatorMotor.get();
         double limitedPwr = limitMotorPwr(currentPwr, false);
@@ -132,6 +134,7 @@ public class Elevator extends Subsystem {
         }
         else {
 			if (m_prevAtBottomLimit) {
+                //setMotor(-.5, true);
 				//TODO: UsbLogging.printLog("Elevator encoder released from reset");
 			}
 		}
