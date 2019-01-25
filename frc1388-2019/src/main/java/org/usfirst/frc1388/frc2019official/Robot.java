@@ -73,6 +73,10 @@ public class Robot extends TimedRobot {
 
         // Start up USB logging
         UsbLogging.openLog();
+        extracted();
+    }
+
+    private void extracted() {
         UsbLogging.printLog("Robot.robotInit()");
     }
 
