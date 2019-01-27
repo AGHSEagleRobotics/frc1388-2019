@@ -25,8 +25,14 @@ import edu.wpi.first.wpilibj.GenericHID.RumbleType;
  */
 public class OI {
 
+<<<<<<< HEAD
     XboxController driveController = new XboxController(1);
     XboxController opController = new XboxController(2);
+=======
+    
+    XboxController driveController = new XboxController(0);
+    XboxController opController = new XboxController(1);
+>>>>>>> 901ee1e... Added BallGraber subsystem and BallGrab command code. Uses triggers on both Dr and Op controllers to grab and release ball and to eject ball.  Ball ejector timeout of 2 seconds is not working and needs to be debugged. Currently turns on and off immediately.
 
     //// CREATING BUTTONS
     // One type of button is a joystick button which is any button on a joystick.

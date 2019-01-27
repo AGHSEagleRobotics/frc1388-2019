@@ -7,6 +7,7 @@
 
 package org.usfirst.frc1388.frc2019official.commands;
 
+import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.command.Command;
 
 public class ElevatorLean extends Command {
@@ -22,7 +23,7 @@ public class ElevatorLean extends Command {
 
   // Called repeatedly when this Command is scheduled to run
   @Override
-  protected void execute() {
+  protected void execute() {    
   }
 
   // Make this return true when this Command no longer needs to run execute()
@@ -40,5 +41,13 @@ public class ElevatorLean extends Command {
   // subsystems is scheduled to run
   @Override
   protected void interrupted() {
+  }
+  protected void stand(DoubleSolenoid elevatorActuatorBackLeft, DoubleSolenoid elevatorActuatorBackRight){
+    elevatorActuatorBackLeft.set( DoubleSolenoid.Value.kForward );
+    elevatorActuatorBackRight.set( DoubleSolenoid.Value.kForward ); // both pistons in the back push forward and Stand the robot
+  }
+  protected void lean( DoubleSolenoid elevatorActuatorBackLeft, DoubleSolenoid elevatorActuatorBackRight ){
+    elevatorActuatorBackLeft.set( DoubleSolenoid.Value.kForward );
+    elevatorActuatorBackRight.set( DoubleSolenoid.Value.kForward ); // both pistons retract putting the robot into the lean position
   }
 }

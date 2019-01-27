@@ -86,7 +86,8 @@ public class Robot extends TimedRobot {
      */
     @Override
     public void disabledInit(){
-
+        //TODO:  might need to be removed or only run on a flag
+        Robot.ballGrabber.initialize();
     }
 
     @Override
