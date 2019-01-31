@@ -28,8 +28,12 @@ public class BallGrab extends Command {
 
     private boolean ejectorEnabled = false;
     private Timer ejectorTimer;
-    private boolean drTriggersPressed;
-    private boolean opTriggersPressed;
+    private boolean drBothTriggersPressed;
+    private boolean opBothTriggersPressed;
+    private boolean bothTriggersPressed;
+    private boolean leftTriggerPressed;
+    private boolean rightTriggerPressed;
+    private boolean ejectorEnabledAndTimerExpired;
 
     public BallGrab() {
 
@@ -41,18 +45,23 @@ public class BallGrab extends Command {
         requires(Robot.ballGrabber); 
         ejectorEnabled = false;     
         ejectorTimer = new Timer();
-        drTriggersPressed = false;
-        opTriggersPressed = false;
+        drBothTriggersPressed = false;
+        opBothTriggersPressed = false;
+        bothTriggersPressed = false;
+        leftTriggerPressed = false;
+        rightTriggerPressed = false;
+        ejectorEnabledAndTimerExpired = false;
     }
 
-    public void ballGrab( DoubleSolenoid controlSolenoid ){        
+    /*public void ballGrab( DoubleSolenoid controlSolenoid ){        
         controlSolenoid.set(DoubleSolenoid.Value.kForward ); // pushes the actuator on the effector forward to allow for grabbing
         // get a signal and or after a delay
         controlSolenoid.set(DoubleSolenoid.Value.kReverse ); // contract the jaws to hold the ball
     }
     public void ballRelease( DoubleSolenoid controlSolenoid ){        
         controlSolenoid.set( DoubleSolenoid.Value.kForward );
-    }
+    }*/
+
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
@@ -61,32 +70,33 @@ public class BallGrab extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        
-        System.out.println("ZZZZZZZ Timer value = "+ejectorTimer.get());    
+            
         // Read Triggers
         double drRightTrigger = Robot.oi.getDriveController().getTriggerAxis(Hand.kRight);
         double opRightTrigger = Robot.oi.getOpController().getTriggerAxis(Hand.kRight);
         double drLeftTrigger = Robot.oi.getDriveController().getTriggerAxis(Hand.kLeft);
         double opLeftTrigger = Robot.oi.getOpController().getTriggerAxis(Hand.kLeft);
-        drTriggersPressed = ( drRightTrigger > 0 && drLeftTrigger > 0 );
-        opTriggersPressed = ( opRightTrigger > 0 && opLeftTrigger > 0 );
+        // Assign values
+        drBothTriggersPressed = ( drRightTrigger > 0 && drLeftTrigger > 0 );
+        opBothTriggersPressed = ( opRightTrigger > 0 && opLeftTrigger > 0 );
+        bothTriggersPressed = ( drBothTriggersPressed || opBothTriggersPressed );
+        leftTriggerPressed = ( drLeftTrigger > 0 || opLeftTrigger > 0 );
+        rightTriggerPressed = ( drRightTrigger > 0 || opRightTrigger > 0 );
+        ejectorEnabledAndTimerExpired = ( ejectorEnabled && ejectorTimer.hasPeriodPassed(2) );
 
         // Grab (close grabber) when Right trigger pressed (eiter controller)
-        if(drRightTrigger > 0 || opRightTrigger > 0) {
+        if(rightTriggerPressed && !bothTriggersPressed && !ejectorEnabled ) {
             // Grab (close Grabber)
             Robot.ballGrabber.grab();
         }
 
         // Release (open grabber) when Left trigger pressed (either controller)		
-        if( drLeftTrigger > 0 || opLeftTrigger > 0 ) {
-            System.out.println("!ejectorEnabled and Left trigger pressed");
+        if( leftTriggerPressed && !bothTriggersPressed ) {
             Robot.ballGrabber.release();
         }
         
         // Eject Ball (open grabber and extend ejector) when both triggers pressed (either controller) 
-        if( drTriggersPressed  || opTriggersPressed ){
-
-        // TODO: put this in eject
+        if( bothTriggersPressed ){
             Robot.ballGrabber.release();
             Robot.ballGrabber.eject();
             // set an ejector enabled flag
@@ -96,16 +106,13 @@ public class BallGrab extends Command {
         }
 
         // Retract the ejector afater two seconds and both triggers are released (either controller)
-        if(ejectorEnabled && ejectorTimer.hasPeriodPassed(2)) {
-            if( !drTriggersPressed && !opTriggersPressed ){
-                System.out.println("ejectorEnabled and isTimedOut");
-                // Retract the ejector
-                Robot.ballGrabber.retract();
-                // reset the ejector enabled flag
-                ejectorEnabled = false;
-                // stop the timer
-                ejectorTimer.stop();
-            }
+        if( ejectorEnabledAndTimerExpired && !bothTriggersPressed ) {
+            // Retract the ejector
+            Robot.ballGrabber.retract();
+            // reset the ejector enabled flag
+            ejectorEnabled = false;
+            // stop the timer
+            ejectorTimer.stop();
         }
 }
 
