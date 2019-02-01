@@ -44,6 +44,17 @@ public class ElevatorMove extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+        boolean drStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
+        boolean drBackPressed = Robot.oi.getDriveController().getBackButtonPressed();
+        boolean opStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
+        boolean opBackPressed = Robot.oi.getDriveController().getBackButtonPressed();
+
+        if( drStartPressed || opStartPressed ){
+            Robot.elevator.stand();
+        }
+        if( drBackPressed || opBackPressed ){
+            Robot.elevator.lean();
+        }
     }
 
     // Make this return true when this Command no longer needs to run execute()

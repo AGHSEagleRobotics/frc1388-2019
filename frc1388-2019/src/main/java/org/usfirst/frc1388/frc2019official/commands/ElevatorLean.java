@@ -42,12 +42,4 @@ public class ElevatorLean extends Command {
   @Override
   protected void interrupted() {
   }
-  protected void stand(DoubleSolenoid elevatorActuatorBackLeft, DoubleSolenoid elevatorActuatorBackRight){
-    elevatorActuatorBackLeft.set( DoubleSolenoid.Value.kForward );
-    elevatorActuatorBackRight.set( DoubleSolenoid.Value.kForward ); // both pistons in the back push forward and Stand the robot
-  }
-  protected void lean( DoubleSolenoid elevatorActuatorBackLeft, DoubleSolenoid elevatorActuatorBackRight ){
-    elevatorActuatorBackLeft.set( DoubleSolenoid.Value.kForward );
-    elevatorActuatorBackRight.set( DoubleSolenoid.Value.kForward ); // both pistons retract putting the robot into the lean position
-  }
 }
