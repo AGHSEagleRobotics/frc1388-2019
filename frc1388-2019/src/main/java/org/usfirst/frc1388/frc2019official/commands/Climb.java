@@ -43,6 +43,21 @@ public class Climb extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+        //get the current dpad value
+        //boolean drDpadLeftPressed = Robot.oi.getDriveController().get
+        //boolean drDpadRightPressed = Robot.oi.getDriveController().getDpadPressed
+        //boolean opDpadLeftPressed = Robot.oi.getOpController().getDpadPressed
+        //boolean opDpadRightPressed = Robot.oi.getOpController().getDpadPressed
+        if( /* either left dpad pressed */ )
+        {
+            Robot.climber.extend();
+        }
+        if( /*either right dpad pressed */ )
+        {
+            Robot.climber.retract();
+        }
+
+
     }
 
     // Make this return true when this Command no longer needs to run execute()
