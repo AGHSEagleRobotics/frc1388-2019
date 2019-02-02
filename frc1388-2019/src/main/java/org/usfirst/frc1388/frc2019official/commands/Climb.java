@@ -48,14 +48,16 @@ public class Climb extends Command {
         //boolean drDpadRightPressed = Robot.oi.getDriveController().getDpadPressed
         //boolean opDpadLeftPressed = Robot.oi.getOpController().getDpadPressed
         //boolean opDpadRightPressed = Robot.oi.getOpController().getDpadPressed
-        if( /* either left dpad pressed */ )
+        /*
+        if ( )
         {
             Robot.climber.extend();
         }
-        if( /*either right dpad pressed */ )
+        if (  )
         {
             Robot.climber.retract();
         }
+        */
 
 
     }

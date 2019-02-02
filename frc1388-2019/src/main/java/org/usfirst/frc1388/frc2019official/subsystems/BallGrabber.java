@@ -81,14 +81,14 @@ public class BallGrabber extends Subsystem {
     public void grab() {
 
         // Claw closes when actuator is retracted
-        ballGrabber.set( DoubleSolenoid.Value.kReverse) ;
+        ballGrabber.set( DoubleSolenoid.Value.kReverse);
 
     }
     
     public void release() {
 
         // Claw opens when actuator is extended
-        ballGrabber.set( DoubleSolenoid.Value.kForward) ;
+        ballGrabber.set( DoubleSolenoid.Value.kForward);
         
     }
 
