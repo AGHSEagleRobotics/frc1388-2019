@@ -14,6 +14,8 @@ import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc1388.frc2019official.Robot;
 
+import org.usfirst.frc1388.frc2019official.OI.Controller;
+
 /**
  *
  */
@@ -51,10 +53,12 @@ public class Drive extends Command {
         boolean leftStickButton = Robot.oi.getDriveController().getStickButtonPressed(Hand.kLeft);
         if (leftStickButton) {
             precisionMode = !precisionMode;
+
+            if ( precisionMode )
+                Robot.oi.rumblePulse( Controller.DRIVER, 1 );
         }
        
         if (precisionMode) {
-            Robot.oi.rumbleOn();
             Robot.driveTrain.arcadeDrive(driveLeftStickY, driveRightStickX);
 
             // For Tank Drive
@@ -62,7 +66,6 @@ public class Drive extends Command {
             // Robot.driveTrain.tankDrive(driveLeftStickY, driveRightStickY);
         }
         else {
-            Robot.oi.rumbleOff();
             Robot.driveTrain.cheesyDrive(driveLeftStickY, -driveRightStickX, precisionMode);
         }
     }
@@ -77,7 +80,8 @@ public class Drive extends Command {
     @Override
     protected void end() {
         //turns off rumble when robot is disabled
-        Robot.oi.rumbleOff();
+        Robot.oi.rumbleOff( Controller.DRIVER );
+        Robot.oi.rumbleOff( Controller.OPER );
     }
 
     // Called when another command which requires one or more of the same
