@@ -18,6 +18,7 @@ import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.GenericHID.RumbleType;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.lang.Thread;
 
 
 
@@ -38,7 +39,7 @@ public class OI {
     /*
      * time of single rumble in milliseconds
      */
-    public long rumble_pulse_time = 50;
+    public long rumble_pulse_time = 100;
     public double rumble_strength = 1;
 
     //// CREATING BUTTONS
@@ -104,13 +105,13 @@ public class OI {
 
         TimerTask task = new TimerTask()
         {
-            private void task_wait( long wait_time )
+            private void task_wait( long wait_time_ms )
             {
                 // Start the clock
                 long rumble_start_time = System.nanoTime();
 
-                // Wait for wait_time in nanoseconds
-                while ( System.nanoTime() - rumble_start_time < wait_time * 1000000 )
+                // Wait for wait_time_ms in nanoseconds
+                while ( System.nanoTime() - rumble_start_time < wait_time_ms * 1000000 )
                 { /* wait */ }
             }
 
@@ -126,7 +127,14 @@ public class OI {
                     rumbleOn( controller );
 
                     // Wait for rumble_pulse_time
-                    task_wait( rumble_pulse_time );
+                    try {
+                        Thread.sleep( rumble_pulse_time );
+                    }
+                    catch ( Exception e )
+                    {
+                        // Active wait
+                        task_wait( rumble_pulse_time );
+                    }
 
                     // Turn off the rumble
                     rumbleOff( controller );
@@ -136,7 +144,14 @@ public class OI {
                         break;
 
                     // Wait for rumble_pulse_time
-                    task_wait( rumble_pulse_time );
+                    try {
+                        Thread.sleep( rumble_pulse_time * 2 );
+                    }
+                    catch ( Exception e )
+                    {
+                        // Active wait
+                        task_wait( rumble_pulse_time * 2 );
+                    }
 
                     n--;
                 }
