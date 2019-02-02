@@ -46,8 +46,8 @@ public class ElevatorMove extends Command {
     protected void execute() {
         boolean drStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
         boolean drBackPressed = Robot.oi.getDriveController().getBackButtonPressed();
-        boolean opStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
-        boolean opBackPressed = Robot.oi.getDriveController().getBackButtonPressed();
+        boolean opStartPressed = Robot.oi.getOpController().getStartButtonPressed();
+        boolean opBackPressed = Robot.oi.getOpController().getBackButtonPressed();
 
         if( drStartPressed || opStartPressed ){
             Robot.elevator.stand();

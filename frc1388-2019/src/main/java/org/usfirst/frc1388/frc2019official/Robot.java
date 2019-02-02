@@ -75,7 +75,7 @@ public class Robot extends TimedRobot {
 
         // Start up USB logging
         UsbLogging.openLog();
-        UsbLogging.setLogLevel( Level.INFO );
+        UsbLogging.setLogLevel( Level.DEBUG );
 
         UsbLogging.info( "Robot.robotInit()" );
     }
