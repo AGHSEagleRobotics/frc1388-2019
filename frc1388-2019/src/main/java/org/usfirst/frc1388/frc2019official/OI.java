@@ -95,7 +95,8 @@ public class OI {
     /**
      * Must be called from a context that does not loop continuously.
      * Use a flag to determine if a button has been released since the last check
-
+     *
+     * @param controller The controller to pulse
      * @param num The number of equally spaced pulses
      *
      * FIX: This forces the calling thread to wait until pulses have completed

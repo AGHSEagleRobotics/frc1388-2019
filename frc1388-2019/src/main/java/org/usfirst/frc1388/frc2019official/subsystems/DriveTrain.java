@@ -61,11 +61,6 @@ public class DriveTrain extends Subsystem {
         //useFrontWheelsOnly(); //2 motor controllers
         //useSpeedControllerGroups(); //2 speed controller groups
         useFollowMode(); //Follow mode, links sameside motors
-        
-        // Why put these 3 lines here? We can just use the `useFollowMode()` method.
-        // diffDrive = new DifferentialDrive(leftFront, rightFront); // arcade drive
-        // leftBack.follow( leftFront );
-        // rightBack.follow( rightFront );
 
         addChild("DifferentialDrive",diffDrive);
         diffDrive.setSafetyEnabled(true);
