@@ -40,7 +40,8 @@ public class OI {
      * time of single rumble in milliseconds
      */
     public long rumble_pulse_time = 100;
-    public double rumble_strength = 1;
+    public double rumble_strength = 1.0;
+    private long rumble_spin_down_time = 200;
 
     //// CREATING BUTTONS
     // One type of button is a joystick button which is any button on a joystick.
@@ -99,7 +100,6 @@ public class OI {
      * @param controller The controller to pulse
      * @param num The number of equally spaced pulses
      *
-     * FIX: This forces the calling thread to wait until pulses have completed
      */
     public void rumblePulse( Controller controller, int num ) {
         Timer timer = new Timer();
@@ -108,14 +108,24 @@ public class OI {
         {
             private void task_wait( long wait_time_ms )
             {
-                // Start the clock
-                long rumble_start_time = System.nanoTime();
+                try {
+                    Thread.sleep( wait_time_ms );
+                }
+                catch ( Exception e )
+                {
+                    // Active wait
+                    // Start the clock
+                    long rumble_start_time = System.nanoTime();
 
-                // Wait for wait_time_ms in nanoseconds
-                while ( System.nanoTime() - rumble_start_time < wait_time_ms * 1000000 )
-                { /* wait */ }
+                    // Wait for wait_time_ms in nanoseconds
+                    while ( System.nanoTime() - rumble_start_time < wait_time_ms * 1000000 )
+                    { /* wait */ }
+                }
             }
 
+            /*
+             * This method is called automatically by Timer.schedule()
+             */
             @Override
             public void run()
             {
@@ -128,14 +138,7 @@ public class OI {
                     rumbleOn( controller );
 
                     // Wait for rumble_pulse_time
-                    try {
-                        Thread.sleep( rumble_pulse_time );
-                    }
-                    catch ( Exception e )
-                    {
-                        // Active wait
-                        task_wait( rumble_pulse_time );
-                    }
+                    task_wait( rumble_pulse_time );
 
                     // Turn off the rumble
                     rumbleOff( controller );
@@ -144,19 +147,13 @@ public class OI {
                     if ( n <= 1 )
                         break;
 
-                    // Wait for rumble_pulse_time
-                    try {
-                        Thread.sleep( rumble_pulse_time * 2 );
-                    }
-                    catch ( Exception e )
-                    {
-                        // Active wait
-                        task_wait( rumble_pulse_time * 2 );
-                    }
+                    // Allow motor to spin down
+                    task_wait( rumble_spin_down_time );
 
                     n--;
                 }
 
+                // Destroy the thread
                 timer.cancel();
                 timer.purge();
             }
