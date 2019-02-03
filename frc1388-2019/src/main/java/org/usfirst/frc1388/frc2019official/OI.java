@@ -163,35 +163,29 @@ public class OI {
         timer.schedule( task, 0 );
     }
 
-    public void rumbleOn( Controller controller ) {
-        XboxController cont = driveController;
-
+    /**
+     * Convert Controller Enum to XBoxController member
+     */
+    private XboxController controllerToXBoxController( Controller controller )
+    {
         switch ( controller )
         {
             case DRIVER:
-                cont = driveController;
-                break;
+                return driveController;
             case OPER:
-                cont = opController;
-                break;
+                return opController;
         }
+    }
+
+    public void rumbleOn( Controller controller ) {
+        XboxController cont = controllerToXBoxController( controller );
 
         cont.setRumble( RumbleType.kLeftRumble, rumble_strength );
         cont.setRumble( RumbleType.kRightRumble, rumble_strength );
     }
 
     public void rumbleOff( Controller controller ) {
-        XboxController cont = driveController;
-
-        switch ( controller )
-        {
-            case DRIVER:
-                cont = driveController;
-                break;
-            case OPER:
-                cont = opController;
-                break;
-        }
+        XboxController cont = controllerToXBoxController( controller );
 
         cont.setRumble( RumbleType.kLeftRumble, 0 );
         cont.setRumble( RumbleType.kRightRumble, 0 );
