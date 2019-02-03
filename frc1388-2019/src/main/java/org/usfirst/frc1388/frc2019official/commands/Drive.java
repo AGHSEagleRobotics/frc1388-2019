@@ -14,8 +14,6 @@ import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc1388.frc2019official.Robot;
 
-import org.usfirst.frc1388.frc2019official.OI.Controller;
-
 /**
  *
  */
@@ -55,7 +53,7 @@ public class Drive extends Command {
             precisionMode = !precisionMode;
 
             if ( precisionMode )
-                Robot.oi.rumblePulse( Controller.DRIVER, 1 );
+                Robot.oi.rumblePulse( Robot.oi.driveController, 1 );
         }
        
         if (precisionMode) {
