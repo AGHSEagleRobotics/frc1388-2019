@@ -81,6 +81,10 @@ public class Robot extends TimedRobot {
         UsbLogging.setLogLevel( Level.INFO );
 
         UsbLogging.info( "Robot.robotInit()" );
+
+        // print software version
+        UsbLogging.info("Git version: " + BuildInfo.GIT_VERSION + " (branch: " + BuildInfo.GIT_BRANCH + BuildInfo.GIT_STATUS + ")");
+        UsbLogging.info("Built: " + BuildInfo.BUILD_DATE + "  " + BuildInfo.BUILD_TIME);
     }
 
     /**
