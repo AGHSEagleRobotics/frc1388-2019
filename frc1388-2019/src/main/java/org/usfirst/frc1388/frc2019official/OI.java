@@ -365,7 +365,7 @@ public class OI {
      * Left Bumper has been pressed since last check
      * @return true if driver or operator has pressed left bumper
      */
-    public boolean leftBumperpressed() {
+    public boolean leftBumperPressed() {
         return driveController.getBumperPressed( Hand.kLeft ) || opController.getBumperPressed( Hand.kLeft );
     }
 
@@ -373,7 +373,7 @@ public class OI {
      * Right Bumper has been pressed since last check
      * @return true if driver or operator has pressed right bumper
      */
-    public boolean rightBumperpressed() {
+    public boolean rightBumperPressed() {
         return driveController.getBumperPressed( Hand.kRight ) || opController.getBumperPressed( Hand.kRight );
     }
 
