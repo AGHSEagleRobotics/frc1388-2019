@@ -28,8 +28,8 @@ import java.lang.Thread;
  */
 public class OI {
 
-    XboxController driveController = new XboxController(1);
-    XboxController opController = new XboxController(2);
+    public XboxController driveController = new XboxController(1);
+    public XboxController opController = new XboxController(2);
 
     /*
      * time of single rumble in milliseconds
@@ -96,7 +96,7 @@ public class OI {
      * @param sides Array of sides to rumble
      * @param strength Intensity of rumble [0,1]
      */
-    private rumble( XBoxController controller, RumbleType[] sides, double strength ) {
+    private void rumble( XboxController controller, RumbleType[] sides, double strength ) {
         for ( RumbleType s : sides )
             controller.setRumble( s, rumble_strength );
     }
@@ -111,7 +111,7 @@ public class OI {
      * @param sides Array of sides to rumble
      * @param num The number of equally spaced pulses
      */
-    private void rumblePulse( XBoxController controller, RumbleType[] sides, int num ) {
+    private void rumblePulse( XboxController controller, RumbleType[] sides, int num ) {
         Timer timer = new Timer();
 
         TimerTask task = new TimerTask()
@@ -181,7 +181,7 @@ public class OI {
      * @param controller Reference to controller to pulse
      * @param num The number of equally spaced pulses
      */
-    public void rumblePulse( XBoxController controller, int num ) {
+    public void rumblePulse( XboxController controller, int num ) {
         rumblePulse( controller, RumbleType.values(), num );
     }
 
@@ -194,7 +194,7 @@ public class OI {
      * @param side The side to rumble
      * @param num The number of equally spaced pulses
      */
-    public void rumblePulse( XBoxController controller, RumbleType side, int num ) {
+    public void rumblePulse( XboxController controller, RumbleType side, int num ) {
         rumblePulse( controller, new RumbleType[] { side }, num );
     }
 
@@ -204,7 +204,7 @@ public class OI {
      *
      * @param controller Reference to controller
      */
-    public void rumbleOn( XBoxController controller ) {
+    public void rumbleOn( XboxController controller ) {
         rumble( controller, RumbleType.values(), rumble_strength );
     }
 
@@ -215,7 +215,7 @@ public class OI {
      * @param controller Reference to controller
      * @param side The side to rumble
      */
-    public void rumbleOn( XBoxController controller, RumbleType side ) {
+    public void rumbleOn( XboxController controller, RumbleType side ) {
         rumble( controller, new RumbleType[] { side }, rumble_strength );
     }
 
@@ -224,7 +224,7 @@ public class OI {
      *
      * @param controller Reference to controller
      */
-    public void rumbleOff( XBoxController controller ) {
+    public void rumbleOff( XboxController controller ) {
         rumble( controller, RumbleType.values(), 0 );
     }
 
@@ -234,7 +234,7 @@ public class OI {
      * @param controller Reference to controller
      * @param side The side to rumble
      */
-    public void rumbleOff( XBoxController controller, RumbleType side ) {
+    public void rumbleOff( XboxController controller, RumbleType side ) {
         rumble( controller, new RumbleType[] { side }, 0 );
     }
 

@@ -11,6 +11,7 @@
 
 package org.usfirst.frc1388.frc2019official.commands;
 import edu.wpi.first.wpilibj.GenericHID.Hand;
+import edu.wpi.first.wpilibj.GenericHID.RumbleType;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc1388.frc2019official.Robot;
 
@@ -53,7 +54,10 @@ public class Drive extends Command {
             precisionMode = !precisionMode;
 
             if ( precisionMode )
-                Robot.oi.rumblePulse( Robot.oi.driveController, 1 );
+                Robot.oi.rumblePulse( Robot.oi.driveController, RumbleType.kRightRumble, 1 );
+            else
+                Robot.oi.rumblePulse( Robot.oi.driveController, RumbleType.kLeftRumble, 1 );
+
         }
        
         if (precisionMode) {
@@ -78,8 +82,8 @@ public class Drive extends Command {
     @Override
     protected void end() {
         //turns off rumble when robot is disabled
-        Robot.oi.rumbleOff( Controller.DRIVER );
-        Robot.oi.rumbleOff( Controller.OPER );
+        Robot.oi.rumbleOff( Robot.oi.driveController );
+        Robot.oi.rumbleOff( Robot.oi.opController );
     }
 
     // Called when another command which requires one or more of the same
