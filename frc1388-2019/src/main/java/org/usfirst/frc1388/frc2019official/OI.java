@@ -377,5 +377,30 @@ public class OI {
         return driveController.getBumperPressed( Hand.kRight ) || opController.getBumperPressed( Hand.kRight );
     }
 
+    /*******************************************************************************************************
+     *                                            Triggers
+     *******************************************************************************************************/
+
+    /*
+     * Does not check whether a trigger has been pressed since last call.
+     * This means you will need flags to determine the status of the mechanism being controlled.
+     * i.e. Don't use these to control a mechanism. Use them to control the flag for the mechanism
+     */
+
+    /**
+     * Left Trigger is pressed.
+     * @return true if driver or operator is pressing left trigger
+     */
+    public boolean leftTriggerPressed() {
+        return driveController.getTriggerAxis( Hand.kLeft ) > 0 || opController.getTriggerAxis( Hand.kLeft ) > 0;
+    }
+
+    /**
+     * Right Trigger is pressed.
+     * @return true if driver or operator is pressing right trigger
+     */
+    public boolean rightTriggerPressed() {
+        return driveController.getTriggerAxis( Hand.kRight ) > 0 || opController.getTriggerAxis( Hand.kRight ) > 0;
+    }
 }
 
