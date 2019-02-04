@@ -317,5 +317,40 @@ public class OI {
         return driveController.getPOV() == 315 || opController.getPOV() == 315;
     }
 
+    /*******************************************************************************************************
+     *                                            Buttons
+     *******************************************************************************************************/
+
+    /**
+     * Button A has been pressed since last check
+     * @return true if driver or operator has pressed Button A
+     */
+    public boolean buttonAPressed() {
+        return driveController.getAButtonPressed() || opController.getAButtonPressed();
+    }
+
+     /**
+     * Button B has been pressed since last check
+     * @return true if driver or operator has pressed Button B
+     */
+    public boolean buttonBPressed() {
+        return driveController.getBButtonPressed() || opController.getBButtonPressed();
+    }
+
+     /**
+     * Button X has been pressed since last check
+     * @return true if driver or operator has pressed Button X
+     */
+    public boolean buttonXPressed() {
+        return driveController.getXButtonPressed() || opController.getXButtonPressed();
+    }
+
+     /**
+     * Button Y has been pressed since last check
+     * @return true if driver or operator has pressed Button Y
+     */
+    public boolean buttonYPressed() {
+        return driveController.getYButtonPressed() || opController.getYButtonPressed();
+    }
 }
 
