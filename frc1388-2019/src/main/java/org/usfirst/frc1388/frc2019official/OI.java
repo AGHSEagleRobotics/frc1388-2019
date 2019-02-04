@@ -245,6 +245,77 @@ public class OI {
     public XboxController getOpController(){
         return opController;
     }
-    
+
+    /*
+     * D-Pad
+     * Does not check whether a direction has been released since last call.
+     * This means you will need flags to determine the status of the mechanism being controlled.
+     * i.e. Don't use these to control a mechanism. Use them to control the flag for the mechanism
+     */
+
+    /**
+     * D-Pad Up is pressed.
+     * @return true if driver or operator has D-Pad Up currently pressed
+     */
+    public boolean povUpPressed() {
+        return driveController.getPOV() == 0 || opController.getPOV() == 0;
+    }
+
+    /**
+     * D-Pad Up-Right is pressed.
+     * @return true if driver or operator has D-Pad Up-Right currently pressed
+     */
+    public boolean povUpRightPressed() {
+        return driveController.getPOV() == 45 || opController.getPOV() == 45;
+    }
+
+    /**
+     * D-Pad Right is pressed.
+     * @return true if driver or operator has D-Pad Right currently pressed
+     */
+    public boolean povRightPressed() {
+        return driveController.getPOV() == 90 || opController.getPOV() == 90;
+    }
+
+    /**
+     * D-Pad Down-Right is pressed.
+     * @return true if driver or operator has D-Pad Down-Right currently pressed
+     */
+    public boolean povDownRightPressed() {
+        return driveController.getPOV() == 135 || opController.getPOV() == 135;
+    }
+
+    /**
+     * D-Pad Down is pressed.
+     * @return true if driver or operator has D-Pad Down currently pressed
+     */
+    public boolean povDownPressed() {
+        return driveController.getPOV() == 180 || opController.getPOV() == 180;
+    }
+
+    /**
+     * D-Pad Down-Left is pressed.
+     * @return true if driver or operator has D-Pad Down-Left currently pressed
+     */
+    public boolean povDownLeftPressed() {
+        return driveController.getPOV() == 225 || opController.getPOV() == 225;
+    }
+
+    /**
+     * D-Pad Left is pressed.
+     * @return true if driver or operator has D-Pad Left currently pressed
+     */
+    public boolean povLeftPressed() {
+        return driveController.getPOV() == 270 || opController.getPOV() == 270;
+    }
+
+    /**
+     * D-Pad Up-Left is pressed.
+     * @return true if driver or operator has D-Pad Up-Left currently pressed
+     */
+    public boolean povUpLeftPressed() {
+        return driveController.getPOV() == 315 || opController.getPOV() == 315;
+    }
+
 }
 
