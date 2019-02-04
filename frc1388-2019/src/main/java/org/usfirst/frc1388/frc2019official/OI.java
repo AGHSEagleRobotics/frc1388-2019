@@ -15,6 +15,7 @@ import org.usfirst.frc1388.frc2019official.commands.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import edu.wpi.first.wpilibj.XboxController;
+import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.GenericHID.RumbleType;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -246,9 +247,12 @@ public class OI {
         return opController;
     }
 
+    /*******************************************************************************************************
+     *                                            D-pad
+     *******************************************************************************************************/
+
     /*
-     * D-Pad
-     * Does not check whether a direction has been released since last call.
+     * Does not check whether a direction has been pressed since last call.
      * This means you will need flags to determine the status of the mechanism being controlled.
      * i.e. Don't use these to control a mechanism. Use them to control the flag for the mechanism
      */
@@ -352,5 +356,26 @@ public class OI {
     public boolean buttonYPressed() {
         return driveController.getYButtonPressed() || opController.getYButtonPressed();
     }
+
+    /*******************************************************************************************************
+     *                                            Bumpers
+     *******************************************************************************************************/
+
+    /**
+     * Left Bumper has been pressed since last check
+     * @return true if driver or operator has pressed left bumper
+     */
+    public boolean leftBumperpressed() {
+        return driveController.getBumperPressed( Hand.kLeft ) || opController.getBumperPressed( Hand.kLeft );
+    }
+
+    /**
+     * Right Bumper has been pressed since last check
+     * @return true if driver or operator has pressed right bumper
+     */
+    public boolean rightBumperpressed() {
+        return driveController.getBumperPressed( Hand.kRight ) || opController.getBumperPressed( Hand.kRight );
+    }
+
 }
 
