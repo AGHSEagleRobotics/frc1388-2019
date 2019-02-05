@@ -46,23 +46,19 @@ public class Climb extends Command {
         //get the current dpad value
         int Right = 90; 
         int Left = 270;
-        //0-180 Ret
-        //int drDpadValue = Robot.oi.getDriveController().getPOV(0);
-        //int opDpadValue = Robot.oi.getOpController().getPOV(0);
+        // 90 = retract 270 = extend
         
-        //dpadUp = Robot.oi.getDriveController().getPOV(0) == 0 || Robot.oi.getOpController().getPOV(0) == 0;
         boolean dpadRight = Robot.oi.getOpController().getPOV(0) == Right;
         boolean dpadLeft = Robot.oi.getOpController().getPOV(0) == Left;
         if( dpadRight )
         {
-            Robot.climber.retract();
-            UsbLogging.debug( "retracting" );
+            Robot.climber.retractLifter();
+            UsbLogging.debug( "retracting lifter" );
         }
         else if( dpadLeft )
         {
-            Robot.climber.extend();
-            UsbLogging.debug( "extending" );
-
+            Robot.climber.extendLifter();
+            UsbLogging.debug( "extending lifter" );
         }
 
 
