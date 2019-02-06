@@ -98,7 +98,7 @@ public class OI {
      */
     private void rumble( XboxController controller, RumbleType[] sides, double strength ) {
         for ( RumbleType s : sides )
-            controller.setRumble( s, rumble_strength );
+            controller.setRumble( s, strength );
     }
 
     /**
@@ -400,6 +400,11 @@ public class OI {
      */
     public boolean rightTriggerPressed() {
         return driveController.getTriggerAxis( Hand.kRight ) > 0 || opController.getTriggerAxis( Hand.kRight ) > 0;
+    }
+
+    public boolean oppositeTriggersPressed() {
+        return ( driveController.getTriggerAxis( Hand.kLeft ) > 0 && opController.getTriggerAxis( Hand.kRight ) > 0 ) ||
+               ( driveController.getTriggerAxis( Hand.kRight ) > 0 && opController.getTriggerAxis( Hand.kLeft ) > 0 );
     }
 }
 
