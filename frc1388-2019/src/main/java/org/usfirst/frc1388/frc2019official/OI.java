@@ -99,7 +99,7 @@ public class OI {
      */
     private void rumble( XboxController controller, RumbleType[] sides, double strength ) {
         for ( RumbleType s : sides )
-            controller.setRumble( s, rumble_strength );
+            controller.setRumble( s, strength );
     }
 
     /**
