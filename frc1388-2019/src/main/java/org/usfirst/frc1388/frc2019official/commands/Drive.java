@@ -54,9 +54,9 @@ public class Drive extends Command {
             precisionMode = !precisionMode;
 
             if ( precisionMode )
-                Robot.oi.rumblePulse( Robot.oi.driveController, RumbleType.kRightRumble, 1 );
+                Robot.oi.rumblePulse( Robot.oi.driveController, RumbleType.kRightRumble, 2 );
             else
-                Robot.oi.rumblePulse( Robot.oi.driveController, RumbleType.kLeftRumble, 1 );
+                Robot.oi.rumblePulse( Robot.oi.driveController, RumbleType.kLeftRumble, 2 );
 
         }
 
