@@ -29,11 +29,11 @@ public class Manipulator extends Subsystem {
   *
   */
   // DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.ID_PCM12v_channel2, RobotMap.ID_PCM12v_channel3); // ball grabber
-  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.ID_PCM12v_channel2, RobotMap.ID_PCM12v_channel3); // ball grabber
-  Solenoid ejector = new Solenoid( RobotMap.ID_PCM12v_channel4); // ball ejector
+  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.CANID_PCM12v, RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
+  Solenoid ejector = new Solenoid(RobotMap.CANID_PCM12v, RobotMap.PCMCH_ejector); // ball ejector
 
-  DoubleSolenoid pancakeMaker = new DoubleSolenoid(RobotMap.ID_PCM12v_channel6, RobotMap.ID_PCM12v_channel7); // pancake maker
-  Solenoid pancakeEjector = new Solenoid( RobotMap.ID_PCM12v_channel5); // pancake eject
+  DoubleSolenoid pancakeMaker = new DoubleSolenoid(RobotMap.CANID_PCM12v, RobotMap.PCMCH_pancakeMakerPush, RobotMap.PCMCH_pancakeMakerPull); // pancake maker
+  Solenoid pancakeEjector = new Solenoid(RobotMap.CANID_PCM12v, RobotMap.PCMCH_pancakeEjector); // pancake eject
 
   @Override
   public void initDefaultCommand() {
