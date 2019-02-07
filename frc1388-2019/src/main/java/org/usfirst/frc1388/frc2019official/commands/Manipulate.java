@@ -23,8 +23,6 @@ public class Manipulate extends Command {
   private boolean ejectorEnabledAndTimerExpired;
 
   // pancake variables
-  private boolean dPadUp;
-  private boolean dPadDown;
 
   public Manipulate() {
     // Use requires() here to declare subsystem dependencies
@@ -36,9 +34,6 @@ public class Manipulate extends Command {
     ejectorTimer = new Timer();
     ejectorEnabledAndTimerExpired = false;
 
-    // pancake variables
-    dPadUp = false;
-    dPadDown = false;
 
   }
 
@@ -51,6 +46,7 @@ public class Manipulate extends Command {
   @Override
   protected void execute() {
 
+    // ballgrab execute
     boolean leftTriggersPressed = Robot.oi.leftTriggerPressed();
     boolean rightTriggersPressed = Robot.oi.rightTriggerPressed();
     boolean oppositeTriggersPressed = Robot.oi.oppositeTriggersPressed();
@@ -92,28 +88,23 @@ public class Manipulate extends Command {
     }
 
     // pancake execute
-    int Up = 0;
-    int Down = 180;
-    boolean drDPadUp = Robot.oi.getDriveController().getPOV(0) == Up;
-    boolean opDPadUp = Robot.oi.getOpController().getPOV(0) == Up;
-    boolean drDPadDown = Robot.oi.getDriveController().getPOV(0) == Down;
-    boolean opDPadDown = Robot.oi.getOpController().getPOV(0) == Down;
+    // TODO: the if statements from the ballgrab execute might be affecting the if statements of the
+    // pancake execute
+    boolean dPadUpPressed = Robot.oi.povUpPressed();
+    boolean dPadDownPressed = Robot.oi.povDownPressed();
 
-    dPadUp = (drDPadUp || opDPadUp);
-    dPadDown = (drDPadDown || opDPadDown);
-
-    if (dPadUp && !dPadDown) { // move pancake arm up
+    if (dPadUpPressed && !dPadDownPressed) { // move pancake arm up
       Robot.manipulator.pancakeUp();
       UsbLogging.debug("pancake arm up");
     }
 
-    if (dPadDown && !dPadUp) { // move pancake arm down
+    if (dPadUpPressed && !dPadDownPressed) { // move pancake arm down
       Robot.manipulator.pancakeDown();
       UsbLogging.debug("pancake arm down");
     }
-
+    
   }
-
+  
   // Make this return true when this Command no longer needs to run execute()
   @Override
   protected boolean isFinished() {

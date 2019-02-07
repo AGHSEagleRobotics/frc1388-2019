@@ -15,6 +15,7 @@ import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.PIDOutput;
 import edu.wpi.first.wpilibj.PIDSource;
 import edu.wpi.first.wpilibj.Solenoid;
+import org.usfirst.frc1388.frc2019official.RobotMap;
 
 /**
  * Add your docs here.
@@ -23,12 +24,16 @@ public class Manipulator extends Subsystem {
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
-  Boolean hatchStart;
-  DoubleSolenoid manipulator = new DoubleSolenoid(2, 3); // used to represent the top actuator of the end effector
-  Solenoid ejector = new Solenoid(4); // ball ejector
+  /*
+  * TODO: double check the pneumatic controller module IDs and channel IDs
+  *
+  */
+  // DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.ID_PCM12v_channel2, RobotMap.ID_PCM12v_channel3); // ball grabber
+  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.ID_PCM12v_channel2, RobotMap.ID_PCM12v_channel3); // ball grabber
+  Solenoid ejector = new Solenoid( RobotMap.ID_PCM12v_channel4); // ball ejector
 
-  DoubleSolenoid pancakeMaker = new DoubleSolenoid(6, 7); // used to represent the top actuator of the end effector
-  Solenoid pancakeEjector = new Solenoid(5);
+  DoubleSolenoid pancakeMaker = new DoubleSolenoid(RobotMap.ID_PCM12v_channel6, RobotMap.ID_PCM12v_channel7); // pancake maker
+  Solenoid pancakeEjector = new Solenoid( RobotMap.ID_PCM12v_channel5); // pancake eject
 
   @Override
   public void initDefaultCommand() {
