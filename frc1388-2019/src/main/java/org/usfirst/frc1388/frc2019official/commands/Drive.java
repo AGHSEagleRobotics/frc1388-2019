@@ -13,7 +13,17 @@ package org.usfirst.frc1388.frc2019official.commands;
 import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.GenericHID.RumbleType;
 import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.command.CommandGroup;
+
 import org.usfirst.frc1388.frc2019official.Robot;
+import org.usfirst.frc1388.frc2019official.UsbLogging;
+
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.networktables.NetworkTable;
+import edu.wpi.first.networktables.NetworkTableEntry;
+import edu.wpi.first.networktables.NetworkTableInstance;
+
+
 
 /**
  *
@@ -41,13 +51,28 @@ public class Drive extends Command {
     @Override
     protected void initialize() {
     }
+    double numberOfStepsTaken = 0;
+    boolean stepsTaken = false;
 
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
 
+    
+
         double driveLeftStickY = Robot.oi.getDriveController().getY(Hand.kLeft);
         double driveRightStickX = Robot.oi.getDriveController().getX(Hand.kRight);
+        boolean getAButton = Robot.oi.getDriveController().getAButtonPressed();
+
+        if( getAButton )
+        {
+           CommandGroup targeting = new Targeting();
+
+            targeting.start();
+        }
+        
+        
+
 
         boolean leftStickButton = Robot.oi.getDriveController().getStickButtonPressed(Hand.kLeft);
         if (leftStickButton) {
@@ -69,7 +94,9 @@ public class Drive extends Command {
         }
         else {
             Robot.driveTrain.cheesyDrive(driveLeftStickY, -driveRightStickX, precisionMode);
-        }
+     
+       }
+       
     }
 
     // Make this return true when this Command no longer needs to run execute()
