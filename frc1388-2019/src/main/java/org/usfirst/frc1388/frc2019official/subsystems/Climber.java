@@ -72,11 +72,11 @@ public class Climber extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.    
 
-    public void extend(){
+    public void extendLifter(){
         lifterLeft.set(true);
         lifterRight.set(true);
     }
-    public void retract(){
+    public void retractLifter(){
         lifterLeft.set(false);
         lifterRight.set(false);
     }
