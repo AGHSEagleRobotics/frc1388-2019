@@ -17,4 +17,17 @@ public class RobotMap
      */
     public static final int CANID_Drivetrain_LB = 4;
     public static final int CANID_Drivetrain_RB = 1;
-}
+
+    /**
+     * PCM IDs
+     */
+
+    public static final int PCM_Module2_12V = 1;
+    /**
+     * Solenoid IDs
+     */
+    // 12V PCM IDs ( PCM 1 )
+    public static final int CANID_Climber_L = 0;
+    public static final int CANID_Climber_R = 1;
+}   
+    

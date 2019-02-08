@@ -44,25 +44,20 @@ public class Climb extends Command {
     @Override
     protected void execute() {
         //get the current dpad value
-        int Right = 90; 
-        int Left = 270;
-        // 90 = retract 270 = extend
         
-        boolean dpadRight = Robot.oi.getOpController().getPOV(0) == Right;
-        boolean dpadLeft = Robot.oi.getOpController().getPOV(0) == Left;
-        if( dpadRight )
+        boolean dpadRight = Robot.oi.povRightPressed();
+        boolean dpadLeft = Robot.oi.povLeftPressed();
+
+        if( dpadRight && !dpadLeft )
         {
             Robot.climber.retractLifter();
             UsbLogging.debug( "retracting lifter" );
         }
-        else if( dpadLeft )
+        else if( dpadLeft && !dpadRight )
         {
             Robot.climber.extendLifter();
             UsbLogging.debug( "extending lifter" );
         }
-
-
-
     }
 
     // Make this return true when this Command no longer needs to run execute()
