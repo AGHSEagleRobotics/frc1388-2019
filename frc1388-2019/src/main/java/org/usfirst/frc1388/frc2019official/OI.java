@@ -320,6 +320,15 @@ public class OI {
         return driveController.getPOV() == 315 || opController.getPOV() == 315;
     }
 
+    /**
+     * D-Pad Up and D-Pad Down are pressed, one on each controller.
+     * @return
+     */
+    public boolean povVerticalOppositePressed() {
+        return ( driveController.getPOV() == 0 && opController.getPOV() == 180 ) ||
+               ( driveController.getPOV() == 180 && opController.getPOV() == 0 );
+    }
+
     /*******************************************************************************************************
      *                                            Buttons
      *******************************************************************************************************/

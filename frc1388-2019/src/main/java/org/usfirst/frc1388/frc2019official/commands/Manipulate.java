@@ -10,6 +10,9 @@ package org.usfirst.frc1388.frc2019official.commands;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.command.Command;
+
+import javax.lang.model.util.ElementScanner6;
+
 import org.usfirst.frc1388.frc2019official.Robot;
 import org.usfirst.frc1388.frc2019official.UsbLogging;
 
@@ -23,6 +26,8 @@ public class Manipulate extends Command {
   private boolean ejectorEnabledAndTimerExpired;
 
   // pancake variables
+  private boolean pancakeIsDown = false;
+
 
   public Manipulate() {
     // Use requires() here to declare subsystem dependencies
@@ -45,7 +50,15 @@ public class Manipulate extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-
+    
+    ballGrabExecute();
+    pancakeExecute();
+  }
+  
+  /**
+   *  ball grab execute method
+   */
+  private void ballGrabExecute() {
     // ballgrab execute
     boolean leftTriggersPressed = Robot.oi.leftTriggerPressed();
     boolean rightTriggersPressed = Robot.oi.rightTriggerPressed();
@@ -86,25 +99,39 @@ public class Manipulate extends Command {
       // stop the timer
       ejectorTimer.stop();
     }
-
-    // pancake execute
-    // TODO: the if statements from the ballgrab execute might be affecting the if statements of the
-    // pancake execute
-    boolean dPadUpPressed = Robot.oi.povUpPressed();
-    boolean dPadDownPressed = Robot.oi.povDownPressed();
-
-    if (dPadUpPressed && !dPadDownPressed) { // move pancake arm up
-      Robot.manipulator.pancakeUp();
-      UsbLogging.debug("pancake arm up");
-    }
-
-    if (dPadUpPressed && !dPadDownPressed) { // move pancake arm down
-      Robot.manipulator.pancakeDown();
-      UsbLogging.debug("pancake arm down");
-    }
-    
   }
-  
+
+  /**
+   * pancake arm execute method
+   */
+  private void pancakeExecute() {
+    // pancake execute
+    boolean upPressed = Robot.oi.povUpPressed() || Robot.oi.povUpLeftPressed() || Robot.oi.povUpRightPressed();
+    boolean downPressed = Robot.oi.povDownPressed() || Robot.oi.povDownLeftPressed() || Robot.oi.povDownRightPressed();
+    
+    /**
+     * at the start, the pancake arm is default to an up position
+     */
+
+    if (upPressed && !downPressed ) { // move pancake arm up
+      pancakeIsDown = false;
+      
+    }
+
+    else if (downPressed && !upPressed ) { // move pancake arm down
+      pancakeIsDown = true;
+      
+    }
+
+    if( pancakeIsDown ) {
+      Robot.manipulator.pancakeDown();
+    }
+
+    else {
+      Robot.manipulator.pancakeUp();
+    }
+  }
+
   // Make this return true when this Command no longer needs to run execute()
   @Override
   protected boolean isFinished() {

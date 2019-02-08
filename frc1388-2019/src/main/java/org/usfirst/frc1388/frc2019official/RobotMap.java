@@ -22,8 +22,8 @@ public class RobotMap
      *   Pneumatics Control Modules
      */
     /* PCM CAN IDs */
-    public static final int CANID_PCM12v = 1;
-    public static final int CANID_PCM24v = 2;
+    public static final int CANID_PCM12v = 0;
+    public static final int CANID_PCM24v = 1;
 
     /* PCM12V channels */
     // public static final int PCMCH_12Vchannel0 = 0;
@@ -32,8 +32,7 @@ public class RobotMap
     public static final int PCMCH_manipulatorPull = 3;
     public static final int PCMCH_ejector = 4;
     public static final int PCMCH_pancakeEjector = 5;
-    public static final int PCMCH_pancakeMakerPush = 6;
-    public static final int PCMCH_pancakeMakerPull = 7;
+    public static final int PCMCH_pancakeArm = 6;
 
     /* PCM24V channels */
     // public static final int PCMCH_24Vchannel0 = 0;

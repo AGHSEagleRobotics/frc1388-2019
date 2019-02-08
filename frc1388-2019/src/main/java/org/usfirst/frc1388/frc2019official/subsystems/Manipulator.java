@@ -28,12 +28,12 @@ public class Manipulator extends Subsystem {
   * TODO: double check the pneumatic controller module IDs and channel IDs
   *
   */
-  // DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.ID_PCM12v_channel2, RobotMap.ID_PCM12v_channel3); // ball grabber
-  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.CANID_PCM12v, RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
-  Solenoid ejector = new Solenoid(RobotMap.CANID_PCM12v, RobotMap.PCMCH_ejector); // ball ejector
+  // ball grabber
+  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
+  Solenoid ejector = new Solenoid(RobotMap.PCMCH_ejector); // ball ejector
 
-  DoubleSolenoid pancakeMaker = new DoubleSolenoid(RobotMap.CANID_PCM12v, RobotMap.PCMCH_pancakeMakerPush, RobotMap.PCMCH_pancakeMakerPull); // pancake maker
-  Solenoid pancakeEjector = new Solenoid(RobotMap.CANID_PCM12v, RobotMap.PCMCH_pancakeEjector); // pancake eject
+  Solenoid pancakeMaker = new Solenoid( RobotMap.PCMCH_pancakeArm );
+  Solenoid pancakeEjector = new Solenoid(RobotMap.PCMCH_pancakeEjector); // pancake eject
 
   @Override
   public void initDefaultCommand() {
@@ -45,7 +45,7 @@ public class Manipulator extends Subsystem {
     manipulator.set(DoubleSolenoid.Value.kOff);
     ejector.set(false);
 
-    pancakeMaker.set(DoubleSolenoid.Value.kOff);
+    pancakeMaker.set(false);
     pancakeEjector.set(false);
 
   }
@@ -54,7 +54,7 @@ public class Manipulator extends Subsystem {
     manipulator.set(DoubleSolenoid.Value.kOff);
     ejector.set(false);
 
-    pancakeMaker.set(DoubleSolenoid.Value.kOff);
+    pancakeMaker.set(false);
     pancakeEjector.set(false);
   }
 
@@ -101,13 +101,13 @@ public class Manipulator extends Subsystem {
 
   public void pancakeUp() {
 
-    pancakeMaker.set(DoubleSolenoid.Value.kReverse);
+    pancakeMaker.set(false);
 
   }
 
   public void pancakeDown() {
 
-    pancakeMaker.set(DoubleSolenoid.Value.kForward);
+    pancakeMaker.set(true);
 
   }
 
