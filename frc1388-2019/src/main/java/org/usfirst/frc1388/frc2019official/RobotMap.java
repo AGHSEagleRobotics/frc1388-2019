@@ -22,25 +22,21 @@ public class RobotMap
      *   Pneumatics Control Modules
      */
     /* PCM CAN IDs */
-    public static final int CANID_PCM12v = 0;
-    public static final int CANID_PCM24v = 1;
+    public static final int CANID_PCM1 = 1;
+    public static final int CANID_PCM2 = 2;
 
-    /* PCM12V channels */
-    // public static final int PCMCH_12Vchannel0 = 0;
-    // public static final int PCMCH_12Vchannel1 = 1;
-    public static final int PCMCH_manipulatorPush = 2;
-    public static final int PCMCH_manipulatorPull = 3;
-    public static final int PCMCH_ejector = 4;
-    public static final int PCMCH_pancakeEjector = 5;
-    public static final int PCMCH_pancakeArm = 6;
+    /* PCM Module 1 Channels */
+    public static final int PCMCH_manipulatorPush = 1;
+    public static final int PCMCH_manipulatorPull = 2;
+    public static final int PCMCH_ballEjectorPush = 3;
+    public static final int PCMCH_ballEjectorPull = 4;
+    public static final int PCMCH_pancakeArm = 5;
+    public static final int PCMCH_pancakeEjector = 6;
 
-    /* PCM24V channels */
-    // public static final int PCMCH_24Vchannel0 = 0;
-    // public static final int PCMCH_24Vchannel1 = 1;
-    // public static final int PCMCH_24Vchannel1 = 2;
-    // public static final int PCMCH_24Vchannel1 = 3;
-    // public static final int PCMCH_24Vchannel1 = 4;
-    // public static final int PCMCH_24Vchannel1 = 5;
-    // public static final int PCMCH_24Vchannel1 = 6;
-    // public static final int PCMCH_24Vchannel1 = 7;
+    /* PCM Module 2 Channels */
+    
+    public static final int PCMCH_elevatorLeanExtend = 1;
+    public static final int PCMCH_elevatorLeanRetract = 2;
+    // public static final int PCMCH_lifterExtend = 2;
+    // public static final int PCMCH_lifterRetract = 3;
 }

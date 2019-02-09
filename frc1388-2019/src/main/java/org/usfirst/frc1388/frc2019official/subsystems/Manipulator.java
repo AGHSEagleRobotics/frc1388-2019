@@ -28,11 +28,11 @@ public class Manipulator extends Subsystem {
   * TODO: double check the pneumatic controller module IDs and channel IDs
   *
   */
-  // ball grabber
-  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
-  Solenoid ejector = new Solenoid(RobotMap.PCMCH_ejector); // ball ejector
 
-  Solenoid pancakeMaker = new Solenoid( RobotMap.PCMCH_pancakeArm );
+  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
+  DoubleSolenoid ejector = new DoubleSolenoid(RobotMap.PCMCH_ballEjectorPush, RobotMap.PCMCH_ballEjectorPull); // ball ejector
+
+  Solenoid pancakeMaker = new Solenoid( RobotMap.PCMCH_pancakeArm ); // pancake arm
   Solenoid pancakeEjector = new Solenoid(RobotMap.PCMCH_pancakeEjector); // pancake eject
 
   @Override
@@ -43,7 +43,7 @@ public class Manipulator extends Subsystem {
     setDefaultCommand(new Manipulate());
 
     manipulator.set(DoubleSolenoid.Value.kOff);
-    ejector.set(false);
+    ejector.set(DoubleSolenoid.Value.kOff);
 
     pancakeMaker.set(false);
     pancakeEjector.set(false);
@@ -52,7 +52,7 @@ public class Manipulator extends Subsystem {
 
   public void initialize() {
     manipulator.set(DoubleSolenoid.Value.kOff);
-    ejector.set(false);
+    ejector.set(DoubleSolenoid.Value.kOff);
 
     pancakeMaker.set(false);
     pancakeEjector.set(false);
@@ -88,14 +88,14 @@ public class Manipulator extends Subsystem {
   public void ballEjectorExtend() {
 
     // Ball is ejected when actuator is extended
-    ejector.set(true);
+    ejector.set(DoubleSolenoid.Value.kForward);
 
   }
 
   public void ballEjectorRetract() {
 
     // retract ball ejector
-    ejector.set(false);
+    ejector.set(DoubleSolenoid.Value.kReverse);
 
   }
 
