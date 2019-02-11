@@ -85,7 +85,7 @@ public class Manipulate extends Command {
 
     //Use distance sensor to auto close the grabber when ball is close enough
     System.out.println("getVoltage " + Robot.ai.getVoltage());
-    if(  Robot.ai.getVoltage() > 1.2 && Robot.ai.getVoltage() < 2.25 &&  opRightBumper )
+    if(  Robot.ai.getVoltage() > 1.2 && Robot.ai.getVoltage() > 2.25 &&  opRightBumper )
       Robot.manipulator.ballGrab();
     //else if(Robot.ai.getValue() < .7 && opRightBumper )
 
@@ -117,7 +117,12 @@ public class Manipulate extends Command {
       // stop the timer
       ejectorTimer.stop();
     }
+  }
 
+  /**
+   * pancake arm execute method
+   */
+  private void pancakeExecute() {
     // pancake execute
     int Up = 0;
     int Down = 180;
@@ -139,6 +144,9 @@ public class Manipulate extends Command {
       UsbLogging.debug("pancake arm down");
     }
 
+    else {
+      Robot.manipulator.pancakeUp();
+    }
   }
 
   // Make this return true when this Command no longer needs to run execute()

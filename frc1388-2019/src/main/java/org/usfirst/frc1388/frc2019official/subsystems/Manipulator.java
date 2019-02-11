@@ -15,6 +15,7 @@ import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.PIDOutput;
 import edu.wpi.first.wpilibj.PIDSource;
 import edu.wpi.first.wpilibj.Solenoid;
+import org.usfirst.frc1388.frc2019official.RobotMap;
 
 /**
  * Add your docs here.
@@ -23,12 +24,16 @@ public class Manipulator extends Subsystem {
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
 
-  Boolean hatchStart;
-  DoubleSolenoid manipulator = new DoubleSolenoid(2, 3); // used to represent the top actuator of the end effector
-  Solenoid ejector = new Solenoid(4); // ball ejector
+  /*
+  * TODO: double check the pneumatic controller module IDs and channel IDs
+  *
+  */
 
-  DoubleSolenoid pancakeMaker = new DoubleSolenoid(6, 7); // used to represent the top actuator of the end effector
-  Solenoid pancakeEjector = new Solenoid(5);
+  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
+  DoubleSolenoid ejector = new DoubleSolenoid(RobotMap.PCMCH_ballEjectorPush, RobotMap.PCMCH_ballEjectorPull); // ball ejector
+
+  Solenoid pancakeMaker = new Solenoid( RobotMap.PCMCH_pancakeArm ); // pancake arm
+  Solenoid pancakeEjector = new Solenoid(RobotMap.PCMCH_pancakeEjector); // pancake eject
 
   @Override
   public void initDefaultCommand() {
@@ -38,18 +43,18 @@ public class Manipulator extends Subsystem {
     setDefaultCommand(new Manipulate());
 
     manipulator.set(DoubleSolenoid.Value.kOff);
-    ejector.set(false);
+    ejector.set(DoubleSolenoid.Value.kOff);
 
-    pancakeMaker.set(DoubleSolenoid.Value.kOff);
+    pancakeMaker.set(false);
     pancakeEjector.set(false);
 
   }
 
   public void initialize() {
     manipulator.set(DoubleSolenoid.Value.kOff);
-    ejector.set(false);
+    ejector.set(DoubleSolenoid.Value.kOff);
 
-    pancakeMaker.set(DoubleSolenoid.Value.kOff);
+    pancakeMaker.set(false);
     pancakeEjector.set(false);
   }
 
@@ -83,26 +88,26 @@ public class Manipulator extends Subsystem {
   public void ballEjectorExtend() {
 
     // Ball is ejected when actuator is extended
-    ejector.set(true);
+    ejector.set(DoubleSolenoid.Value.kForward);
 
   }
 
   public void ballEjectorRetract() {
 
     // retract ball ejector
-    ejector.set(false);
+    ejector.set(DoubleSolenoid.Value.kReverse);
 
   }
 
   public void pancakeUp() {
 
-    pancakeMaker.set(DoubleSolenoid.Value.kReverse);
+    pancakeMaker.set(false);
 
   }
 
   public void pancakeDown() {
 
-    pancakeMaker.set(DoubleSolenoid.Value.kForward);
+    pancakeMaker.set(true);
 
   }
 
