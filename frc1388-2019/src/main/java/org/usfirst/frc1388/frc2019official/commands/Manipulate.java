@@ -67,6 +67,7 @@ public class Manipulate extends Command {
     double opRightTrigger = Robot.oi.getOpController().getTriggerAxis(Hand.kRight);
     double drLeftTrigger = Robot.oi.getDriveController().getTriggerAxis(Hand.kLeft);
     double opLeftTrigger = Robot.oi.getOpController().getTriggerAxis(Hand.kLeft);
+    boolean opRightBumper = Robot.oi.getOpController().getBumper(Hand.kRight);
     // Assign values
     drBothTriggersPressed = (drRightTrigger > 0 && drLeftTrigger > 0);
     opBothTriggersPressed = (opRightTrigger > 0 && opLeftTrigger > 0);
@@ -75,11 +76,20 @@ public class Manipulate extends Command {
     rightTriggerPressed = (drRightTrigger > 0 || opRightTrigger > 0);
     ejectorEnabledAndTimerExpired = (ejectorEnabled && ejectorTimer.hasPeriodPassed(2));
 
-    // Grab (close grabber) when Right trigger pressed (eiter controller)
+    // Grab (close grabber) when Right trigger pressed (either controller)
     if (rightTriggerPressed && !bothTriggersPressed && !ejectorEnabled) {
       // Grab (close Grabber)
       Robot.manipulator.ballGrab();
+  
     }
+
+    //Use distance sensor to auto close the grabber when ball is close enough
+    System.out.println("getVoltage " + Robot.ai.getVoltage());
+    if(  Robot.ai.getVoltage() > 1.2 && Robot.ai.getVoltage() < 2.25 &&  opRightBumper )
+      Robot.manipulator.ballGrab();
+    //else if(Robot.ai.getValue() < .7 && opRightBumper )
+
+    
 
     // Release (open grabber) when Left trigger pressed (either controller)
     if (leftTriggerPressed && !bothTriggersPressed) {
