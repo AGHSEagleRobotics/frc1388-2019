@@ -10,7 +10,6 @@ import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.CommandGroup;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-import org.usfirst.frc1388.frc2019official.NetworkTables;
 import org.usfirst.frc1388.frc2019official.Robot;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -30,9 +29,9 @@ public class Targeting extends CommandGroup {
          //read values periodically
         
     
-        double d = ( (20.5-15.625) / Math.tan( 0 + NetworkTables.angleTy ));
-        double turnAngle = 180 - NetworkTables.angleTs -90 - NetworkTables.angleTx;
-        double x = d * Math.sin(NetworkTables.angleTs);
+        double d = ( (20.5-15.625) / Math.tan( 0 + Robot.angleTy ));
+        double turnAngle = 180 - Robot.angleTs -90 - Robot.angleTx;
+        double x = d * Math.sin(Robot.angleTs);
         boolean getAButton = Robot.oi.getDriveController().getAButton();
             System.out.println( "a is pressed");
             addSequential(new AutonFollow());

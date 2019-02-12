@@ -7,7 +7,6 @@
 
 package org.usfirst.frc1388.frc2019official.commands;
 
-import org.usfirst.frc1388.frc2019official.NetworkTables;
 import org.usfirst.frc1388.frc2019official.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
@@ -24,7 +23,7 @@ public class AutonFollow extends Command {
 
   double k_r = 0.12;
   double k_a = 0.09;// area constant
-  double k_max = .8;//max motor power
+  double k_max = .6;//max motor power
 
   public AutonFollow() {
     // Use requires() here to declare subsystem dependencies
@@ -45,8 +44,8 @@ public class AutonFollow extends Command {
   @Override
   protected void execute() {
 
-        double rotation = k_r * NetworkTables.angleTx;
-        double speed = NetworkTables.area / k_a;
+        double rotation = k_r * Robot.angleTx;
+        double speed = Robot.area / k_a;
 
         rotation = Math.min(rotation, k_max);
         rotation = Math.max(rotation, -k_max);
@@ -60,7 +59,7 @@ public class AutonFollow extends Command {
     
      //if(NetworkTables.getTv == 1.0 ){
       //if(NetworkTables.angleTx >= 0 ){
-      if( NetworkTables.angleTx >= 0)
+      if( Robot.angleTx >= 0)
         Robot.driveTrain.arcadeDrive(-speed , -rotation);
       else
       Robot.driveTrain.arcadeDrive(-speed , -rotation);
@@ -76,7 +75,7 @@ public class AutonFollow extends Command {
   // Make this return true when this Command no longer needs to run execute()
   @Override
   protected boolean isFinished() {
-    if(NetworkTables.area == 0){
+    if(Robot.area == 0){
         return true;
     }
     else{

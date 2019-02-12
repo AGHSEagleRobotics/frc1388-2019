@@ -7,7 +7,6 @@
 
 package org.usfirst.frc1388.frc2019official.commands;
 
-import org.usfirst.frc1388.frc2019official.NetworkTables;
 import org.usfirst.frc1388.frc2019official.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
@@ -46,7 +45,7 @@ public class AutonDrive extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    double power = k_p * NetworkTables.angleTx;
+    double power = k_p * Robot.angleTx;
 
 
         power = Math.min(power, k_max);
