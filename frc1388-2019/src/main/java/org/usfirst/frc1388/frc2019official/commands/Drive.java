@@ -14,6 +14,7 @@ import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.GenericHID.RumbleType;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc1388.frc2019official.Robot;
+import org.usfirst.frc1388.frc2019official.UsbLogging;
 
 /**
  *
@@ -40,6 +41,7 @@ public class Drive extends Command {
     // Called just before this Command runs the first time
     @Override
     protected void initialize() {
+    	UsbLogging.info(">>> " + this.getClass().getSimpleName() + " started");
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -84,12 +86,14 @@ public class Drive extends Command {
         //turns off rumble when robot is disabled
         Robot.oi.rumbleOff( Robot.oi.driveController );
         Robot.oi.rumbleOff( Robot.oi.opController );
+    	UsbLogging.info("<<< " + this.getClass().getSimpleName() + " ended");
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     @Override
     protected void interrupted() {
+    	UsbLogging.info("<<< " + this.getClass().getSimpleName() + " interrupted");
         end();
     }
 }
