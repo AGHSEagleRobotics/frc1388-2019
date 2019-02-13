@@ -25,12 +25,17 @@ public class AutonFollow extends Command {
   double k_max = .6;//max motor power
 
   /**
-   * divide target area into this to get a speed
+   * Divide target area into this to get a speed
    *   that decreases as the target area increases
    * 
    * i.e. dist_mult / Robot.area
    */
   double dist_mult = 7;
+
+  /**
+   * When the target is larger than this, stop the robot
+   */
+  double target_max_area = 15.0;
 
   public AutonFollow() {
     // Use requires() here to declare subsystem dependencies
@@ -81,8 +86,7 @@ public class AutonFollow extends Command {
     /**
      * If area is greater than a size, we are close enough
      */
-    System.out.println( "Robot.area: " + Robot.area );
-    if(Robot.area > 15){
+    if(Robot.area > target_max_area){
         return true;
     }
     else{
