@@ -58,10 +58,8 @@ public class Drive extends Command {
     @Override
     protected void execute() {
 
-    
-
-        double driveLeftStickY = Robot.oi.getDriveController().getY(Hand.kLeft);
-        double driveRightStickX = Robot.oi.getDriveController().getX(Hand.kRight);
+        Robot.oi.driveLeftStickY = Robot.oi.getDriveController().getY(Hand.kLeft);
+        Robot.oi.driveRightStickX = Robot.oi.getDriveController().getX(Hand.kRight);
         boolean getAButton = Robot.oi.getDriveController().getAButtonPressed();
 
         if( getAButton )
@@ -86,15 +84,14 @@ public class Drive extends Command {
         }
        
         if (precisionMode) {
-            Robot.driveTrain.arcadeDrive(driveLeftStickY, driveRightStickX);
+            Robot.driveTrain.arcadeDrive(Robot.oi.driveLeftStickY, Robot.oi.driveRightStickX);
 
             // For Tank Drive
             // double driveRightStickY = Robot.oi.getDriveController().getY(Hand.kRight);
             // Robot.driveTrain.tankDrive(driveLeftStickY, driveRightStickY);
         }
         else {
-            Robot.driveTrain.cheesyDrive(driveLeftStickY, -driveRightStickX, precisionMode);
-     
+            Robot.driveTrain.cheesyDrive(Robot.oi.driveLeftStickY, -Robot.oi.driveRightStickX, precisionMode);
        }
        
     }

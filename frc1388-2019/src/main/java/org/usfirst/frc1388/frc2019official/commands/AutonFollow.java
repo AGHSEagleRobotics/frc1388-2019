@@ -15,15 +15,22 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.networktables.NetworkTable;
 import edu.wpi.first.networktables.NetworkTableEntry;
 import edu.wpi.first.networktables.NetworkTableInstance;
+import edu.wpi.first.wpilibj.GenericHID.Hand;
+
 
 public class AutonFollow extends Command {
- // NetworkTableEntry tx = .getEntry("tx");
-        //  NetworkTableEntry tv = table.getEntry("tv");
-
 
   double k_r = 0.12;
   double k_a = 0.09;// area constant
   double k_max = .6;//max motor power
+
+  /**
+   * divide target area into this to get a speed
+   *   that decreases as the target area increases
+   * 
+   * i.e. dist_mult / Robot.area
+   */
+  double dist_mult = 7;
 
   public AutonFollow() {
     // Use requires() here to declare subsystem dependencies
@@ -44,38 +51,38 @@ public class AutonFollow extends Command {
   @Override
   protected void execute() {
 
-        double rotation = k_r * Robot.angleTx;
-        double speed = Robot.area / k_a;
+      double rotation = k_r * Robot.angleTx;
+      double speed = dist_mult / Robot.area;
 
-        rotation = Math.min(rotation, k_max);
-        rotation = Math.max(rotation, -k_max);
+      rotation = Math.min(rotation, k_max);
+      rotation = Math.max(rotation, -k_max);
 
-        speed = Math.min(speed, k_max);
-        speed = Math.max(speed, -k_max);
-        // double angleTx = tx.getDouble(0.0);
-       // double getTv = tv.getDouble(1.0);
-       // System.out.println("getTv" + getTv);
+      speed = Math.min(speed, k_max);
+      speed = Math.max(speed, -k_max);
 
-    
-     //if(NetworkTables.getTv == 1.0 ){
-      //if(NetworkTables.angleTx >= 0 ){
       if( Robot.angleTx >= 0)
         Robot.driveTrain.arcadeDrive(-speed , -rotation);
       else
-      Robot.driveTrain.arcadeDrive(-speed , -rotation);
+        Robot.driveTrain.arcadeDrive(-speed , -rotation);
 
-      //}
-     /* else
-      {
-        Robot.driveTrain.arcadeDrive(0 , power);
-      } */
-    }
-    //}
+  }
 
   // Make this return true when this Command no longer needs to run execute()
   @Override
   protected boolean isFinished() {
-    if(Robot.area == 0){
+
+    /**
+     * If the driver sticks are pressed more than half way
+     *   the AutonFollow is finished
+     */
+    if ( Math.abs(Robot.oi.driveLeftStickY) > 0.5 || Math.abs(Robot.oi.driveRightStickX) > 0.5 )
+      return true;
+
+    /**
+     * If area is greater than a size, we are close enough
+     */
+    System.out.println( "Robot.area: " + Robot.area );
+    if(Robot.area > 15){
         return true;
     }
     else{
@@ -92,5 +99,6 @@ public class AutonFollow extends Command {
   // subsystems is scheduled to run
   @Override
   protected void interrupted() {
+    end();
   }
 }

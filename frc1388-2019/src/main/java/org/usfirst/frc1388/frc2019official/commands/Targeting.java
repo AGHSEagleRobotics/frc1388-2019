@@ -26,15 +26,11 @@ public class Targeting extends CommandGroup {
    */
   public Targeting() {
     
-         //read values periodically
-        
-    
-        double d = ( (20.5-15.625) / Math.tan( 0 + Robot.angleTy ));
-        double turnAngle = 180 - Robot.angleTs -90 - Robot.angleTx;
-        double x = d * Math.sin(Robot.angleTs);
-        boolean getAButton = Robot.oi.getDriveController().getAButton();
-            System.out.println( "a is pressed");
-            addSequential(new AutonFollow());
+    // double d = ( (20.5-15.625) / Math.tan( 0 + Robot.angleTy ));
+    // double turnAngle = 180 - Robot.angleTs -90 - Robot.angleTx;
+    // double x = d * Math.sin(Robot.angleTs);
+
+    addSequential(new AutonFollow());
 
             
     // Add Commands here:
