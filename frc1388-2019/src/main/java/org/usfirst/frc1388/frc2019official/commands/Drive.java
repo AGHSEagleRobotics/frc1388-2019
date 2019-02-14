@@ -83,7 +83,7 @@ public class Drive extends Command {
         }
 
         if (precisionMode) {
-            Robot.driveTrain.arcadeDrive(Robot.oi.driveLeftStickY, Robot.oi.driveRightStickX);
+            Robot.driveTrain.arcadeDrive(Robot.oi.driveLeftStickY, -Robot.oi.driveRightStickX);
 
             // For Tank Drive
             // double driveRightStickY = Robot.oi.getDriveController().getY(Hand.kRight);
