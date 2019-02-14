@@ -2,7 +2,7 @@ package org.usfirst.frc1388.frc2019official.commands;
 import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc1388.frc2019official.Robot;
-//import org.usfirst.frc1388.frc2019official.UsbLogging;
+import org.usfirst.frc1388.frc2019official.UsbLogging;
 import org.usfirst.frc1388.frc2019official.subsystems.Elevator;
 
 /**
@@ -35,12 +35,24 @@ public class ElevatorMove extends Command {
 	// Called just before this Command runs the first time
 	@Override
 	protected void initialize() {
-    	//UsbLogging.printLog(">>> " + this.getClass().getSimpleName() + " started");
+    	UsbLogging.printLog(">>> " + this.getClass().getSimpleName() + " started");
 	}
 
 	// Called repeatedly when this Command is scheduled to run
 	@Override
 	protected void execute() {
+        // Tower control
+        boolean drStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
+        boolean drBackPressed = Robot.oi.getDriveController().getBackButtonPressed();
+        boolean opStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
+        boolean opBackPressed = Robot.oi.getDriveController().getBackButtonPressed();
+
+        if( drStartPressed || opStartPressed ){
+            Robot.elevator.stand();
+        }
+        if( drBackPressed || opBackPressed ){
+            Robot.elevator.lean();
+        }
 
 		// TODO make on/off vs hold
 		boolean override = Robot.oi.getOpController().getBackButton();
@@ -78,14 +90,14 @@ public class ElevatorMove extends Command {
 	@Override
 	protected void end() {
 		elevator.setMotor(0, false);
-    	//UsbLogging.printLog("<<< " + this.getClass().getSimpleName() + " ended");
+    	UsbLogging.printLog("<<< " + this.getClass().getSimpleName() + " ended");
 	}
 
 	// Called when another command which requires one or more of the same
 	// subsystems is scheduled to run
 	@Override
 	protected void interrupted() {
-    	//UsbLogging.printLog("<<< " + this.getClass().getSimpleName() + " interrupted");
+    	UsbLogging.printLog("<<< " + this.getClass().getSimpleName() + " interrupted");
 		end();
 	}
 
