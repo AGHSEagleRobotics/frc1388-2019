@@ -41,7 +41,7 @@ public class ElevatorMove extends Command {
 	// Called repeatedly when this Command is scheduled to run
 	@Override
 	protected void execute() {
-        // Tower control
+        // Tower control TODO: Double check controls & if they work with Xbox one.
         boolean drStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
         boolean drBackPressed = Robot.oi.getDriveController().getBackButtonPressed();
         boolean opStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
@@ -69,7 +69,7 @@ public class ElevatorMove extends Command {
 
 		} else if (rightTrigger > 0) {
 			
-			elevatorSpeed = applyDeadband(rightTrigger, k_elevatorDeadband);
+			elevatorSpeed = applyDeadband(rightTrigger, k_elevatorDeadband); 
 			
 		} else if (leftTrigger > 0) {
 			

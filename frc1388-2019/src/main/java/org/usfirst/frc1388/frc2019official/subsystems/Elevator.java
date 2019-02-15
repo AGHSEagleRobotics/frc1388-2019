@@ -50,9 +50,9 @@ public class Elevator extends Subsystem {
         CARGOBALL(0),
         MIDHATCHROCKET(0),
         MIDBALLROCKET(0),
-        INITALPOSITION(0); // maybe?
+        INITALPOSITION(25); // maybe? look to change or replace the final variable with this enum
         */
-        SCALE(77), //TODO implement above
+        SCALE(77), //TODO replace with above
 		SWITCH(30),
 		DEPLOYARMS(20),
 		BOTTOM(0),
@@ -326,8 +326,8 @@ public class Elevator extends Subsystem {
         // check that the elevator is high enough before leaning
         if (getHeight() >= k_minLeanHeight) {
             leanControl.set( DoubleSolenoid.Value.kReverse ); // retracts the actuator 
+            m_towerUpright = false;
         }
-        m_towerUpright = false;
     }
 
     public void deactivate(){
