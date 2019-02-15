@@ -96,9 +96,8 @@ public class Elevator extends Subsystem {
     
 
     public Elevator() {
-        elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB,
-            false, EncodingType.k4X); //TODO
-        elevatorEncoder.setDistancePerPulse(0.0169270833);//TODO
+        // elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB, false, EncodingType.k1X); //TODO
+        // elevatorEncoder.setDistancePerPulse(0.0169270833);//TODO
 
         bottomElevatorSwitch1 = new DigitalInput(RobotMap.DIO_bottomLimit1);
         bottomElevatorSwitch2 = new DigitalInput(RobotMap.DIO_bottomLimit2);
@@ -134,12 +133,12 @@ public class Elevator extends Subsystem {
         // Zero the encoder if the elevator is at the bottom limit switch and set the elevator initialized flag
 		if (atBottomLimit()) {
 			if (! m_prevAtBottomLimit) {
-				UsbLogging.info("Elevator encoder held in reset; pre-reset value: " + elevatorEncoder.getDistance());
+				// UsbLogging.info("Elevator encoder held in reset; pre-reset value: " + elevatorEncoder.getDistance());
 			}
 			
 			// set the elevator encoder to zero so that we can use it to measure elevator height for set points 
 			// and so that we can ensure that the elevator height does not exceed the limits. 
-			elevatorEncoder.reset();
+			// elevatorEncoder.reset();
 			m_initialized = true;
         }
         else {
@@ -192,7 +191,7 @@ public class Elevator extends Subsystem {
     public double getHeight() {
         double height = -1;
 		// height is encoder distance + distance of bottom of elevator to floor
-        height = elevatorEncoder.getDistance() + k_lowestHeight;
+        // height = elevatorEncoder.getDistance() + k_lowestHeight;
 
         if (!isinitialized()) {
             // account for approximate starting position
