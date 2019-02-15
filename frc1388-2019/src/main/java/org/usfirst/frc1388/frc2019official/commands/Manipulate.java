@@ -63,6 +63,7 @@ public class Manipulate extends Command {
     boolean leftTriggersPressed = Robot.oi.leftTriggerPressed();
     boolean rightTriggersPressed = Robot.oi.rightTriggerPressed();
     boolean oppositeTriggersPressed = Robot.oi.oppositeTriggersPressed();
+    boolean getYButton = Robot.oi.getOpController().getYButton();
 
     boolean bothTriggersPressed = (leftTriggersPressed && rightTriggersPressed) && ! oppositeTriggersPressed;
     ejectorEnabledAndTimerExpired = (ejectorEnabled && ejectorTimer.hasPeriodPassed(2));
@@ -78,6 +79,11 @@ public class Manipulate extends Command {
       // TODO: Explain why we start timer
       ejectorTimer.start();
     }
+
+    // open grabber and close when the ball is detected
+    if( getYButton && Robot.exampleAnalog.getVoltage() > 1.2 && Robot.exampleAnalog.getVoltage() < 2.25)
+      Robot.manipulator.ballGrab();
+
 
     // Grab (close grabber) when Right trigger pressed (either controller)
     else if (rightTriggersPressed && ! ejectorEnabled) {
