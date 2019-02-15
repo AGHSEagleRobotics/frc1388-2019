@@ -54,7 +54,7 @@ public class Robot extends TimedRobot {
     private static final double k_transducerFullRange = (150 / 4.0 * 5.0);  // (psi / Vrange * Vfullscale) - see datasheet
     private static final double k_transducerOffset = 0.5;                   // V - see datasheet
 
-    AnalogInput exampleAnalog = new AnalogInput(0);
+    public static AnalogInput exampleAnalog = new AnalogInput(0);
     int raw;
     double volts;
     int averageRaw;  

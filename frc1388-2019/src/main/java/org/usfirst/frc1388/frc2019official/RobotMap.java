@@ -45,7 +45,17 @@ public class RobotMap
     // public static final int PCMCH_24Vchannel1 = 6;
     // public static final int PCMCH_24Vchannel1 = 7;
 
+    public static final int PCM_Module2_12V = 1;
+
+
     /* Analog Inputs */
     // public static final int AI_channel0 = 0;
     public static final int AI_airPressure = 1;
+
+     /**
+     * Solenoid IDs
+     */
+    // 12V PCM IDs ( PCM 1 )
+    public static final int CANID_Climber_L = 0;
+    public static final int CANID_Climber_R = 1;
 }

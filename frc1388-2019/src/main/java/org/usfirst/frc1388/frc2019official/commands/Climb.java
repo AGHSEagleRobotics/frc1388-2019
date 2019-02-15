@@ -10,8 +10,10 @@
 
 
 package org.usfirst.frc1388.frc2019official.commands;
+import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc1388.frc2019official.Robot;
+import org.usfirst.frc1388.frc2019official.subsystems.Climber;
 
 /**
  *
@@ -43,6 +45,27 @@ public class Climb extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
+
+        boolean dpadRight = Robot.oi.povRightPressed();
+        boolean dpadLeft = Robot.oi.povLeftPressed();
+
+        double opControllerRightStick = Robot.oi.getOpController().getY(Hand.kRight);
+        double opControllerLeftStick = Robot.oi.getOpController().getY(Hand.kLeft);
+
+        if( dpadRight && !dpadLeft )
+        {
+            Robot.climber.retractLifter();
+            //UsbLogging.debug( "retracting lifter" );
+        }
+        else if( dpadLeft && !dpadRight )
+        {
+            Robot.climber.extendLifter();
+            //UsbLogging.debug( "extending lifter" );
+        }
+
+        Robot.climber.runClimberArm( -opControllerRightStick );
+        Robot.climber.runClimberWheels( opControllerLeftStick );
+    }
         //get the current dpad value
         //boolean drDpadLeftPressed = Robot.oi.getDriveController().get
         //boolean drDpadRightPressed = Robot.oi.getDriveController().getDpadPressed
@@ -60,7 +83,7 @@ public class Climb extends Command {
         */
 
 
-    }
+    
 
     // Make this return true when this Command no longer needs to run execute()
     @Override
