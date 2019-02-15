@@ -44,4 +44,8 @@ public class RobotMap
     // public static final int PCMCH_24Vchannel1 = 5;
     // public static final int PCMCH_24Vchannel1 = 6;
     // public static final int PCMCH_24Vchannel1 = 7;
+
+    /* Analog Inputs */
+    // public static final int AI_channel0 = 0;
+    public static final int AI_airPressure = 1;
 }

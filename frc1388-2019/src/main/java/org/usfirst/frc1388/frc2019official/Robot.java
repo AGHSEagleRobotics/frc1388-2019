@@ -20,6 +20,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import edu.wpi.first.wpilibj.AnalogInput;
+import edu.wpi.first.wpilibj.AnalogPotentiometer;
 
 import org.usfirst.frc1388.frc2019official.UsbLogging.Level;
 import org.usfirst.frc1388.frc2019official.commands.*;
@@ -48,6 +49,10 @@ public class Robot extends TimedRobot {
     public static Climber climber;
     public static Elevator elevator;
     public static Manipulator manipulator;
+
+    public static AnalogPotentiometer airPressure;
+    private static final double k_transducerFullRange = (150 / 4.0 * 5.0);  // (psi / Vrange * Vfullscale) - see datasheet
+    private static final double k_transducerOffset = 0.5;                   // V - see datasheet
 
     AnalogInput exampleAnalog = new AnalogInput(0);
     int raw;
@@ -87,9 +92,7 @@ public class Robot extends TimedRobot {
         elevator = new Elevator();
         manipulator = new Manipulator();
 
-        AnalogInput ai;
-        ai = new AnalogInput(1);
-
+        airPressure = new AnalogPotentiometer(RobotMap.AI_airPressure, k_transducerFullRange, k_transducerOffset);
         
         raw = exampleAnalog.getValue();
         volts = exampleAnalog.getVoltage();
@@ -219,6 +222,9 @@ public class Robot extends TimedRobot {
         SmartDashboard.putNumber("Infrared volts", volts );
         SmartDashboard.putNumber("Infrared Average Raw", averageRaw );
         SmartDashboard.putNumber("Infrared Average Volts", averageVolts );
+
+        // Air pressure transducer
+        SmartDashboard.putNumber("Air Pressure", airPressure.get());
     }
 
     /**
