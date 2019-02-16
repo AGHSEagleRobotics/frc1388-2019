@@ -70,18 +70,18 @@ public class Elevator extends Subsystem {
     }
 
     // The below refer to the height in inches of various critical points of the elevator
-    public final double k_maxHeight = 40; // max height limit TODO: fill in max height
-    public final double k_lowestHeight = 0; // lowest height limit TODO: fill in min height
-    public final double k_maxHeightMargin = 3; // margin of error for the elevator's max height TODO: fill in margin
+    public final double k_maxHeight = 40; // max height limit
+    public final double k_lowestHeight = 0; // lowest height limit
+    public final double k_maxHeightMargin = 3; // margin of error for the elevator's max height
 
     // The below refer to various critical limits of the motors in inches
-    private final double k_maxPwrUp = 0.5; //max power when moving up TODO: fill in and Test
-	private final double k_finalPwrUp = 0.3; //max power when elevator is at top TODO: fill in and Test
-	private final double k_rampDistUp = 2; //distance from top when power will scale down TODO: fill in and Test
+    private final double k_maxPwrUp = 0.5; //max power when moving up TODO: update when manipulator is attached
+	private final double k_finalPwrUp = 0.3; //max power when elevator is at top
+	private final double k_rampDistUp = 2; //distance from top when power will scale down
 
-	private final double k_maxPwrDwn = -0.5; //max power when moving down TODO: fill in and Test
-	private final double k_finalPwrDwn = -0.3; //max power when elevator is at bottom TODO: fill in and Test
-	private final double k_rampDistDwn = 4; //distance from bottom when power will scale down TODO: fill in and Test
+	private final double k_maxPwrDwn = -0.5; //max power when moving down TODO: update when manipulator is attached
+	private final double k_finalPwrDwn = -0.3; //max power when elevator is at bottom
+	private final double k_rampDistDwn = 4; //distance from bottom when power will scale down
 	
 	private final double k_slopeUp = (k_maxPwrUp - k_finalPwrUp) / k_rampDistUp; // slope of the limit = y / x = power / distance
 	private final double k_slopeDwn = (k_maxPwrDwn - k_finalPwrDwn) / k_rampDistDwn; // slope of the limit = y / x = power / distance
@@ -97,7 +97,11 @@ public class Elevator extends Subsystem {
 
     public Elevator() {
         elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB, true, EncodingType.k1X); //TODO
-        elevatorEncoder.setDistancePerPulse(0.0164386244606542);//TODO  0.0169270833 jolt's number
+        // Calculated distance per pulse:
+        // (1R / 256P) * (12t / 22t) * (180mm / R) * (1in / 25.4mm) = 0.01509932
+        // encoder       sprocket      pulley
+        // sprocket      ratio         circumference
+        elevatorEncoder.setDistancePerPulse(0.0164386244606542);    //  0.0169270833 jolt's number
 
         bottomElevatorSwitch1 = new DigitalInput(RobotMap.DIO_bottomLimit1);
         bottomElevatorSwitch2 = new DigitalInput(RobotMap.DIO_bottomLimit2);
@@ -251,8 +255,6 @@ public class Elevator extends Subsystem {
 
 		double height = getHeight();
 
-        System.out.println( "Height = " + height + " Initialized = " + m_initialized + "  TowerUpright = " + m_towerUpright );
-
 		// max power limit
 		if (pwr > k_maxPwrUp) pwr = k_maxPwrUp;                         // Never exceed the max Up power
 		if (pwr < k_maxPwrDwn) pwr = k_maxPwrDwn;                       // Never exceed the max Down power
@@ -260,15 +262,12 @@ public class Elevator extends Subsystem {
         // top/bottom limits (limit switches or soft limits)
         if (atTopLimit()) {
             pwr = Math.min(pwr, 0);                         // Do not go up
-            System.out.println("AT TOP LIMIT");
         }
         if (atBottomLimit()) {
             pwr = Math.max(pwr, 0);                         // Do not go down
-            System.out.println("AT BOTTOM LIMIT");
         }
         if (! m_towerUpright && (height <= k_minLeanHeight)) {
             pwr = Math.max(pwr, 0);                         // Do not go down
-            System.out.println("TOWER LIMITED");
         }
 
         // Reduce the power as the elevator approaches top/bottom limits
