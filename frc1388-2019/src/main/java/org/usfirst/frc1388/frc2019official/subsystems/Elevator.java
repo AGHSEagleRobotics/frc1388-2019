@@ -96,8 +96,8 @@ public class Elevator extends Subsystem {
     
 
     public Elevator() {
-        // elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB, false, EncodingType.k1X); //TODO
-        // elevatorEncoder.setDistancePerPulse(0.0169270833);//TODO
+        elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB, true, EncodingType.k1X); //TODO
+        elevatorEncoder.setDistancePerPulse(0.0169270833);//TODO
 
         bottomElevatorSwitch1 = new DigitalInput(RobotMap.DIO_bottomLimit1);
         bottomElevatorSwitch2 = new DigitalInput(RobotMap.DIO_bottomLimit2);
@@ -128,17 +128,17 @@ public class Elevator extends Subsystem {
         double limitedPwr = limitMotorPwr(currentPwr);
 
         if (Math.abs(currentPwr - limitedPwr) > 0.1) {
-			UsbLogging.info("Warning: Elevator motor power limit exceeded!");
+			UsbLogging.warning("Warning: Elevator motor power limit exceeded!");
         }
         // Zero the encoder if the elevator is at the bottom limit switch and set the elevator initialized flag
 		if (atBottomLimit()) {
 			if (! m_prevAtBottomLimit) {
-				// UsbLogging.info("Elevator encoder held in reset; pre-reset value: " + elevatorEncoder.getDistance());
+				UsbLogging.info("Elevator encoder held in reset; pre-reset value: " + elevatorEncoder.getDistance());
 			}
 			
 			// set the elevator encoder to zero so that we can use it to measure elevator height for set points 
 			// and so that we can ensure that the elevator height does not exceed the limits. 
-			// elevatorEncoder.reset();
+			elevatorEncoder.reset();
 			m_initialized = true;
         }
         else {
@@ -157,8 +157,9 @@ public class Elevator extends Subsystem {
 	 * @return    Elevator is at the lower limit
 	 */
     public boolean atBottomLimit() {
-        // TODO: verify polarity
-		return bottomElevatorSwitch1.get() || bottomElevatorSwitch2.get();
+        boolean limit1 = bottomElevatorSwitch1.get();       // Normally closed
+        boolean limit2 = bottomElevatorSwitch2.get();       // Normally closed
+		return limit1 || limit2;
     }
 
 	/**
@@ -191,7 +192,7 @@ public class Elevator extends Subsystem {
     public double getHeight() {
         double height = -1;
 		// height is encoder distance + distance of bottom of elevator to floor
-        // height = elevatorEncoder.getDistance() + k_lowestHeight;
+        height = elevatorEncoder.getDistance() + k_lowestHeight;
 
         if (!isinitialized()) {
             // account for approximate starting position
@@ -204,10 +205,6 @@ public class Elevator extends Subsystem {
             height = -1;
         }
         
-        if (m_initialized == false) {
-            height = -1;
-            // print out if encoder not initialized
-        }
         return height;
     }
 
@@ -254,19 +251,24 @@ public class Elevator extends Subsystem {
 
 		double height = getHeight();
 
+        System.out.println( "Height = " + height + " Initialized = " + m_initialized + "  TowerUpright = " + m_towerUpright );
+
 		// max power limit
 		if (pwr > k_maxPwrUp) pwr = k_maxPwrUp;                         // Never exceed the max Up power
 		if (pwr < k_maxPwrDwn) pwr = k_maxPwrDwn;                       // Never exceed the max Down power
 
         // top/bottom limits (limit switches or soft limits)
         if (atTopLimit()) {
-            pwr = Math.max(pwr, 0);                         // Do not go up
+            pwr = Math.min(pwr, 0);                         // Do not go up
+            System.out.println("AT TOP LIMIT");
         }
         if (atBottomLimit()) {
-            pwr = Math.min(pwr, 0);                         // Do not go down
+            pwr = Math.max(pwr, 0);                         // Do not go down
+            System.out.println("AT BOTTOM LIMIT");
         }
         if (! m_towerUpright && (getHeight() <= k_minLeanHeight)) {
-            pwr = Math.min(pwr, 0);                         // Do not go down
+            pwr = Math.max(pwr, 0);                         // Do not go down
+            System.out.println("TOWER LIMITED");
         }
 
         // Reduce the power as the elevator approaches top/bottom limits
