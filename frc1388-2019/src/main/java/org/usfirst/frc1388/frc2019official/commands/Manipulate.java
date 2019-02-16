@@ -61,6 +61,7 @@ public class Manipulate extends Command {
 
     // Eject Ball (open grabber and extend ejector) when both triggers pressed
     if ( bothBumpersPressed ) {
+      UsbLogging.info( "[Manipulate] Ball is ejecting" );
       Robot.manipulator.ballRelease();
 
       /**
@@ -68,23 +69,30 @@ public class Manipulate extends Command {
        * Automatically retracts after ballEjectorPulseDuration
        */
       Robot.manipulator.ballEjectorExtend();
-
     }
 
     // Grab (close grabber) when Right trigger pressed
     else if (rightBumper && ! Robot.manipulator.ballEjectorIsActive()) {
+      UsbLogging.info( "[Manipulate] Ball grabber closing" );
+
       // Grab (close Grabber)
       Robot.manipulator.ballGrab();
     }
 
     // Release (open grabber) when Left trigger pressed
     else if (leftBumper) {
+      UsbLogging.info( "[Manipulate] Ball grabber opening" );
+
       Robot.manipulator.ballRelease();
     }
 
     // open grabber and close when the ball is detected
     if( getYButton && Robot.exampleAnalog.getVoltage() > 1.2 && Robot.exampleAnalog.getVoltage() < 2.25)
+    {
+      UsbLogging.info( "[Manipulate] Ball grabber closing using proximity sensor" );
+
       Robot.manipulator.ballGrab();
+    }
 
   }
 
