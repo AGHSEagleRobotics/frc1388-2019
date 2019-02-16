@@ -19,6 +19,8 @@ public class RobotMap
     public static final int CANID_Drivetrain_LB = 4;
     public static final int CANID_Drivetrain_RB = 1;
     public static final int CANID_elevatorMotor = 5;
+    public static final int CANID_ClimbArm = 6;
+    public static final int CANID_ClimbWheels = 7;
 
     /**
      *   Pneumatics Control Modules
@@ -39,9 +41,8 @@ public class RobotMap
     /* PCM2 channels */
     public static final int PCMCH_towerPush = 0;       // TODO: determine the correct channel
     public static final int PCMCH_towerPull = 1;       // TODO: determine the correct channel
-    // public static final int PCMCH_PCM2channel1 = 2;
-    // public static final int PCMCH_PCM2channel1 = 3;
-    // public static final int PCMCH_PCM2channel1 = 4;
+    public static final int PCMCH_Lifter_L = 2;
+    public static final int PCMCH_Lifter_R = 3;
     // public static final int PCMCH_PCM2channel1 = 5;
     // public static final int PCMCH_PCM2channel1 = 6;
     // public static final int PCMCH_PCM2channel1 = 7;
@@ -51,4 +52,9 @@ public class RobotMap
     public static final int DIO_elevatorEncoderA = 5;
     public static final int DIO_bottomLimit1 = 8;
     public static final int DIO_bottomLimit2 = 9;
+
+    /* Analog Inputs */
+    // public static final int AI_channel0 = 0;
+    public static final int AI_airPressure = 1;
+
 }
