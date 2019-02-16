@@ -18,7 +18,7 @@ public class RobotMap
      */
     public static final int CANID_Drivetrain_LB = 4;
     public static final int CANID_Drivetrain_RB = 1;
-    public static final int CANID_elevatorMotor = 5;   // TODO: assign the correct ID
+    public static final int CANID_elevatorMotor = 5;
 
     /**
      *   Pneumatics Control Modules
@@ -27,30 +27,28 @@ public class RobotMap
     public static final int CANID_PCM1 = 1;
     public static final int CANID_PCM2 = 2;
 
-    /* PCM12V channels */
-    // public static final int PCMCH_12Vchannel0 = 0;
-    // public static final int PCMCH_12Vchannel1 = 1;
+    /* PCM1 channels */
+    // public static final int PCMCH_PCM1channel0 = 0;
+    // public static final int PCMCH_PCM1channel1 = 1;
     public static final int PCMCH_manipulatorPush = 2;
     public static final int PCMCH_manipulatorPull = 3;
     public static final int PCMCH_ejector = 4;
     public static final int PCMCH_pancakeEjector = 5;
     public static final int PCMCH_pancakeArm = 6;
 
-    /* PCM24V channels */
+    /* PCM2 channels */
     public static final int PCMCH_towerPush = 0;       // TODO: determine the correct channel
     public static final int PCMCH_towerPull = 1;       // TODO: determine the correct channel
-    // public static final int PCMCH_24Vchannel1 = 2;
-    // public static final int PCMCH_24Vchannel1 = 3;
-    // public static final int PCMCH_24Vchannel1 = 4;
-    // public static final int PCMCH_24Vchannel1 = 5;
-    // public static final int PCMCH_24Vchannel1 = 6;
-    // public static final int PCMCH_24Vchannel1 = 7;
+    // public static final int PCMCH_PCM2channel1 = 2;
+    // public static final int PCMCH_PCM2channel1 = 3;
+    // public static final int PCMCH_PCM2channel1 = 4;
+    // public static final int PCMCH_PCM2channel1 = 5;
+    // public static final int PCMCH_PCM2channel1 = 6;
+    // public static final int PCMCH_PCM2channel1 = 7;
 
     /* Digital IO */
-    public static final int DIO_elevatorEncoderA = 1;   // TODO: verify this is correct
-    public static final int DIO_elevatorEncoderB = 2;   // TODO: verify this is correct
-    // public static final int DIO_elevatorEncoderA = 5;   // TODO: verify this is correct
-    // public static final int DIO_elevatorEncoderB = 4;   // TODO: verify this is correct
-    public static final int DIO_bottomLimit1 = 8;       // TODO: verify this is correct
-    public static final int DIO_bottomLimit2 = 9;       // TODO: verify this is correct
+    public static final int DIO_elevatorEncoderB = 4;
+    public static final int DIO_elevatorEncoderA = 5;
+    public static final int DIO_bottomLimit1 = 8;
+    public static final int DIO_bottomLimit2 = 9;
 }
