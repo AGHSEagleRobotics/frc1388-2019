@@ -34,12 +34,6 @@ public class Manipulate extends Command {
     // eg. requires(chassis);
 
     requires(Robot.manipulator);
-    // ballgrab variables
-    ejectorEnabled = false;
-    ejectorTimer = new Timer();
-    ejectorEnabledAndTimerExpired = false;
-
-
   }
 
   // Called just before this Command runs the first time
@@ -50,7 +44,6 @@ public class Manipulate extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    
     ballGrabExecute();
     pancakeExecute();
   }
@@ -59,58 +52,40 @@ public class Manipulate extends Command {
    *  ball grab execute method
    */
   private void ballGrabExecute() {
-    // ballgrab execute
-    /*boolean leftTriggersPressed = Robot.oi.leftTriggerPressed();
-    boolean rightTriggersPressed = Robot.oi.rightTriggerPressed();
-    boolean oppositeTriggersPressed = Robot.oi.oppositeTriggersPressed(); */
+    boolean leftBumper = Robot.oi.driveController.getBumperPressed( Hand.kLeft );
+    boolean rightBumper = Robot.oi.driveController.getBumperPressed( Hand.kRight);
+    boolean getYButton = Robot.oi.driveController.getYButton();
 
-    boolean driveLeftBumperPressed = Robot.oi.getDriveController().getBumperPressed(Hand.kLeft);
-    boolean driveRightBumperPressed = Robot.oi.getDriveController().getBumperPressed( Hand.kRight);
-    //boolean driveOppositeBumpersPressed = Robot.oi.oppositeTriggersPressed();
-    boolean getYButton = Robot.oi.getDriveController().getYButton();
-
-    
-
-    boolean bothBumpersPressed = (driveLeftBumperPressed && driveRightBumperPressed); //&& ! oppositeTriggersPressed;
+    boolean bothBumpersPressed = (Robot.oi.driveController.getBumper( Hand.kLeft ) && Robot.oi.driveController.getBumper( Hand.kRight ));
     ejectorEnabledAndTimerExpired = (ejectorEnabled && ejectorTimer.hasPeriodPassed(2));
 
-    // Eject Ball (open grabber and extend ejector) when both triggers pressed (either controller)
-    if (bothBumpersPressed) {
+    // Eject Ball (open grabber and extend ejector) when both triggers pressed
+    if ( bothBumpersPressed ) {
       Robot.manipulator.ballRelease();
+
+      /**
+       * Use pulse duration to eject ball.
+       * Automatically retracts after ballEjectorPulseDuration
+       */
       Robot.manipulator.ballEjectorExtend();
 
-      // TODO: Explain why we keep track of ejector
-      ejectorEnabled = true;
+    }
 
-      // TODO: Explain why we start timer
-      ejectorTimer.start();
+    // Grab (close grabber) when Right trigger pressed
+    else if (rightBumper && ! Robot.manipulator.ballEjectorIsActive()) {
+      // Grab (close Grabber)
+      Robot.manipulator.ballGrab();
+    }
+
+    // Release (open grabber) when Left trigger pressed
+    else if (leftBumper) {
+      Robot.manipulator.ballRelease();
     }
 
     // open grabber and close when the ball is detected
     if( getYButton && Robot.exampleAnalog.getVoltage() > 1.2 && Robot.exampleAnalog.getVoltage() < 2.25)
       Robot.manipulator.ballGrab();
 
-
-    // Grab (close grabber) when Right trigger pressed (either controller)
-    else if (driveRightBumperPressed && ! ejectorEnabled) {
-      // Grab (close Grabber)
-      Robot.manipulator.ballGrab();
-    }
-
-    // Release (open grabber) when Left trigger pressed (either controller)
-    else if (driveRightBumperPressed) {
-      Robot.manipulator.ballRelease();
-    }
-
-    // Retract the ejector after two seconds and both triggers are released (either controller)
-    if (ejectorEnabledAndTimerExpired && ! bothBumpersPressed) {
-      // Retract the ejector
-      Robot.manipulator.ballEjectorRetract();
-      // reset the ejector enabled flag
-      ejectorEnabled = false;
-      // stop the timer
-      ejectorTimer.stop();
-    }
   }
 
   /**

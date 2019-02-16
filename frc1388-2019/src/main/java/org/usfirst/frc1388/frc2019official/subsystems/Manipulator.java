@@ -29,11 +29,13 @@ public class Manipulator extends Subsystem {
   *
   */
   // ball grabber
-  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
-  Solenoid ejector = new Solenoid(RobotMap.PCMCH_ejector); // ball ejector
+  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.CANID_PCM1, RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
+  public Solenoid ballEjector = new Solenoid(RobotMap.CANID_PCM1, RobotMap.PCMCH_ejector); // ball ballEjector
 
-  Solenoid pancakeMaker = new Solenoid( RobotMap.PCMCH_pancakeArm );
-  Solenoid pancakeEjector = new Solenoid(RobotMap.PCMCH_pancakeEjector); // pancake eject
+  Solenoid pancakeMaker = new Solenoid( RobotMap.CANID_PCM1, RobotMap.PCMCH_pancakeArm );
+  Solenoid pancakeEjector = new Solenoid( RobotMap.CANID_PCM1, RobotMap.PCMCH_pancakeEjector); // pancake eject
+
+  double ballEjectorPulseDuration = 2.0; // seconds
 
   @Override
   public void initDefaultCommand() {
@@ -43,19 +45,17 @@ public class Manipulator extends Subsystem {
     setDefaultCommand(new Manipulate());
 
     manipulator.set(DoubleSolenoid.Value.kOff);
-    ejector.set(false);
+    ballEjector.set(false);
 
     pancakeMaker.set(false);
     pancakeEjector.set(false);
-
   }
 
   public void initialize() {
     manipulator.set(DoubleSolenoid.Value.kOff);
-    ejector.set(false);
-
-    pancakeMaker.set(false);
-    pancakeEjector.set(false);
+    ballEjectorRetract();
+    pancakeUp();
+    pancakeRetract();
   }
 
   @Override
@@ -86,16 +86,19 @@ public class Manipulator extends Subsystem {
   }
 
   public void ballEjectorExtend() {
-
     // Ball is ejected when actuator is extended
-    ejector.set(true);
+    ballEjector.setPulseDuration( ballEjectorPulseDuration );
+    ballEjector.startPulse();
+  }
 
+  public boolean ballEjectorIsActive() {
+    return ballEjector.get();
   }
 
   public void ballEjectorRetract() {
 
-    // retract ball ejector
-    ejector.set(false);
+    // retract ball ballEjector
+    ballEjector.set(false);
 
   }
 
