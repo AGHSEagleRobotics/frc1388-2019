@@ -40,9 +40,8 @@ public class RobotMap
     /* PCM2 channels */
     public static final int PCMCH_towerPush = 0;       // TODO: determine the correct channel
     public static final int PCMCH_towerPull = 1;       // TODO: determine the correct channel
-    public static final int PCMCH_Lifter_L = 2;       // TODO: determine the correct channel
-    // public static final int PCMCH_PCM2channel1 = 3;
-    public static final int PCMCH_Lifter_R = 4;       // TODO: determine the correct channel
+    public static final int PCMCH_Lifter_L = 2;
+    public static final int PCMCH_Lifter_R = 3;
     // public static final int PCMCH_PCM2channel1 = 5;
     // public static final int PCMCH_PCM2channel1 = 6;
     // public static final int PCMCH_PCM2channel1 = 7;
