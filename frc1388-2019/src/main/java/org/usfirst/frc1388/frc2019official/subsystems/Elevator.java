@@ -77,11 +77,11 @@ public class Elevator extends Subsystem {
     // The below refer to various critical limits of the motors in inches
     private final double k_maxPwrUp = 0.5; //max power when moving up TODO: fill in and Test
 	private final double k_finalPwrUp = 0.3; //max power when elevator is at top TODO: fill in and Test
-	private final double k_rampDistUp = 5; //distance from top when power will scale down TODO: fill in and Test
+	private final double k_rampDistUp = 2; //distance from top when power will scale down TODO: fill in and Test
 
 	private final double k_maxPwrDwn = -0.5; //max power when moving down TODO: fill in and Test
 	private final double k_finalPwrDwn = -0.3; //max power when elevator is at bottom TODO: fill in and Test
-	private final double k_rampDistDwn = 15; //distance from bottom when power will scale down TODO: fill in and Test
+	private final double k_rampDistDwn = 4; //distance from bottom when power will scale down TODO: fill in and Test
 	
 	private final double k_slopeUp = (k_maxPwrUp - k_finalPwrUp) / k_rampDistUp; // slope of the limit = y / x = power / distance
 	private final double k_slopeDwn = (k_maxPwrDwn - k_finalPwrDwn) / k_rampDistDwn; // slope of the limit = y / x = power / distance
@@ -266,7 +266,7 @@ public class Elevator extends Subsystem {
             pwr = Math.max(pwr, 0);                         // Do not go down
             System.out.println("AT BOTTOM LIMIT");
         }
-        if (! m_towerUpright && (getHeight() <= k_minLeanHeight)) {
+        if (! m_towerUpright && (height <= k_minLeanHeight)) {
             pwr = Math.max(pwr, 0);                         // Do not go down
             System.out.println("TOWER LIMITED");
         }
