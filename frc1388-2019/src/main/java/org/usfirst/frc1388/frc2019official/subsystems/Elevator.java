@@ -97,7 +97,7 @@ public class Elevator extends Subsystem {
 
     public Elevator() {
         elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB, true, EncodingType.k1X); //TODO
-        elevatorEncoder.setDistancePerPulse(0.0169270833);//TODO
+        elevatorEncoder.setDistancePerPulse(0.0164386244606542);//TODO  0.0169270833 jolt's number
 
         bottomElevatorSwitch1 = new DigitalInput(RobotMap.DIO_bottomLimit1);
         bottomElevatorSwitch2 = new DigitalInput(RobotMap.DIO_bottomLimit2);
@@ -225,7 +225,7 @@ public class Elevator extends Subsystem {
 	 * To ensure that the elevator is not overdriven, this method should be used to set the motor power,
 	 * and the motor's power should NOT be set directly using the motor's set() method.
 	 *  
-	 * @param     pwr   Desired motor power
+	 * @param     pwr   Desired motor power. Positive is up
 	 * @return          Actual motor power that was set
 	 */
     public double setMotor(double pwr, boolean override) {
@@ -233,7 +233,7 @@ public class Elevator extends Subsystem {
             pwr = limitMotorPwr(pwr);
         }
 
-		elevatorMotor.set(pwr);
+		elevatorMotor.set(-pwr); // The motor is reversed so negative power should move up.
 
 		return pwr;
 	}
