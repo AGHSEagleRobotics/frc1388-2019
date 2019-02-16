@@ -101,7 +101,7 @@ public class Elevator extends Subsystem {
         // (1R / 256P) * (12t / 22t) * (180mm / R) * (1in / 25.4mm) = 0.01509932
         // encoder       sprocket      pulley
         // sprocket      ratio         circumference
-        elevatorEncoder.setDistancePerPulse(0.0164386244606542);    //  0.0169270833 jolt's number
+        elevatorEncoder.setDistancePerPulse(0.01509932);    //  0.0169270833 jolt's number
 
         bottomElevatorSwitch1 = new DigitalInput(RobotMap.DIO_bottomLimit1);
         bottomElevatorSwitch2 = new DigitalInput(RobotMap.DIO_bottomLimit2);
