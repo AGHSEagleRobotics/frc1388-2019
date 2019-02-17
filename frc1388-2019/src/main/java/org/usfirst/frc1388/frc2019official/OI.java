@@ -251,6 +251,13 @@ public class OI {
      * This means you will need flags to determine the status of the mechanism being controlled.
      * i.e. Don't use these to control a mechanism. Use them to control the flag for the mechanism
      */
+    public boolean driverPovUpPressed() {
+        return driveController.getPOV() == 0;
+    }
+
+    public boolean driverPovDownPressed() {
+        return driveController.getPOV() == 180;
+    }
 
     /**
      * D-Pad Up is pressed.
