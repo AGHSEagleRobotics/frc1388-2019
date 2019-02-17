@@ -53,12 +53,12 @@ public class Climb extends Command {
 
         if( leftBumper )
         {
-            UsbLogging.info( "[Climb] Arm is Retracting" );
+            UsbLogging.info( "[Climb] Legs are Retracting" );
             Robot.climber.retractLifter();
         }
         else if( rightBumper )
         {
-            UsbLogging.info( "[Climb] Arm is Extending" );
+            UsbLogging.info( "[Climb] Legs are Extending" );
             Robot.climber.extendLifter();
         }
 
