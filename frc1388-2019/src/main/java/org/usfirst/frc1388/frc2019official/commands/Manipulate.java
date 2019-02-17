@@ -107,7 +107,6 @@ public class Manipulate extends Command {
     /**
      * at the start, the pancake arm is default to an up position
      */
-
     if (upPressed && !downPressed ) { // move pancake arm up
       pancakeIsDown = false;
       
