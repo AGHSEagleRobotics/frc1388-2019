@@ -51,6 +51,8 @@ public class RobotMap
     /* Digital IO */
     public static final int DIO_elevatorEncoderB = 4;
     public static final int DIO_elevatorEncoderA = 5;
+    public static final int DIO_climberArmTop = 6;
+    public static final int DIO_climberArmBottom = 7;
     public static final int DIO_bottomLimit1 = 8;
     public static final int DIO_bottomLimit2 = 9;
 
