@@ -12,26 +12,12 @@
 package org.usfirst.frc1388.frc2019official.subsystems;
 
 import org.usfirst.frc1388.frc2019official.ADIS16448_IMU;
-import org.usfirst.frc1388.frc2019official.Robot;
 import org.usfirst.frc1388.frc2019official.RobotMap;
 import org.usfirst.frc1388.frc2019official.commands.*;
 import org.usfirst.frc1388.frc2019official.subsystems.DifferentialDrive1388;
-import org.usfirst.frc1388.frc2019official.subsystems.talon.Gains;
 import org.usfirst.frc1388.frc2019official.subsystems.talon.Constants;
 
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.Encoder;
-import edu.wpi.first.wpilibj.PIDOutput;
-import edu.wpi.first.wpilibj.PIDSource;
-import edu.wpi.first.wpilibj.SpeedControllerGroup;
-import edu.wpi.first.wpilibj.CounterBase.EncodingType;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.wpilibj.PIDSourceType;
-import edu.wpi.first.wpilibj.drive.RobotDriveBase;
-import edu.wpi.first.networktables.NetworkTable;
-import edu.wpi.first.networktables.NetworkTableEntry;
-import edu.wpi.first.networktables.NetworkTableInstance;
 
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
