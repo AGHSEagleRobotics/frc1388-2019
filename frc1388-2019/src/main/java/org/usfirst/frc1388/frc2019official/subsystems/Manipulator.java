@@ -29,11 +29,11 @@ public class Manipulator extends Subsystem {
   *
   */
   // ball grabber
-  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.CANID_PCM1, RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
-  public Solenoid ballEjector = new Solenoid(RobotMap.CANID_PCM1, RobotMap.PCMCH_ejector); // ball ballEjector
+  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
+  public Solenoid ballEjector = new Solenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_ballejector); // ball ballEjector
 
-  Solenoid pancakeMaker = new Solenoid( RobotMap.CANID_PCM1, RobotMap.PCMCH_pancakeArm );
-  Solenoid pancakeEjector = new Solenoid( RobotMap.CANID_PCM1, RobotMap.PCMCH_pancakeEjector); // pancake eject
+  DoubleSolenoid pancakeMaker = new DoubleSolenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_pancakeArmlift, RobotMap.PCMCH_pancakeArmlower );
+  Solenoid pancakeEjector = new Solenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_diskEjector); // pancake eject
 
   double ballEjectorPulseDuration = 2.0; // seconds
 
@@ -44,11 +44,11 @@ public class Manipulator extends Subsystem {
 
     setDefaultCommand(new Manipulate());
 
-    manipulator.set(DoubleSolenoid.Value.kOff);
-    ballEjector.set(false);
+    ballRelease();
+    ballEjectorRetract();
 
-    pancakeMaker.set(false);
-    pancakeEjector.set(false);
+    pancakeUp();
+    pancakeRetract();
   }
 
   public void initialize() {
@@ -100,20 +100,22 @@ public class Manipulator extends Subsystem {
 
   public void pancakeUp() {
 
-    pancakeMaker.set(false);
+    pancakeMaker.set(DoubleSolenoid.Value.kForward);
 
   }
 
   public void pancakeDown() {
 
-    pancakeMaker.set(true);
+    pancakeMaker.set(DoubleSolenoid.Value.kReverse);
 
   }
 
   public void pancakeEject() {
 
-    pancakeEjector.set(true);
+    pancakeEjector.setPulseDuration( ballEjectorPulseDuration );
+    pancakeEjector.startPulse();
 
+    ballEjectorExtend();
   }
 
   public void pancakeRetract() {
