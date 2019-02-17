@@ -20,14 +20,9 @@ import edu.wpi.first.wpilibj.Timer;
 
 public class Manipulate extends Command {
 
-  // ballgrab variables
-  private boolean ejectorEnabled = false;
-  private Timer ejectorTimer;
-  private boolean ejectorEnabledAndTimerExpired;
-
-  // pancake variables
   private boolean pancakeIsDown = false;
 
+  private boolean clawIsClosed = false;
 
   public Manipulate() {
     // Use requires() here to declare subsystem dependencies
@@ -57,10 +52,9 @@ public class Manipulate extends Command {
     boolean getYButton = Robot.oi.driveController.getYButton();
 
     boolean bothBumpersPressed = (Robot.oi.driveController.getBumper( Hand.kLeft ) && Robot.oi.driveController.getBumper( Hand.kRight ));
-    ejectorEnabledAndTimerExpired = (ejectorEnabled && ejectorTimer.hasPeriodPassed(2));
 
     // Eject Ball (open grabber and extend ejector) when both triggers pressed
-    if ( bothBumpersPressed ) {
+    if ( bothBumpersPressed && !pancakeIsDown ) {
       UsbLogging.info( "[Manipulate] Ball is ejecting" );
       Robot.manipulator.ballRelease();
 
@@ -69,14 +63,18 @@ public class Manipulate extends Command {
        * Automatically retracts after ballEjectorPulseDuration
        */
       Robot.manipulator.ballEjectorExtend();
+
+      clawIsClosed = false;
     }
 
     // Grab (close grabber) when Right trigger pressed
-    else if (rightBumper && ! Robot.manipulator.ballEjectorIsActive()) {
+    else if (rightBumper && ! Robot.manipulator.ballEjectorIsActive() && !pancakeIsDown) {
       UsbLogging.info( "[Manipulate] Ball grabber closing" );
 
       // Grab (close Grabber)
       Robot.manipulator.ballGrab();
+
+      clawIsClosed = true;
     }
 
     // Release (open grabber) when Left trigger pressed
@@ -84,6 +82,7 @@ public class Manipulate extends Command {
       UsbLogging.info( "[Manipulate] Ball grabber opening" );
 
       Robot.manipulator.ballRelease();
+      clawIsClosed = false;
     }
 
     // open grabber and close when the ball is detected
@@ -93,26 +92,27 @@ public class Manipulate extends Command {
 
       Robot.manipulator.ballGrab();
     }
-
   }
 
   /**
    * pancake arm execute method
    */
   private void pancakeExecute() {
-    // pancake execute
+    /** 
+     * NOTE: Dpad has bugs. Switch the controller positions in Driverstation and reenable
+     */
     boolean upPressed = Robot.oi.povUpPressed() || Robot.oi.povUpLeftPressed() || Robot.oi.povUpRightPressed();
     boolean downPressed = Robot.oi.povDownPressed() || Robot.oi.povDownLeftPressed() || Robot.oi.povDownRightPressed();
     
     /**
      * at the start, the pancake arm is default to an up position
      */
-    if (upPressed && !downPressed ) { // move pancake arm up
+    if (upPressed && !downPressed) { // move pancake arm up
       pancakeIsDown = false;
       
     }
 
-    else if (downPressed && !upPressed ) { // move pancake arm down
+    else if (downPressed && !upPressed && !clawIsClosed) { // move pancake arm down
       pancakeIsDown = true;
       
     }
@@ -123,6 +123,11 @@ public class Manipulate extends Command {
 
     else {
       Robot.manipulator.pancakeUp();
+    }
+
+    if ( Robot.oi.driveController.getBButton() && !clawIsClosed && !pancakeIsDown )
+    {
+        Robot.manipulator.pancakeEject();
     }
   }
 

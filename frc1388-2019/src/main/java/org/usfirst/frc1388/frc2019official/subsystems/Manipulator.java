@@ -44,11 +44,11 @@ public class Manipulator extends Subsystem {
 
     setDefaultCommand(new Manipulate());
 
-    manipulator.set(DoubleSolenoid.Value.kOff);
-    ballEjector.set(false);
+    ballRelease();
+    ballEjectorRetract();
 
-    pancakeMaker.set(DoubleSolenoid.Value.kForward);
-    pancakeEjector.set(false);
+    pancakeUp();
+    pancakeRetract();
   }
 
   public void initialize() {
@@ -100,20 +100,22 @@ public class Manipulator extends Subsystem {
 
   public void pancakeUp() {
 
-    pancakeMaker.set(DoubleSolenoid.Value.kReverse);
+    pancakeMaker.set(DoubleSolenoid.Value.kForward);
 
   }
 
   public void pancakeDown() {
 
-    pancakeMaker.set(DoubleSolenoid.Value.kForward);
+    pancakeMaker.set(DoubleSolenoid.Value.kReverse);
 
   }
 
   public void pancakeEject() {
 
-    pancakeEjector.set(true);
+    pancakeEjector.setPulseDuration( ballEjectorPulseDuration );
+    pancakeEjector.startPulse();
 
+    ballEjectorExtend();
   }
 
   public void pancakeRetract() {
