@@ -51,10 +51,10 @@ public class DriveTrain extends Subsystem {
 
         ADIS16448_IMU gyro = new ADIS16448_IMU();
 
-        leftFront = new WPI_TalonSRX(RobotMap.CANID_Drivetrain_LF);
-        rightFront = new WPI_TalonSRX(RobotMap.CANID_Drivetrain_RF);
-        leftBack = new WPI_VictorSPX(RobotMap.CANID_Drivetrain_LB);
-        rightBack = new WPI_VictorSPX(RobotMap.CANID_Drivetrain_RB);
+        leftFront = new WPI_TalonSRX(RobotMap.CANID_drivetrain_LF);
+        rightFront = new WPI_TalonSRX(RobotMap.CANID_drivetrain_RF);
+        leftBack = new WPI_VictorSPX(RobotMap.CANID_drivetrain_LB);
+        rightBack = new WPI_VictorSPX(RobotMap.CANID_drivetrain_RB);
 
         setNeutralBrake();
 

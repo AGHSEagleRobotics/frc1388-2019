@@ -10,39 +10,40 @@ public class RobotMap
      * TalonSRX Can IDs
      */
 
-    public static final int CANID_Drivetrain_LF = 3;
-    public static final int CANID_Drivetrain_RF = 2;
+    public static final int CANID_drivetrain_LF = 3;
+    public static final int CANID_drivetrain_RF = 2;
 
     /**
      * VictorSPX Can IDs
      */
-    public static final int CANID_Drivetrain_LB = 4;
-    public static final int CANID_Drivetrain_RB = 1;
+    public static final int CANID_drivetrain_LB = 4;
+    public static final int CANID_drivetrain_RB = 1;
     public static final int CANID_elevatorMotor = 5;
-    public static final int CANID_ClimbArm = 6;
-    public static final int CANID_ClimbWheels = 7;
+    public static final int CANID_climbArm = 6;
+    public static final int CANID_climbWheels = 7;
 
     /**
      *   Pneumatics Control Modules
      */
     /* PCM CAN IDs */
-    public static final int CANID_PCM1 = 1;
-    public static final int CANID_PCM2 = 2;
+    public static final int CANID_PCM_manipulator = 1;
+    public static final int CANID_PCM_base = 2;
 
     /* PCM1 channels */
     // public static final int PCMCH_PCM1channel0 = 0;
     // public static final int PCMCH_PCM1channel1 = 1;
     public static final int PCMCH_manipulatorPush = 2;
     public static final int PCMCH_manipulatorPull = 3;
-    public static final int PCMCH_ejector = 4;
-    public static final int PCMCH_pancakeEjector = 5;
-    public static final int PCMCH_pancakeArm = 6;
+    public static final int PCMCH_ballejector = 4;
+    public static final int PCMCH_diskEjector = 5;
+    public static final int PCMCH_pancakeArmlift = 6;
+    public static final int PCMCH_pancakeArmlower = 7;
 
     /* PCM2 channels */
     public static final int PCMCH_towerPush = 0;       // TODO: determine the correct channel
     public static final int PCMCH_towerPull = 1;       // TODO: determine the correct channel
-    public static final int PCMCH_Lifter_L = 2;
-    public static final int PCMCH_Lifter_R = 3;
+    public static final int PCMCH_lifter_L = 2;
+    public static final int PCMCH_lifter_R = 3;
     // public static final int PCMCH_PCM2channel1 = 5;
     // public static final int PCMCH_PCM2channel1 = 6;
     // public static final int PCMCH_PCM2channel1 = 7;

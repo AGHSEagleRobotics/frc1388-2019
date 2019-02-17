@@ -101,7 +101,7 @@ public class Elevator extends Subsystem {
         elevatorMotor = new WPI_VictorSPX(RobotMap.CANID_elevatorMotor);
         elevatorMotor.setNeutralMode(NeutralMode.Brake);
 
-        leanControl = new DoubleSolenoid(RobotMap.CANID_PCM2, RobotMap.PCMCH_towerPush, RobotMap.PCMCH_towerPull);
+        leanControl = new DoubleSolenoid(RobotMap.CANID_PCM_base, RobotMap.PCMCH_towerPush, RobotMap.PCMCH_towerPull);
     }
 
     @Override

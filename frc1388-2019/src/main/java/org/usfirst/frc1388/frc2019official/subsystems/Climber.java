@@ -34,11 +34,11 @@ import edu.wpi.first.wpilibj.Solenoid;
  */
 public class Climber extends Subsystem {
 
-    Solenoid lifterLeft = new Solenoid( RobotMap.CANID_PCM2, RobotMap.PCMCH_Lifter_L );
-    Solenoid lifterRight = new Solenoid( RobotMap.CANID_PCM2, RobotMap.PCMCH_Lifter_R );
+    Solenoid lifterLeft = new Solenoid( RobotMap.CANID_PCM_base, RobotMap.PCMCH_lifter_L );
+    Solenoid lifterRight = new Solenoid( RobotMap.CANID_PCM_base, RobotMap.PCMCH_lifter_R );
 
-    WPI_VictorSPX climbArm = new WPI_VictorSPX(RobotMap.CANID_ClimbArm);
-    WPI_VictorSPX climbWheels = new WPI_VictorSPX(RobotMap.CANID_ClimbWheels);
+    WPI_VictorSPX climbArm = new WPI_VictorSPX(RobotMap.CANID_climbArm);
+    WPI_VictorSPX climbWheels = new WPI_VictorSPX(RobotMap.CANID_climbWheels);
 
     public Climber() {
     }
