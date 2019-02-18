@@ -7,16 +7,12 @@
 
 package org.usfirst.frc1388.frc2019official.commands;
 
-import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.command.Command;
-
-import javax.lang.model.util.ElementScanner6;
 
 import org.usfirst.frc1388.frc2019official.Robot;
 import org.usfirst.frc1388.frc2019official.UsbLogging;
 
-import edu.wpi.first.wpilibj.Timer;
 
 public class Manipulate extends Command {
 
@@ -34,6 +30,7 @@ public class Manipulate extends Command {
   // Called just before this Command runs the first time
   @Override
   protected void initialize() {
+    UsbLogging.info(">>> " + this.getClass().getSimpleName() + " started");
   }
 
   // Called repeatedly when this Command is scheduled to run
@@ -138,11 +135,14 @@ public class Manipulate extends Command {
   // Called once after isFinished returns true
   @Override
   protected void end() {
+    UsbLogging.info("<<< " + this.getClass().getSimpleName() + " ended");
   }
 
   // Called when another command which requires one or more of the same
   // subsystems is scheduled to run
   @Override
   protected void interrupted() {
+    UsbLogging.info("<<< " + this.getClass().getSimpleName() + " interrupted");
+    end();
   }
 }

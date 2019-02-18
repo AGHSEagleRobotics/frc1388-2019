@@ -27,26 +27,22 @@ public class RobotMap
      */
     /* PCM CAN IDs */
     public static final int CANID_PCM_manipulator = 1;
+    public static final int CANID_PCM_compressor = 1;
     public static final int CANID_PCM_base = 2;
 
     /* PCM1 channels */
-    // public static final int PCMCH_PCM1channel0 = 0;
-    // public static final int PCMCH_PCM1channel1 = 1;
-    public static final int PCMCH_manipulatorPush = 2;
-    public static final int PCMCH_manipulatorPull = 3;
-    public static final int PCMCH_ballejector = 4;
-    public static final int PCMCH_diskEjector = 5;
-    public static final int PCMCH_pancakeArmlift = 6;
-    public static final int PCMCH_pancakeArmlower = 7;
+    public static final int PCMCH_diskEjector = 1;
+    public static final int PCMCH_ballejector = 2;
+    public static final int PCMCH_manipulatorPush = 3;
+    public static final int PCMCH_manipulatorPull = 4;
+    public static final int PCMCH_pancakeArmlift = 5;
+    public static final int PCMCH_pancakeArmlower = 6;
 
     /* PCM2 channels */
-    public static final int PCMCH_towerPush = 0;       // TODO: determine the correct channel
-    public static final int PCMCH_towerPull = 1;       // TODO: determine the correct channel
-    public static final int PCMCH_lifter_L = 2;
-    public static final int PCMCH_lifter_R = 3;
-    // public static final int PCMCH_PCM2channel1 = 5;
-    // public static final int PCMCH_PCM2channel1 = 6;
-    // public static final int PCMCH_PCM2channel1 = 7;
+    public static final int PCMCH_towerPush = 4;
+    public static final int PCMCH_towerPull = 5;
+    public static final int PCMCH_lifterPush = 6;
+    public static final int PCMCH_lifterPull = 7;
 
     /* Digital IO */
     public static final int DIO_elevatorEncoderB = 4;
