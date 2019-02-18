@@ -115,9 +115,7 @@ public class Manipulate extends Command {
     else if (downPressed && !upPressed && !clawIsClosed) { // move pancake arm down
       pancakeIsDown = true;
       
-    }
-
-    if( pancakeIsDown ) {
+      ( pancakeIsDown ) {
       Robot.manipulator.pancakeDown();
     }
 

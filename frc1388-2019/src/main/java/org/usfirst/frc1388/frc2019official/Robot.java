@@ -53,8 +53,8 @@ public class Robot extends TimedRobot {
     int averageRaw;  
     double averageVolts;
 
-    public static NetworkTableEntry tx, ta, ty, ts, tshort, tlong, getPipe, tv;
-    public static double angleTx, area, angleTs, angleTy, getTv, lengthTShort, lengthTLong, getPipeline ;
+    public static NetworkTableEntry tx, ta, ty, ts, tshort, tlong, getPipe, tv, cameraMode;
+    public static double angleTx, area, angleTs, angleTy, getTv, lengthTShort, lengthTLong, getPipeline, currentCameraMode ;
 
     public static DriverStation driverStation;
 
@@ -99,6 +99,7 @@ public class Robot extends TimedRobot {
         chooser.setDefaultOption("Autonomous Command", new AutonomousCommand());
 
         SmartDashboard.putData("Auto mode", chooser);
+        NetworkTableInstance.getDefault().getTable("limelight-eagle").getEntry( "cameraMode").setNumber( 1 );
 
     }
 
@@ -185,6 +186,7 @@ public class Robot extends TimedRobot {
         tlong =  NetworkTableInstance.getDefault().getTable("table").getEntry("tlong");
         getPipe = NetworkTableInstance.getDefault().getTable("table").getEntry("getpipe");
         tv = NetworkTableInstance.getDefault().getTable("table").getEntry("getpipe");
+        cameraMode = NetworkTableInstance.getDefault().getTable( "limelight-eagle").getEntry("cameraMode");
 
         angleTx = tx.getDouble(0.0);
         area = ta.getDouble(0.0);
