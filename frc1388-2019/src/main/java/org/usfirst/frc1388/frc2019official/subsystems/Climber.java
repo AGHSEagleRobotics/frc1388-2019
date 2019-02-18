@@ -10,6 +10,7 @@
 
 package org.usfirst.frc1388.frc2019official.subsystems;
 
+import com.ctre.phoenix.motorcontrol.NeutralMode;
 import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 import org.usfirst.frc1388.frc2019official.RobotMap;
 import org.usfirst.frc1388.frc2019official.commands.*;
@@ -21,12 +22,20 @@ import edu.wpi.first.wpilibj.DoubleSolenoid;
  */
 public class Climber extends Subsystem {
 
-    DoubleSolenoid lifters = new DoubleSolenoid( RobotMap.CANID_PCM_base, RobotMap.PCMCH_lifterPush, RobotMap.PCMCH_lifterPull );
+    DoubleSolenoid lifters;
 
-    WPI_VictorSPX climbArm = new WPI_VictorSPX(RobotMap.CANID_climbArm);
-    WPI_VictorSPX climbWheels = new WPI_VictorSPX(RobotMap.CANID_climbWheels);
+    WPI_VictorSPX climbArm; 
+    WPI_VictorSPX climbWheels;
 
     public Climber() {
+
+        lifters = new DoubleSolenoid( RobotMap.CANID_PCM_base, RobotMap.PCMCH_lifterPush, RobotMap.PCMCH_lifterPull );
+
+        climbArm = new WPI_VictorSPX(RobotMap.CANID_climbArm);
+        climbWheels = new WPI_VictorSPX(RobotMap.CANID_climbWheels);
+
+        climbArm.setNeutralMode(NeutralMode.Brake);
+        climbWheels.setNeutralMode(NeutralMode.Brake);
     }
 
     @Override

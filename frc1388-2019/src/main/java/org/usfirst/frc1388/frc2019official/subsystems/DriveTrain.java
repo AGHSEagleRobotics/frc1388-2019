@@ -74,12 +74,20 @@ public class DriveTrain extends Subsystem {
      * The motors will apply the brake when
      *   joysticks are released
      */
-    private void setNeutralBrake()
+    public void setNeutralBrake()
     {
         leftFront.setNeutralMode(NeutralMode.Brake);
 		leftBack.setNeutralMode(NeutralMode.Brake);
 		rightFront.setNeutralMode(NeutralMode.Brake);
 		rightBack.setNeutralMode(NeutralMode.Brake);
+    }
+
+    public void setNeutralCoast()
+    {
+        leftFront.setNeutralMode(NeutralMode.Coast);
+        leftBack.setNeutralMode(NeutralMode.Coast);
+        rightFront.setNeutralMode(NeutralMode.Coast);
+        rightBack.setNeutralMode(NeutralMode.Coast);
     }
 
     @Override

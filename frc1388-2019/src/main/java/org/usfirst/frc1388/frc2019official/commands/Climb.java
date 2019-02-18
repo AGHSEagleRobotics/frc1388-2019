@@ -54,12 +54,12 @@ public class Climb extends Command {
 
         if( leftBumper )
         {
-            UsbLogging.info( "[Climb] Arm is Retracting" );
+            UsbLogging.info( "[Climb] Lifter is Retracting" );
             Robot.climber.retractLifter();
         }
         else if( rightBumper )
         {
-            UsbLogging.info( "[Climb] Arm is Extending" );
+            UsbLogging.info( "[Climb] Lifter is Extending" );
             Robot.climber.extendLifter();
         }
 
@@ -78,6 +78,15 @@ public class Climb extends Command {
          * Pressing down on stick causes wheel to climb
          */
         Robot.climber.runClimberWheels( leftStickY );
+
+        if( ( rightStickY != 0 ) || ( leftStickY != 0 ) )
+        {
+            Robot.driveTrain.setNeutralCoast();
+        }
+        else
+        {
+            Robot.driveTrain.setNeutralBrake();
+        }
     }
 
     // Make this return true when this Command no longer needs to run execute()
