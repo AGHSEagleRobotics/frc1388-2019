@@ -16,10 +16,6 @@ import org.usfirst.frc1388.frc2019official.UsbLogging;
 
 public class Manipulate extends Command {
 
-  private boolean pancakeIsDown = false;
-
-  private boolean clawIsClosed = false;
-
   public Manipulate() {
     // Use requires() here to declare subsystem dependencies
     // eg. requires(chassis);
@@ -51,7 +47,7 @@ public class Manipulate extends Command {
     boolean bothBumpersPressed = (Robot.oi.driveController.getBumper( Hand.kLeft ) && Robot.oi.driveController.getBumper( Hand.kRight ));
 
     // Eject Ball (open grabber and extend ejector) when both triggers pressed
-    if ( bothBumpersPressed && !pancakeIsDown ) {
+    if ( bothBumpersPressed ) {
       UsbLogging.info( "[Manipulate] Ball is ejecting" );
       Robot.manipulator.ballRelease();
 
@@ -61,17 +57,15 @@ public class Manipulate extends Command {
        */
       Robot.manipulator.ballEjectorExtend();
 
-      clawIsClosed = false;
     }
 
     // Grab (close grabber) when Right trigger pressed
-    else if (rightBumper && ! Robot.manipulator.ballEjectorIsActive() && !pancakeIsDown) {
+    else if (rightBumper && ! Robot.manipulator.ballEjectorIsActive()) {
       UsbLogging.info( "[Manipulate] Ball grabber closing" );
 
       // Grab (close Grabber)
       Robot.manipulator.ballGrab();
-
-      clawIsClosed = true;
+      
     }
 
     // Release (open grabber) when Left trigger pressed
@@ -79,11 +73,11 @@ public class Manipulate extends Command {
       UsbLogging.info( "[Manipulate] Ball grabber opening" );
 
       Robot.manipulator.ballRelease();
-      clawIsClosed = false;
+      
     }
 
     // open grabber and close when the ball is detected
-    if( getYButton && Robot.exampleAnalog.getVoltage() > 1.2 && Robot.exampleAnalog.getVoltage() < 2.25)
+    if( getYButton && Robot.exampleAnalog.getVoltage() > 1.2 && Robot.exampleAnalog.getVoltage() < 2.25 )
     {
       UsbLogging.info( "[Manipulate] Ball grabber closing using proximity sensor" );
 
@@ -105,24 +99,15 @@ public class Manipulate extends Command {
      * at the start, the pancake arm is default to an up position
      */
     if (upPressed && !downPressed) { // move pancake arm up
-      pancakeIsDown = false;
-      
-    }
-
-    else if (downPressed && !upPressed && !clawIsClosed) { // move pancake arm down
-      pancakeIsDown = true;
-      
-    }
-
-    if( pancakeIsDown ) {
       Robot.manipulator.pancakeDown();
+      
     }
-
-    else {
+    else if ( downPressed && !upPressed ) { // move pancake arm down
       Robot.manipulator.pancakeUp();
+      
     }
 
-    if ( Robot.oi.driveController.getBButton() && !clawIsClosed && !pancakeIsDown )
+    if ( Robot.oi.driveController.getBButton() )
     {
         Robot.manipulator.pancakeEject();
     }
