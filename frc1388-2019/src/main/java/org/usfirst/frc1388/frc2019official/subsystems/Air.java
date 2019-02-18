@@ -37,7 +37,7 @@ public class Air extends Subsystem {
     // Constructor
     public Air() {
         // create objects
-        compressor = new Compressor(RobotMap.CANID_PCM1);
+        compressor = new Compressor(RobotMap.CANID_PCM_compressor);
         airPressure = new AnalogPotentiometer(RobotMap.AI_airPressure, k_fullRange, k_offset);
         timer = new Timer();
 
