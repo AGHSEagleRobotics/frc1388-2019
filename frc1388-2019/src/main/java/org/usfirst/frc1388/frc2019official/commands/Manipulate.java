@@ -101,8 +101,8 @@ public class Manipulate extends Command {
     /** 
      * NOTE: Dpad has bugs. Switch the controller positions in Driverstation and reenable
      */
-    boolean upPressed = Robot.oi.povUpPressed() || Robot.oi.povUpLeftPressed() || Robot.oi.povUpRightPressed();
-    boolean downPressed = Robot.oi.povDownPressed() || Robot.oi.povDownLeftPressed() || Robot.oi.povDownRightPressed();
+    boolean upPressed = Robot.oi.driverPovUpPressed();
+    boolean downPressed = Robot.oi.driverPovDownPressed();
     
     /**
      * at the start, the pancake arm is default to an up position
