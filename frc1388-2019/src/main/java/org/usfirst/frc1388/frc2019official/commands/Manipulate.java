@@ -49,7 +49,6 @@ public class Manipulate extends Command {
     // Eject Ball (open grabber and extend ejector) when both triggers pressed
     if ( bothBumpersPressed ) {
       UsbLogging.info( "[Manipulate] Ball is ejecting" );
-      Robot.manipulator.ballRelease();
 
       /**
        * Use pulse duration to eject ball.
