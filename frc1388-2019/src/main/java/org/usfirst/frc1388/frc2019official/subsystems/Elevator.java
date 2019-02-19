@@ -20,6 +20,7 @@ import org.usfirst.frc1388.frc2019official.UsbLogging;
 
 import org.usfirst.frc1388.frc2019official.commands.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Encoder;
@@ -88,7 +89,7 @@ public class Elevator extends Subsystem {
     
 
     public Elevator() {
-        elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB, true, EncodingType.k1X); //TODO
+        elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB, false, EncodingType.k1X); //TODO
         // Calculated distance per pulse:
         // (1R / 256P) * (12t / 22t) * (180mm / R) * (1in / 25.4mm) = 0.01509932
         // encoder       sprocket      pulley
@@ -138,7 +139,10 @@ public class Elevator extends Subsystem {
                 UsbLogging.info("Elevator encoder released from reset");
 			}
 		}
-		m_prevAtBottomLimit = atBottomLimit();
+        m_prevAtBottomLimit = atBottomLimit();
+        
+        // Send elevator height to the dashboard
+        SmartDashboard.putNumber("Elevator Height", (int)getHeight());
     }
 
     /**
@@ -225,7 +229,7 @@ public class Elevator extends Subsystem {
             pwr = limitMotorPwr(pwr);
         }
 
-		elevatorMotor.set(-pwr); // The motor is reversed so negative power should move up.
+		elevatorMotor.set(pwr); // The motor is reversed so negative power should move up.
 
 		return pwr;
 	}
@@ -295,8 +299,11 @@ public class Elevator extends Subsystem {
      * Stand the tower upright
      */
     public void stand(){
-        leanControl.set( DoubleSolenoid.Value.kForward ); // pushes the actuator forward
-        m_towerUpright = true;
+        // check that the elevator is high enough before standing
+        if (getHeight() >= k_minLeanHeight) {
+            leanControl.set( DoubleSolenoid.Value.kForward ); // pushes the actuator forward
+            m_towerUpright = true;
+        }
     }
 
     /**
@@ -305,7 +312,7 @@ public class Elevator extends Subsystem {
     public void lean(){
         // check that the elevator is high enough before leaning
         if (getHeight() >= k_minLeanHeight) {
-            leanControl.set( DoubleSolenoid.Value.kReverse ); // retracts the actuator 
+            leanControl.set( DoubleSolenoid.Value.kReverse ); // retracts the actuator
             m_towerUpright = false;
         }
     }

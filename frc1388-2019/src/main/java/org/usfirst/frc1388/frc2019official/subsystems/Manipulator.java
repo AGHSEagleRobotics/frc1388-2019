@@ -25,17 +25,18 @@ public class Manipulator extends Subsystem {
   // here. Call these from Commands.
 
   /*
-  * TODO: double check the pneumatic controller module IDs and channel IDs
-  *
+  * MAKE TRIPPLE SURE TO IMPLEMENT MANIPULATOR SAFETY INTERLOCKS WHEN ADDING NEW FUNCTIONALITY
   */
   // ball grabber
   DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
   public Solenoid ballEjector = new Solenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_ballejector); // ball ballEjector
 
-  DoubleSolenoid pancakeMaker = new DoubleSolenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_pancakeArmlift, RobotMap.PCMCH_pancakeArmlower );
+  DoubleSolenoid pancakeMaker = new DoubleSolenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_pancakeArmPush, RobotMap.PCMCH_pancakeArmPull );
   Solenoid pancakeEjector = new Solenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_diskEjector); // pancake eject
 
-  double ballEjectorPulseDuration = 2.0; // seconds
+  double ballEjectorPulseDuration = 1.0; // seconds
+  boolean armIsDown;
+  boolean clawIsClosed;
 
   @Override
   public void initDefaultCommand() {
@@ -43,12 +44,6 @@ public class Manipulator extends Subsystem {
     // setDefaultCommand(new MySpecialCommand());
 
     setDefaultCommand(new Manipulate());
-
-    ballRelease();
-    ballEjectorRetract();
-
-    pancakeUp();
-    pancakeRetract();
   }
 
   public void initialize() {
@@ -56,6 +51,8 @@ public class Manipulator extends Subsystem {
     ballEjectorRetract();
     pancakeUp();
     pancakeRetract();
+    armIsDown = false;
+    clawIsClosed = true;
   }
 
   @Override
@@ -68,23 +65,32 @@ public class Manipulator extends Subsystem {
   // here. Call these from Commands.
 
   public void ballGrab() {
-
-    // Claw closes when actuator is retracted
-    manipulator.set(DoubleSolenoid.Value.kReverse);
+    if( !armIsDown )
+    {
+      // Claw closes when actuator is retracted
+      manipulator.set(DoubleSolenoid.Value.kReverse);
+      clawIsClosed = true;
+    }
 
   }
 
   public void ballRelease() {
-
-    // Claw opens when actuator is extended
-    manipulator.set(DoubleSolenoid.Value.kForward);
+    if( !armIsDown )
+    {
+      // Claw opens when actuator is extended
+      manipulator.set(DoubleSolenoid.Value.kForward);
+      clawIsClosed = false;
+    }
 
   }
 
   public void ballEjectorExtend() {
-    // Ball is ejected when actuator is extended
-    ballEjector.setPulseDuration( ballEjectorPulseDuration );
-    ballEjector.startPulse();
+    if( ! armIsDown )
+    {
+      // Ball is ejected when actuator is extended
+      ballEjector.setPulseDuration( ballEjectorPulseDuration );
+      ballEjector.startPulse();
+    }
   }
 
   public boolean ballEjectorIsActive() {
@@ -99,23 +105,29 @@ public class Manipulator extends Subsystem {
   }
 
   public void pancakeUp() {
-
-    pancakeMaker.set(DoubleSolenoid.Value.kForward);
-
+    if( !clawIsClosed )
+    {
+      pancakeMaker.set(DoubleSolenoid.Value.kReverse);
+      armIsDown = false;
+    }
   }
 
   public void pancakeDown() {
-
-    pancakeMaker.set(DoubleSolenoid.Value.kReverse);
-
+    if( !clawIsClosed )
+    {
+      pancakeMaker.set(DoubleSolenoid.Value.kForward);
+      armIsDown = true;
+    }
   }
 
   public void pancakeEject() {
+    if( !armIsDown )
+    {
+      pancakeEjector.setPulseDuration( ballEjectorPulseDuration );
+      pancakeEjector.startPulse();
 
-    pancakeEjector.setPulseDuration( ballEjectorPulseDuration );
-    pancakeEjector.startPulse();
-
-    ballEjectorExtend();
+      ballEjectorExtend();
+    }
   }
 
   public void pancakeRetract() {

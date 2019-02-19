@@ -15,6 +15,9 @@ import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
+import edu.wpi.first.wpilibj.shuffleboard.BuiltInWidgets;
+import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
+import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
@@ -26,6 +29,9 @@ import org.usfirst.frc1388.frc2019official.subsystems.*;
 import edu.wpi.first.networktables.NetworkTable;
 import edu.wpi.first.networktables.NetworkTableEntry;
 import edu.wpi.first.networktables.NetworkTableInstance;
+
+import edu.wpi.first.wpilibj.CameraServer;
+
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -53,10 +59,11 @@ public class Robot extends TimedRobot {
     int averageRaw;  
     double averageVolts;
 
-    public static NetworkTableEntry tx, ta, ty, ts, tshort, tlong, getPipe, tv;
-    public static double angleTx, area, angleTs, angleTy, getTv, lengthTShort, lengthTLong, getPipeline ;
+    public static NetworkTableEntry tx, ta, ty, ts, tshort, tlong, getPipe, tv, stream;
+    public static double angleTx, area, angleTs, angleTy, getTv, lengthTShort, lengthTLong, getPipeline, currentCameraMode ;
 
     public static DriverStation driverStation;
+    ShuffleboardTab compDashboard = Shuffleboard.getTab("competition");
 
     /**
      * This function is run when the robot is first started up and should be
@@ -100,6 +107,13 @@ public class Robot extends TimedRobot {
 
         SmartDashboard.putData("Auto mode", chooser);
 
+        Shuffleboard.getTab("competition")
+        .add( "Camera Mode", 0)
+        .withWidget( BuiltInWidgets.kComboBoxChooser)
+        .getEntry();
+
+        NetworkTableInstance.getDefault().getTable("limelight-eagle").getEntry( "stream").setNumber( 2 );
+        CameraServer.getInstance().startAutomaticCapture();
     }
 
     /**
@@ -185,6 +199,7 @@ public class Robot extends TimedRobot {
         tlong =  NetworkTableInstance.getDefault().getTable("table").getEntry("tlong");
         getPipe = NetworkTableInstance.getDefault().getTable("table").getEntry("getpipe");
         tv = NetworkTableInstance.getDefault().getTable("table").getEntry("getpipe");
+        stream = NetworkTableInstance.getDefault().getTable( "limelight-eagle").getEntry("stream");
 
         angleTx = tx.getDouble(0.0);
         area = ta.getDouble(0.0);
@@ -194,6 +209,7 @@ public class Robot extends TimedRobot {
         lengthTShort = tshort.getDouble(0.0);
         lengthTLong = tlong.getDouble(0.0);
         getPipeline = getPipe.getDouble(0.0);
+        currentCameraMode = stream.getDouble(1.0);
 
         SmartDashboard.putNumber("Infrared Raw", raw );
         SmartDashboard.putNumber("Infrared volts", volts );

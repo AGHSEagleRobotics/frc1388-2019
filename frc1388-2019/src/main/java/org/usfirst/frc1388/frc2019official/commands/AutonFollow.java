@@ -8,6 +8,7 @@
 package org.usfirst.frc1388.frc2019official.commands;
 
 import org.usfirst.frc1388.frc2019official.Robot;
+import org.usfirst.frc1388.frc2019official.UsbLogging;
 
 import edu.wpi.first.wpilibj.command.Command;
 
@@ -47,7 +48,8 @@ public class AutonFollow extends Command {
   // Called just before this Command runs the first time
   @Override
   protected void initialize() {
-  //   calculateTime();
+    UsbLogging.info(">>> " + this.getClass().getSimpleName() + " started");
+    //   calculateTime();
   //  setTimeout(turnTime);
 
   }
@@ -97,12 +99,14 @@ public class AutonFollow extends Command {
   // Called once after isFinished returns true
   @Override
   protected void end() {
+    UsbLogging.info("<<< " + this.getClass().getSimpleName() + " ended");
   }
 
   // Called when another command which requires one or more of the same
   // subsystems is scheduled to run
   @Override
   protected void interrupted() {
+    UsbLogging.info("<<< " + this.getClass().getSimpleName() + " interrupted");
     end();
   }
 }

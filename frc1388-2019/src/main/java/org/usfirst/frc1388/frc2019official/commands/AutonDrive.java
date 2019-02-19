@@ -8,15 +8,9 @@
 package org.usfirst.frc1388.frc2019official.commands;
 
 import org.usfirst.frc1388.frc2019official.Robot;
+import org.usfirst.frc1388.frc2019official.UsbLogging;
 
 import edu.wpi.first.wpilibj.command.Command;
-
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.networktables.NetworkTable;
-import edu.wpi.first.networktables.NetworkTableEntry;
-import edu.wpi.first.networktables.NetworkTableInstance;
-
-
 
 public class AutonDrive extends Command {
 
@@ -38,8 +32,7 @@ public class AutonDrive extends Command {
   // Called just before this Command runs the first time
   @Override
   protected void initialize() {
-
-    
+    UsbLogging.info(">>> " + this.getClass().getSimpleName() + " started");
   }
 
   // Called repeatedly when this Command is scheduled to run
@@ -75,11 +68,14 @@ public class AutonDrive extends Command {
   // Called once after isFinished returns true
   @Override
   protected void end() {
+    UsbLogging.info("<<< " + this.getClass().getSimpleName() + " ended");
   }
 
   // Called when another command which requires one or more of the same
   // subsystems is scheduled to run
   @Override
   protected void interrupted() {
+    UsbLogging.info("<<< " + this.getClass().getSimpleName() + " interrupted");
+    end();
   }
 }
