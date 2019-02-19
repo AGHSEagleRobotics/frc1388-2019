@@ -25,7 +25,7 @@ public class Climb extends Command {
 
     XboxController opCont = null;
     double deadband = 0.2;
-    double climberArmMaxOutput = 0.5;
+    double climberArmMaxOutput = 1.0;
 
     public Climb() {
         requires(Robot.climber);
