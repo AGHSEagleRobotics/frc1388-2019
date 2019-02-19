@@ -51,7 +51,7 @@ public class Manipulator extends Subsystem {
     ballEjectorRetract();
     pancakeUp();
     pancakeRetract();
-    armIsDown = true;
+    armIsDown = false;
     clawIsClosed = true;
   }
 
