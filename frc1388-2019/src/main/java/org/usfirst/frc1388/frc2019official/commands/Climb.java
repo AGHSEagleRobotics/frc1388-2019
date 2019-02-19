@@ -25,6 +25,7 @@ public class Climb extends Command {
 
     XboxController opCont = null;
     double deadband = 0.2;
+    double climberArmMaxOutput = 1.0;
 
     public Climb() {
         requires(Robot.climber);
@@ -69,10 +70,31 @@ public class Climb extends Command {
         rightStickY = Math.abs( rightStickY ) < deadband ? 0.0 : rightStickY;
         leftStickY = Math.abs( leftStickY ) < deadband ? 0.0 : leftStickY;
 
+        rightStickY *= climberArmMaxOutput;
+
         /**
          * Pressing down on stick causes arm to climb
          */
+        if ( rightStickY < 0 && ! Robot.climber.armReachedTop() )
+        {
         Robot.climber.runClimberArm( -rightStickY );
+        }
+
+        /**
+         * Pressing down on stick causes arm to climb
+         */
+        else if ( rightStickY > 0 && ! Robot.climber.armReachedBottom() )
+        {
+            Robot.climber.runClimberArm( -rightStickY );
+        }
+
+        /**
+         * Climber arm is at a limit
+         */
+        else
+        {
+            Robot.climber.runClimberArm( 0.0 );
+        }
 
         /**
          * Pressing down on stick causes wheel to climb

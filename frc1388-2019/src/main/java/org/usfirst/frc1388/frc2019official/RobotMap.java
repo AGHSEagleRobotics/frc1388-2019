@@ -35,8 +35,8 @@ public class RobotMap
     public static final int PCMCH_ballejector = 2;
     public static final int PCMCH_manipulatorPush = 3;
     public static final int PCMCH_manipulatorPull = 4;
-    public static final int PCMCH_pancakeArmlift = 5;
-    public static final int PCMCH_pancakeArmlower = 6;
+    public static final int PCMCH_pancakeArmPush = 5;
+    public static final int PCMCH_pancakeArmPull = 6;
 
     /* PCM2 channels */
     public static final int PCMCH_towerPush = 4;
@@ -47,6 +47,8 @@ public class RobotMap
     /* Digital IO */
     public static final int DIO_elevatorEncoderB = 4;
     public static final int DIO_elevatorEncoderA = 5;
+    public static final int DIO_climberArmTop = 6;
+    public static final int DIO_climberArmBottom = 7;
     public static final int DIO_bottomLimit1 = 8;
     public static final int DIO_bottomLimit2 = 9;
 

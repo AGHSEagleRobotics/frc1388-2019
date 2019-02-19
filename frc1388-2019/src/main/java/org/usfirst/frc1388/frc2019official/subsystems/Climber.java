@@ -16,6 +16,7 @@ import org.usfirst.frc1388.frc2019official.RobotMap;
 import org.usfirst.frc1388.frc2019official.commands.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.DigitalInput;
 
 /**
  *
@@ -26,6 +27,9 @@ public class Climber extends Subsystem {
 
     WPI_VictorSPX climbArm; 
     WPI_VictorSPX climbWheels;
+
+    DigitalInput topArmLimit = new DigitalInput(RobotMap.DIO_climberArmTop);
+    DigitalInput bottomArmLimit = new DigitalInput(RobotMap.DIO_climberArmBottom);
 
     public Climber() {
 
@@ -66,6 +70,16 @@ public class Climber extends Subsystem {
 
     public void runClimberWheels( double speed ){
         climbWheels.set( speed );
+    }
+
+    public boolean armReachedTop() {
+        boolean isActive = topArmLimit.get();
+        return isActive;
+    }
+
+    public boolean armReachedBottom() {
+        boolean isActive = bottomArmLimit.get();
+        return isActive;
     }
 
     // Put methods for controlling this subsystem

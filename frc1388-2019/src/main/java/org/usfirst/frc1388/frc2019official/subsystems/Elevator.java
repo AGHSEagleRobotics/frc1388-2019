@@ -89,7 +89,7 @@ public class Elevator extends Subsystem {
     
 
     public Elevator() {
-        elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB, true, EncodingType.k1X); //TODO
+        elevatorEncoder = new Encoder(RobotMap.DIO_elevatorEncoderA, RobotMap.DIO_elevatorEncoderB, false, EncodingType.k1X); //TODO
         // Calculated distance per pulse:
         // (1R / 256P) * (12t / 22t) * (180mm / R) * (1in / 25.4mm) = 0.01509932
         // encoder       sprocket      pulley
@@ -229,7 +229,7 @@ public class Elevator extends Subsystem {
             pwr = limitMotorPwr(pwr);
         }
 
-		elevatorMotor.set(-pwr); // The motor is reversed so negative power should move up.
+		elevatorMotor.set(pwr); // The motor is reversed so negative power should move up.
 
 		return pwr;
 	}
