@@ -42,7 +42,7 @@ public class Manipulate extends Command {
   private void ballGrabExecute() {
     boolean leftBumper = Robot.oi.driveController.getBumperPressed( Hand.kLeft );
     boolean rightBumper = Robot.oi.driveController.getBumperPressed( Hand.kRight);
-    boolean getYButton = Robot.oi.driveController.getYButton();
+    boolean getYButton = Robot.oi.opController.getYButton();
 
     boolean bothBumpersPressed = (Robot.oi.driveController.getBumper( Hand.kLeft ) && Robot.oi.driveController.getBumper( Hand.kRight ));
 

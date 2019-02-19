@@ -44,9 +44,13 @@ public class ElevatorMove extends Command {
 		// TODO make on/off vs hold
 		boolean override = Robot.oi.getOpController().getBackButton();
 
-		double leftTrigger = Robot.oi.getOpController().getTriggerAxis(Hand.kLeft);
+		double leftOpTrigger = Robot.oi.getOpController().getTriggerAxis(Hand.kLeft);
+		double leftDriveTrigger = Robot.oi.getDriveController().getTriggerAxis(Hand.kLeft);
+		double leftTrigger = Math.max(leftDriveTrigger, leftOpTrigger);
 
-		double rightTrigger = Robot.oi.getOpController().getTriggerAxis(Hand.kRight);
+		double rightOpTrigger = Robot.oi.getOpController().getTriggerAxis(Hand.kRight);
+		double rightDriveTrigger = Robot.oi.getDriveController().getTriggerAxis(Hand.kRight);
+		double rightTrigger = Math.max(rightDriveTrigger, rightOpTrigger);
 
 		double elevatorSpeed = 0;
 
