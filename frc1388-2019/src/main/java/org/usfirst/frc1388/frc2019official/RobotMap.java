@@ -35,8 +35,8 @@ public class RobotMap
     public static final int PCMCH_ballejector = 2;
     public static final int PCMCH_manipulatorPush = 3;
     public static final int PCMCH_manipulatorPull = 4;
-    public static final int PCMCH_pancakeArmlift = 5;
-    public static final int PCMCH_pancakeArmlower = 6;
+    public static final int PCMCH_pancakeArmPush = 5;
+    public static final int PCMCH_pancakeArmPull = 6;
 
     /* PCM2 channels */
     public static final int PCMCH_towerPush = 4;

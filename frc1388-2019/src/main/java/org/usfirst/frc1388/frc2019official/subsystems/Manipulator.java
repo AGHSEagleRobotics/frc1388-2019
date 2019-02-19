@@ -25,17 +25,16 @@ public class Manipulator extends Subsystem {
   // here. Call these from Commands.
 
   /*
-  * TODO: double check the pneumatic controller module IDs and channel IDs
   * MAKE TRIPPLE SURE TO IMPLEMENT MANIPULATOR SAFETY INTERLOCKS WHEN ADDING NEW FUNCTIONALITY
   */
   // ball grabber
   DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
   public Solenoid ballEjector = new Solenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_ballejector); // ball ballEjector
 
-  DoubleSolenoid pancakeMaker = new DoubleSolenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_pancakeArmlift, RobotMap.PCMCH_pancakeArmlower );
+  DoubleSolenoid pancakeMaker = new DoubleSolenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_pancakeArmPush, RobotMap.PCMCH_pancakeArmPull );
   Solenoid pancakeEjector = new Solenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_diskEjector); // pancake eject
 
-  double ballEjectorPulseDuration = 2.0; // seconds
+  double ballEjectorPulseDuration = 1.0; // seconds
   boolean armIsDown;
   boolean clawIsClosed;
 
@@ -45,12 +44,6 @@ public class Manipulator extends Subsystem {
     // setDefaultCommand(new MySpecialCommand());
 
     setDefaultCommand(new Manipulate());
-
-    ballRelease();
-    ballEjectorRetract();
-
-    pancakeUp();
-    pancakeRetract();
   }
 
   public void initialize() {
@@ -58,8 +51,8 @@ public class Manipulator extends Subsystem {
     ballEjectorRetract();
     pancakeUp();
     pancakeRetract();
-    armIsDown = false;
-    clawIsClosed = false;
+    armIsDown = true;
+    clawIsClosed = true;
   }
 
   @Override
@@ -92,7 +85,7 @@ public class Manipulator extends Subsystem {
   }
 
   public void ballEjectorExtend() {
-    if( armIsDown )
+    if( ! armIsDown )
     {
       // Ball is ejected when actuator is extended
       ballEjector.setPulseDuration( ballEjectorPulseDuration );
@@ -112,16 +105,17 @@ public class Manipulator extends Subsystem {
   }
 
   public void pancakeUp() {
-    
-    pancakeMaker.set(DoubleSolenoid.Value.kForward);
-    armIsDown = false;
-
+    if( !clawIsClosed )
+    {
+      pancakeMaker.set(DoubleSolenoid.Value.kReverse);
+      armIsDown = false;
+    }
   }
 
   public void pancakeDown() {
     if( !clawIsClosed )
     {
-      pancakeMaker.set(DoubleSolenoid.Value.kReverse);
+      pancakeMaker.set(DoubleSolenoid.Value.kForward);
       armIsDown = true;
     }
   }
