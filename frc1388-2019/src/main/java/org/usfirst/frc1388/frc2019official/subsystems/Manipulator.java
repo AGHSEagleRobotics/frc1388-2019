@@ -75,13 +75,9 @@ public class Manipulator extends Subsystem {
   }
 
   public void ballRelease() {
-    if( !armIsDown )
-    {
-      // Claw opens when actuator is extended
-      manipulator.set(DoubleSolenoid.Value.kForward);
-      clawIsClosed = false;
-    }
-
+    // Claw opens when actuator is extended
+    manipulator.set(DoubleSolenoid.Value.kForward);
+    clawIsClosed = false;
   }
 
   public void ballEjectorExtend() {

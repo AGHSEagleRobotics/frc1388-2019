@@ -159,9 +159,7 @@ public class Robot extends TimedRobot {
     		UsbLogging.info("FMS not connected");
     	}
         
-        autonomousCommand = chooser.getSelected();
-        // schedule the autonomous command (example)
-        if (autonomousCommand != null) autonomousCommand.start();
+        // if (autonomousCommand != null) autonomousCommand.cancel();
     }
 
     /**
