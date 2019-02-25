@@ -122,6 +122,9 @@ public class Robot extends TimedRobot {
         
         //TODO:  might need to be removed or only run on a flag
         Robot.manipulator.initialize();
+
+        // Turn off the camera's LED when the robot is disabled.
+        Robot.vision.ledOff();
     }
 
     @Override
@@ -150,7 +153,11 @@ public class Robot extends TimedRobot {
     		UsbLogging.info(fmsInfo);
     	} else {
     		UsbLogging.info("FMS not connected");
-    	}
+        }
+        
+        // Turn on the camera's LED when the robot is enabled
+        // TODO: Consider removing this
+        Robot.vision.ledAuto();
         
         // if (autonomousCommand != null) autonomousCommand.cancel();
     }
@@ -172,6 +179,10 @@ public class Robot extends TimedRobot {
         // continue until interrupted by another command, remove
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
+
+        // Turn on the camera's LED when the robot is enabled
+        // TODO: Consider removing this
+        Robot.vision.ledAuto();
     }
 
     /**

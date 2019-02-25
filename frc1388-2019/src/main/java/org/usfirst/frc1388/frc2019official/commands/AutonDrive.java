@@ -33,6 +33,9 @@ public class AutonDrive extends Command {
   @Override
   protected void initialize() {
     UsbLogging.info(">>> " + this.getClass().getSimpleName() + " started");
+
+    // Turn on the camera's LED
+    Robot.vision.ledOn();
   }
 
   // Called repeatedly when this Command is scheduled to run
@@ -68,6 +71,9 @@ public class AutonDrive extends Command {
   // Called once after isFinished returns true
   @Override
   protected void end() {
+    // Turn off the camera's LED
+    Robot.vision.ledOff();
+
     UsbLogging.info("<<< " + this.getClass().getSimpleName() + " ended");
   }
 
