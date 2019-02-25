@@ -12,12 +12,6 @@ import org.usfirst.frc1388.frc2019official.UsbLogging;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.networktables.NetworkTable;
-import edu.wpi.first.networktables.NetworkTableEntry;
-import edu.wpi.first.networktables.NetworkTableInstance;
-import edu.wpi.first.wpilibj.GenericHID.Hand;
-
 
 public class AutonFollow extends Command {
 
@@ -58,8 +52,8 @@ public class AutonFollow extends Command {
   @Override
   protected void execute() {
 
-      double rotation = k_r * Robot.angleTx;
-      double speed = dist_mult / Robot.area;
+      double rotation = k_r * Robot.vision.targetAngleTx;
+      double speed = dist_mult / Robot.vision.targetArea;
 
       rotation = Math.min(rotation, k_max);
       rotation = Math.max(rotation, -k_max);
@@ -67,7 +61,7 @@ public class AutonFollow extends Command {
       speed = Math.min(speed, k_max);
       speed = Math.max(speed, -k_max);
 
-      if( Robot.angleTx >= 0)
+      if( Robot.vision.targetAngleTx >= 0)
         Robot.driveTrain.arcadeDrive(-speed , -rotation);
       else
         Robot.driveTrain.arcadeDrive(-speed , -rotation);
@@ -88,7 +82,7 @@ public class AutonFollow extends Command {
     /**
      * If area is greater than a size, we are close enough
      */
-    if(Robot.area > target_max_area){
+    if(Robot.vision.targetArea > target_max_area){
         return true;
     }
     else{

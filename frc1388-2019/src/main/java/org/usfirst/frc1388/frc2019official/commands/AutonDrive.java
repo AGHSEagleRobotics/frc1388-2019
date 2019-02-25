@@ -14,8 +14,8 @@ import edu.wpi.first.wpilibj.command.Command;
 
 public class AutonDrive extends Command {
 
-  private double distance = 99999;
-  private double time = 99999;
+  // private double distance = 99999;
+  // private double time = 99999;
   double k_p = 0.1;
   double k_max = .5;//max motor power
 
@@ -38,7 +38,7 @@ public class AutonDrive extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    double power = k_p * Robot.angleTx;
+    double power = k_p * Robot.vision.targetAngleTx;
 
 
         power = Math.min(power, k_max);

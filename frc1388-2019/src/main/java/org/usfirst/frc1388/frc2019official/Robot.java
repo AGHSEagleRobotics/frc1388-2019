@@ -26,11 +26,7 @@ import org.usfirst.frc1388.frc2019official.UsbLogging.Level;
 import org.usfirst.frc1388.frc2019official.commands.*;
 import org.usfirst.frc1388.frc2019official.subsystems.*;
 
-import edu.wpi.first.networktables.NetworkTable;
-import edu.wpi.first.networktables.NetworkTableEntry;
-import edu.wpi.first.networktables.NetworkTableInstance;
-
-import edu.wpi.first.wpilibj.CameraServer;
+import edu.wpi.first.cameraserver.CameraServer;;
 
 
 /**
@@ -44,7 +40,6 @@ public class Robot extends TimedRobot {
 
     Command autonomousCommand;
     SendableChooser<Command> chooser = new SendableChooser<>();
-    NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight");
 
     public static OI oi;
     public static DriveTrain driveTrain;
@@ -52,15 +47,13 @@ public class Robot extends TimedRobot {
     public static Elevator elevator;
     public static Manipulator manipulator;
     public static Air air;
+    public static Vision vision;
 
     public static AnalogInput exampleAnalog = new AnalogInput(0);
     int raw;
     double volts;
     int averageRaw;  
     double averageVolts;
-
-    public static NetworkTableEntry tx, ta, ty, ts, tshort, tlong, getPipe, tv, stream;
-    public static double angleTx, area, angleTs, angleTy, getTv, lengthTShort, lengthTLong, getPipeline, currentCameraMode ;
 
     public static DriverStation driverStation;
     ShuffleboardTab compDashboard = Shuffleboard.getTab("competition");
@@ -89,6 +82,7 @@ public class Robot extends TimedRobot {
         elevator = new Elevator();
         manipulator = new Manipulator();
         air = new Air();
+        vision = new Vision();
 
         raw = exampleAnalog.getValue();
         volts = exampleAnalog.getVoltage();
@@ -112,7 +106,6 @@ public class Robot extends TimedRobot {
         .withWidget( BuiltInWidgets.kComboBoxChooser)
         .getEntry();
 
-        NetworkTableInstance.getDefault().getTable("limelight-eagle").getEntry( "stream").setNumber( 2 );
         CameraServer.getInstance().startAutomaticCapture();
     }
 
@@ -187,28 +180,6 @@ public class Robot extends TimedRobot {
     @Override
     public void robotPeriodic()
     {
-        NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight-eagle");
-
-        tx = table.getEntry("tx");
-        ty = table.getEntry("ty");
-        ta = table.getEntry("ta");
-        ts = NetworkTableInstance.getDefault().getTable("limelight-eagle").getEntry("ts");
-        tshort = NetworkTableInstance.getDefault().getTable("table").getEntry("tshort");
-        tlong =  NetworkTableInstance.getDefault().getTable("table").getEntry("tlong");
-        getPipe = NetworkTableInstance.getDefault().getTable("table").getEntry("getpipe");
-        tv = NetworkTableInstance.getDefault().getTable("table").getEntry("getpipe");
-        stream = NetworkTableInstance.getDefault().getTable( "limelight-eagle").getEntry("stream");
-
-        angleTx = tx.getDouble(0.0);
-        area = ta.getDouble(0.0);
-        angleTs = ts.getDouble(0.0);
-        angleTy = ty.getDouble(0.0);
-        getTv = tv.getDouble(0.0);
-        lengthTShort = tshort.getDouble(0.0);
-        lengthTLong = tlong.getDouble(0.0);
-        getPipeline = getPipe.getDouble(0.0);
-        currentCameraMode = stream.getDouble(1.0);
-
         SmartDashboard.putNumber("Infrared Raw", raw );
         SmartDashboard.putNumber("Infrared volts", volts );
         SmartDashboard.putNumber("Infrared Average Raw", averageRaw );
@@ -221,14 +192,5 @@ public class Robot extends TimedRobot {
     @Override
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
-
-        SmartDashboard.putNumber("LimelightX", angleTx);
-        SmartDashboard.putNumber("LimelightY", angleTy);
-        SmartDashboard.putNumber("LimelightArea", area);
-        SmartDashboard.putNumber("LimelightArea", getTv);
-        SmartDashboard.putNumber("LimelightArea", angleTs);
-        SmartDashboard.putNumber("LimelightArea", lengthTShort);
-        SmartDashboard.putNumber("LimelightArea", lengthTLong);
-        SmartDashboard.putNumber("LimelightArea", getPipeline) ;
     }
 }
