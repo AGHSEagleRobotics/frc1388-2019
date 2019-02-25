@@ -21,7 +21,6 @@ import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardTab;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
-import edu.wpi.first.wpilibj.AnalogInput;
 import org.usfirst.frc1388.frc2019official.UsbLogging.Level;
 import org.usfirst.frc1388.frc2019official.commands.*;
 import org.usfirst.frc1388.frc2019official.subsystems.*;
@@ -53,12 +52,6 @@ public class Robot extends TimedRobot {
     public static Manipulator manipulator;
     public static Air air;
 
-    public static AnalogInput exampleAnalog = new AnalogInput(0);
-    int raw;
-    double volts;
-    int averageRaw;  
-    double averageVolts;
-
     public static NetworkTableEntry tx, ta, ty, ts, tshort, tlong, getPipe, tv, stream;
     public static double angleTx, area, angleTs, angleTy, getTv, lengthTShort, lengthTLong, getPipeline, currentCameraMode ;
 
@@ -89,11 +82,6 @@ public class Robot extends TimedRobot {
         elevator = new Elevator();
         manipulator = new Manipulator();
         air = new Air();
-
-        raw = exampleAnalog.getValue();
-        volts = exampleAnalog.getVoltage();
-        averageRaw = exampleAnalog.getAverageValue();
-        averageVolts = exampleAnalog.getAverageVoltage();
 
         // OI must be constructed after subsystems. If the OI creates Commands
         //(which it very likely will), subsystems are not guaranteed to be
@@ -208,11 +196,6 @@ public class Robot extends TimedRobot {
         lengthTLong = tlong.getDouble(0.0);
         getPipeline = getPipe.getDouble(0.0);
         currentCameraMode = stream.getDouble(1.0);
-
-        SmartDashboard.putNumber("Infrared Raw", raw );
-        SmartDashboard.putNumber("Infrared volts", volts );
-        SmartDashboard.putNumber("Infrared Average Raw", averageRaw );
-        SmartDashboard.putNumber("Infrared Average Volts", averageVolts );
     }
 
     /**

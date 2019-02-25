@@ -53,7 +53,7 @@ public class RobotMap
     public static final int DIO_bottomLimit2 = 9;
 
     /* Analog Inputs */
-    // public static final int AI_channel0 = 0;
+    public static final int AI_ballSensor = 0;
     public static final int AI_airPressure = 1;
 
 }

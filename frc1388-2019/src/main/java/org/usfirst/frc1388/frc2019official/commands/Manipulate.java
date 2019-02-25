@@ -76,7 +76,7 @@ public class Manipulate extends Command {
     }
 
     // open grabber and close when the ball is detected
-    if( getYButton && Robot.exampleAnalog.getVoltage() > 1.2 && Robot.exampleAnalog.getVoltage() < 2.25 )
+    if( getYButton && Robot.manipulator.ballSensor.getVoltage() > 1.2 && Robot.manipulator.ballSensor.getVoltage() < 2.25 )
     {
       UsbLogging.info( "[Manipulate] Ball grabber closing using proximity sensor" );
 

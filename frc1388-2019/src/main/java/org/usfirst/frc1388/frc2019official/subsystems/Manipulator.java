@@ -9,11 +9,9 @@ package org.usfirst.frc1388.frc2019official.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 import org.usfirst.frc1388.frc2019official.commands.*;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import edu.wpi.first.wpilibj.command.Subsystem;
+
+import edu.wpi.first.wpilibj.AnalogInput;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
-import edu.wpi.first.wpilibj.PIDOutput;
-import edu.wpi.first.wpilibj.PIDSource;
 import edu.wpi.first.wpilibj.Solenoid;
 import org.usfirst.frc1388.frc2019official.RobotMap;
 
@@ -28,11 +26,13 @@ public class Manipulator extends Subsystem {
   * MAKE TRIPPLE SURE TO IMPLEMENT MANIPULATOR SAFETY INTERLOCKS WHEN ADDING NEW FUNCTIONALITY
   */
   // ball grabber
-  DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull); // ball grabber
-  public Solenoid ballEjector = new Solenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_ballejector); // ball ballEjector
+  private DoubleSolenoid manipulator = new DoubleSolenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_manipulatorPush, RobotMap.PCMCH_manipulatorPull);
+  private Solenoid ballEjector = new Solenoid(RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_ballejector);
 
-  DoubleSolenoid pancakeMaker = new DoubleSolenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_pancakeArmPush, RobotMap.PCMCH_pancakeArmPull );
-  Solenoid pancakeEjector = new Solenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_diskEjector); // pancake eject
+  private DoubleSolenoid pancakeMaker = new DoubleSolenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_pancakeArmPush, RobotMap.PCMCH_pancakeArmPull );
+  private Solenoid pancakeEjector = new Solenoid( RobotMap.CANID_PCM_manipulator, RobotMap.PCMCH_diskEjector);
+
+  public AnalogInput ballSensor = new AnalogInput(RobotMap.AI_ballSensor);
 
   double ballEjectorPulseDuration = 1.0; // seconds
   boolean armIsDown;
