@@ -155,10 +155,6 @@ public class Robot extends TimedRobot {
     		UsbLogging.info("FMS not connected");
         }
         
-        // Turn on the camera's LED when the robot is enabled
-        // TODO: Consider removing this
-        Robot.vision.ledAuto();
-        
         // if (autonomousCommand != null) autonomousCommand.cancel();
     }
 
@@ -179,10 +175,6 @@ public class Robot extends TimedRobot {
         // continue until interrupted by another command, remove
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
-
-        // Turn on the camera's LED when the robot is enabled
-        // TODO: Consider removing this
-        Robot.vision.ledAuto();
     }
 
     /**
@@ -203,5 +195,14 @@ public class Robot extends TimedRobot {
     @Override
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
+    }
+
+    /**
+     * This function is called periodically in test mode
+     */
+    @Override
+    public void testPeriodic() {
+        // Force the camera's LED on when the robot is enabled in test mode
+        Robot.vision.ledOn();
     }
 }
