@@ -108,7 +108,6 @@ public class Elevator extends Subsystem {
     @Override
     public void initDefaultCommand() {
         setDefaultCommand(new ElevatorMove());            
-        leanControl.set( DoubleSolenoid.Value.kOff);
     }
 
     @Override
@@ -319,5 +318,6 @@ public class Elevator extends Subsystem {
 
     public void deactivate(){
         leanControl.set( DoubleSolenoid.Value.kOff ); // stops powering the solenoid
+        elevatorMotor.set(0);
     }
 }

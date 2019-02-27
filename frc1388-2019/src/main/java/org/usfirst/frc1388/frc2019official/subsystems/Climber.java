@@ -45,14 +45,15 @@ public class Climber extends Subsystem {
     @Override
     public void initDefaultCommand() {
         setDefaultCommand(new Climb());
-        
-        retractLifter();
     }
 
     @Override
     public void periodic() {
         // Put code here to be run every loop
     }
+
+    // Put methods for controlling this subsystem
+    // here. Call these from Commands.
 
     public void extendLifter(){
         // activates airflow into the lifter actuators
@@ -82,7 +83,14 @@ public class Climber extends Subsystem {
         return isActive;
     }
 
-    // Put methods for controlling this subsystem
-    // here. Call these from Commands.
+    /**
+     * Disable all actuators.
+     * May be called at the end() of a command or when the robot is disabled.
+     */
+    public void deactivate() {
+        lifters.set(DoubleSolenoid.Value.kOff);
+        climbArm.set(0);
+        climbWheels.set(0);
+    }
 }
 

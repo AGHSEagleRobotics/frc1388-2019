@@ -46,13 +46,24 @@ public class Manipulator extends Subsystem {
     setDefaultCommand(new Manipulate());
   }
 
+  /**
+   * Set the initial state of the subsystem
+   */
   public void initialize() {
-    manipulator.set(DoubleSolenoid.Value.kOff);
-    ballEjectorRetract();
-    pancakeUp();
-    pancakeRetract();
+    // TODO: Come up with a smarter way of initializing this state
     armIsDown = false;
     clawIsClosed = true;
+  }
+
+  /**
+   * Disable all actuators.
+   * May be called at the end() of a command or when the robot is disabled.
+   */
+  public void deactivate() {
+    manipulator.set(DoubleSolenoid.Value.kOff);
+    pancakeMaker.set(DoubleSolenoid.Value.kOff);
+    ballEjector.set(false);
+    pancakeEjector.set(false);
   }
 
   @Override

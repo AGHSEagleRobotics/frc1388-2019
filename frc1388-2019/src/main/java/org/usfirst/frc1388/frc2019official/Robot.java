@@ -83,6 +83,8 @@ public class Robot extends TimedRobot {
         manipulator = new Manipulator();
         air = new Air();
 
+        manipulator.initialize();
+        
         // OI must be constructed after subsystems. If the OI creates Commands
         //(which it very likely will), subsystems are not guaranteed to be
         // constructed yet. Thus, their requires() statements may grab null
@@ -115,8 +117,10 @@ public class Robot extends TimedRobot {
 
         UsbLogging.info("########  Robot disabled");
         
-        //TODO:  might need to be removed or only run on a flag
-        Robot.manipulator.initialize();
+        // Disable subsystems  (see issue #51)
+        Robot.climber.deactivate();
+        Robot.elevator.deactivate();
+        Robot.manipulator.deactivate();
     }
 
     @Override
