@@ -260,11 +260,11 @@ public class OI {
     }
 
     public boolean opPovLeftPressed() {
-        return driveController.getPOV() == 270;
+        return opController.getPOV() == 270;
     }
 
     public boolean opPovRightPressed() {
-        return driveController.getPOV() == 90;
+        return opController.getPOV() == 90;
     }
 
     /**

@@ -34,7 +34,7 @@ public class ElevatorMove extends Command {
         boolean opStartPressed = Robot.oi.getOpController().getStartButtonPressed();
         boolean opBackPressed = Robot.oi.getOpController().getBackButtonPressed();
 		boolean override = Robot.oi.opPovRightPressed();
-		
+
         if( /*drStartPressed || */ opStartPressed ){
             Robot.elevator.stand( override );
         }
