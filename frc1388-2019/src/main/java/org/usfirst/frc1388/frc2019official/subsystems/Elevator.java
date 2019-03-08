@@ -15,6 +15,7 @@ package org.usfirst.frc1388.frc2019official.subsystems;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
 import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 
+import org.usfirst.frc1388.frc2019official.Robot;
 import org.usfirst.frc1388.frc2019official.RobotMap;
 import org.usfirst.frc1388.frc2019official.UsbLogging;
 
@@ -143,6 +144,7 @@ public class Elevator extends Subsystem {
         
         // Send elevator height to the dashboard
         SmartDashboard.putNumber("Elevator Height", (int)getHeight());
+        SmartDashboard.putNumber("Elevator Encoder Value", (int)(elevatorEncoder.getDistance()));
     }
 
     /**
@@ -298,9 +300,9 @@ public class Elevator extends Subsystem {
     /**
      * Stand the tower upright
      */
-    public void stand(){
+    public void stand( boolean override ){
         // check that the elevator is high enough before standing
-        if (getHeight() >= k_minLeanHeight) {
+        if (getHeight() >= k_minLeanHeight || override) {
             leanControl.set( DoubleSolenoid.Value.kForward ); // pushes the actuator forward
             m_towerUpright = true;
         }
@@ -309,9 +311,9 @@ public class Elevator extends Subsystem {
     /**
      * Lean the tower back
      */
-    public void lean(){
+    public void lean( boolean override){
         // check that the elevator is high enough before leaning
-        if (getHeight() >= k_minLeanHeight) {
+        if (getHeight() >= k_minLeanHeight || override) {
             leanControl.set( DoubleSolenoid.Value.kReverse ); // retracts the actuator
             m_towerUpright = false;
         }

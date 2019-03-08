@@ -259,6 +259,14 @@ public class OI {
         return driveController.getPOV() == 180;
     }
 
+    public boolean opPovLeftPressed() {
+        return driveController.getPOV() == 270;
+    }
+
+    public boolean opPovRightPressed() {
+        return driveController.getPOV() == 90;
+    }
+
     /**
      * D-Pad Up is pressed.
      * @return true if driver or operator has D-Pad Up currently pressed

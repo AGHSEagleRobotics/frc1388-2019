@@ -28,21 +28,23 @@ public class ElevatorMove extends Command {
 	// Called repeatedly when this Command is scheduled to run
 	@Override
 	protected void execute() {
-        // Tower control TODO: Double check controls & if they work with Xbox one.
-        boolean drStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
-        boolean drBackPressed = Robot.oi.getDriveController().getBackButtonPressed();
+		// Tower control TODO: Double check controls & if they work with Xbox one.
+       // boolean drStartPressed = Robot.oi.getDriveController().getStartButtonPressed();
+      //  boolean drBackPressed = Robot.oi.getDriveController().getBackButtonPressed();
         boolean opStartPressed = Robot.oi.getOpController().getStartButtonPressed();
         boolean opBackPressed = Robot.oi.getOpController().getBackButtonPressed();
-
-        if( drStartPressed || opStartPressed ){
-            Robot.elevator.stand();
+		boolean override = Robot.oi.opPovRightPressed();
+		
+        if( /*drStartPressed || */ opStartPressed ){
+            Robot.elevator.stand( override );
         }
-        if( drBackPressed || opBackPressed ){
-            Robot.elevator.lean();
+        if( /*drBackPressed ||*/ opBackPressed ){
+            Robot.elevator.lean( override );
         }
 
 		// TODO make on/off vs hold
-		boolean override = Robot.oi.getOpController().getBackButton();
+		
+		
 
 		double leftOpTrigger = Robot.oi.getOpController().getTriggerAxis(Hand.kLeft);
 		double leftDriveTrigger = Robot.oi.getDriveController().getTriggerAxis(Hand.kLeft);
