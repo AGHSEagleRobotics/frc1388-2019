@@ -1,0 +1,188 @@
+2019-03-07
+11:03:25.118562  Git version: 642605f (branch: master 2 files changed, 6 insertions(+), 4 deletions(-))
+11:03:25.236579  Built: Fri 03/08/2019   12:24 PM
+11:03:25.257799 [INFO] Robot.robotInit()
+11:03:26.612662 [INFO] ########  Robot disabled
+11:03:26.686579 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+11:03:27.639544 [INFO] Elevator encoder released from reset
+11:03:32.979846 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+11:03:33.059847 [INFO] Elevator encoder released from reset
+11:03:33.259817 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+11:03:37.099557 [INFO] Elevator encoder released from reset
+11:03:37.219708 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+11:03:37.419733 [INFO] Elevator encoder released from reset
+2019-03-09
+12:44:42.462321 [INFO] ########  Autonomous enabled
+12:44:42.581501 [INFO] FMS info:  CAFR Qualification match 79 replay 1;  Red alliance,  Driver Station 3
+12:44:42.650033 [INFO] Compressor is OFF  Pressure= 114psi
+12:44:42.724691 [INFO] >>> Drive started
+12:44:42.752716 [INFO] >>> Climb started
+12:44:42.771596 [INFO] >>> ElevatorMove started
+12:44:42.788692 [INFO] >>> Manipulate started
+12:44:44.682440 [INFO] Compressor is OFF  Pressure= 114psi
+12:44:46.702782 [INFO] Elevator encoder held in reset; pre-reset value: -0.48317824
+12:44:46.717212 [INFO] Compressor is OFF  Pressure= 114psi
+12:44:48.742539 [INFO] Compressor is OFF  Pressure= 114psi
+12:44:50.762665 [INFO] Compressor is OFF  Pressure= 114psi
+12:44:52.834287 [INFO] Compressor is ON   Pressure= 96psi  Current= 10.19 A
+12:44:54.863764 [INFO] Compressor is ON   Pressure= 98psi  Current= 11.06 A
+12:44:57.424222 [INFO] Compressor is ON   Pressure= 106psi  Current= 11.03 A
+12:44:57.825235 [INFO] ########  Robot disabled
+12:44:57.849261 [INFO] <<< Drive interrupted
+12:44:57.865885 [INFO] <<< Drive ended
+12:44:57.886681 [INFO] <<< Climb interrupted
+12:44:57.904837 [INFO] <<< Climb ended
+12:44:57.922935 [INFO] <<< ElevatorMove interrupted
+12:44:57.940604 [INFO] <<< ElevatorMove ended
+12:44:57.963920 [INFO] <<< Manipulate interrupted
+12:44:57.981549 [INFO] <<< Manipulate ended
+12:44:58.068468 [INFO] ########  Teleop enabled
+12:44:58.084116 [INFO] >>> Drive started
+12:44:58.103928 [INFO] >>> Climb started
+12:44:58.118227 [INFO] >>> ElevatorMove started
+12:44:58.131338 [INFO] >>> Manipulate started
+12:44:59.444045 [INFO] Compressor is ON   Pressure= 111psi  Current= 11.06 A
+12:44:59.822390 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.202370 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.223310 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.248002 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.271203 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.292353 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.312831 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.333037 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.356231 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.377375 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.420850 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.436105 [INFO] Elevator encoder held in reset; pre-reset value: -25.155467119999997
+12:45:00.459630 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.487591 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.515559 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.535617 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.559374 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.585451 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.609710 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.629850 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.652547 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.715258 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.742997 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.762358 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:00.789857 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:01.382460 [INFO] Elevator encoder released from reset
+12:45:01.465914 [INFO] Compressor is ON   Pressure= 116psi  Current= 10.91 A
+12:45:01.842700 [INFO] Elevator encoder held in reset; pre-reset value: 0.03019864
+12:45:02.822764 [INFO] Compressor is OFF  Pressure= 118psi
+12:45:03.622690 [INFO] Elevator encoder released from reset
+12:45:04.842805 [INFO] Compressor is OFF  Pressure= 117psi
+12:45:06.322738 [INFO] Elevator encoder held in reset; pre-reset value: 11.113099519999999
+12:45:06.863323 [INFO] Compressor is OFF  Pressure= 117psi
+12:45:08.883086 [INFO] Compressor is OFF  Pressure= 107psi
+12:45:09.624310 [INFO] Compressor is ON   Pressure= 99psi  Current= 11.53 A
+12:45:10.743974 [INFO] [Manipulate] Ball grabber closing
+12:45:11.646806 [INFO] Compressor is ON   Pressure= 104psi  Current= 11.38 A
+12:45:13.665757 [INFO] Compressor is ON   Pressure= 107psi  Current= 11.00 A
+12:45:13.942578 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:13.967179 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:13.987405 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:14.006478 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:14.026157 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:14.046197 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:15.684418 [INFO] Compressor is ON   Pressure= 112psi  Current= 11.41 A
+12:45:17.704255 [INFO] Compressor is ON   Pressure= 116psi  Current= 11.50 A
+12:45:18.683093 [INFO] Compressor is OFF  Pressure= 118psi
+12:45:20.703657 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:22.723925 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:24.743734 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:26.763341 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:27.142818 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:27.168542 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:27.188745 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:27.211644 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:27.231288 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:28.783433 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:30.804054 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:32.823545 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:34.843555 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:36.863569 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:37.643351 [INFO] Elevator encoder held in reset; pre-reset value: 0.31708572
+12:45:38.883752 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:40.903684 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:42.924500 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:44.944730 [INFO] Compressor is OFF  Pressure= 115psi
+12:45:46.964292 [INFO] Compressor is OFF  Pressure= 115psi
+12:45:48.983902 [INFO] Compressor is OFF  Pressure= 115psi
+12:45:51.004226 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:51.563775 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:51.589962 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:51.609657 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:51.629615 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:51.650602 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:51.669996 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:51.983403 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:52.007138 [WARNING] Warning: Elevator motor power limit exceeded!
+12:45:53.023911 [INFO] Compressor is OFF  Pressure= 115psi
+12:45:55.043947 [INFO] Compressor is OFF  Pressure= 116psi
+12:45:57.063919 [INFO] Compressor is OFF  Pressure= 115psi
+12:45:59.084063 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:01.104504 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:03.124067 [INFO] Compressor is OFF  Pressure= 116psi
+12:46:05.144111 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:07.164150 [INFO] Compressor is OFF  Pressure= 116psi
+12:46:09.184242 [INFO] Compressor is OFF  Pressure= 116psi
+12:46:11.204209 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:13.224479 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:15.245171 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:17.264740 [INFO] Compressor is OFF  Pressure= 116psi
+12:46:19.284322 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:21.304408 [INFO] Compressor is OFF  Pressure= 116psi
+12:46:23.324445 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:25.345032 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:27.364543 [INFO] Compressor is OFF  Pressure= 116psi
+12:46:29.384545 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:31.404555 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:33.424612 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:34.104263 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:34.129798 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:34.764219 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:34.904299 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:34.929310 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:34.950400 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:34.972917 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:34.991520 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.010959 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.031993 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.052903 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.073938 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.444787 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:35.884264 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.906573 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.930595 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.950986 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.971271 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:35.992061 [WARNING] Warning: Elevator motor power limit exceeded!
+12:46:37.464672 [INFO] Compressor is OFF  Pressure= 116psi
+12:46:39.484748 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:41.504891 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:43.525325 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:45.545552 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:47.564867 [INFO] Compressor is OFF  Pressure= 116psi
+12:46:49.584986 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:51.605035 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:53.625216 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:55.645056 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:57.665182 [INFO] Compressor is OFF  Pressure= 115psi
+12:46:59.685155 [INFO] Compressor is OFF  Pressure= 115psi
+12:47:01.705204 [INFO] Compressor is OFF  Pressure= 115psi
+12:47:03.725572 [INFO] Compressor is OFF  Pressure= 115psi
+12:47:05.745256 [INFO] Compressor is OFF  Pressure= 115psi
+12:47:07.765532 [INFO] Compressor is OFF  Pressure= 115psi
+12:47:09.785459 [INFO] Compressor is OFF  Pressure= 115psi
+12:47:11.805521 [INFO] Compressor is OFF  Pressure= 115psi
+12:47:13.386070 [INFO] ########  Robot disabled
+12:47:13.403839 [INFO] <<< Drive interrupted
+12:47:13.422270 [INFO] <<< Drive ended
+12:47:13.436552 [INFO] <<< Climb interrupted
+12:47:13.450781 [INFO] <<< Climb ended
+12:47:13.464499 [INFO] <<< ElevatorMove interrupted
+12:47:13.478768 [INFO] <<< ElevatorMove ended
+12:47:13.497104 [INFO] <<< Manipulate interrupted
+12:47:13.510778 [INFO] <<< Manipulate ended

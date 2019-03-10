@@ -1,0 +1,67 @@
+2019-03-07
+11:03:25.099348  Git version: 642605f (branch: master 2 files changed, 6 insertions(+), 4 deletions(-))
+11:03:27.948234  Built: Fri 03/08/2019   12:24 PM
+11:03:27.969698 [INFO] Robot.robotInit()
+11:03:29.411802 [INFO] ########  Robot disabled
+2019-03-09
+12:21:19.417210 [INFO] ########  Teleop enabled
+12:21:19.713395 [INFO] Compressor is ON   Pressure= 23psi  Current= 9.03 A
+12:21:19.779481 [INFO] >>> Drive started
+12:21:19.808661 [INFO] >>> Climb started
+12:21:19.827447 [INFO] >>> ElevatorMove started
+12:21:19.845961 [INFO] >>> Manipulate started
+12:21:21.740583 [INFO] Compressor is ON   Pressure= 26psi  Current= 9.28 A
+12:21:23.760486 [INFO] Compressor is ON   Pressure= 28psi  Current= 9.38 A
+12:21:25.779684 [INFO] Compressor is ON   Pressure= 31psi  Current= 9.41 A
+12:21:27.799659 [INFO] Compressor is ON   Pressure= 33psi  Current= 9.56 A
+12:21:29.820493 [INFO] Compressor is ON   Pressure= 35psi  Current= 9.63 A
+12:21:31.839381 [INFO] Compressor is ON   Pressure= 37psi  Current= 9.75 A
+12:21:33.859953 [INFO] Compressor is ON   Pressure= 39psi  Current= 9.78 A
+12:21:35.880275 [INFO] Compressor is ON   Pressure= 40psi  Current= 9.78 A
+12:21:37.900057 [INFO] Compressor is ON   Pressure= 43psi  Current= 9.88 A
+12:21:39.919676 [INFO] Compressor is ON   Pressure= 45psi  Current= 9.94 A
+12:21:41.940067 [INFO] Compressor is ON   Pressure= 47psi  Current= 9.94 A
+12:21:43.960194 [INFO] Compressor is ON   Pressure= 48psi  Current= 10.06 A
+12:21:46.000157 [INFO] Compressor is ON   Pressure= 51psi  Current= 10.13 A
+12:21:48.020071 [INFO] Compressor is ON   Pressure= 52psi  Current= 10.16 A
+12:21:50.040049 [INFO] Compressor is ON   Pressure= 54psi  Current= 10.28 A
+12:21:52.060554 [INFO] Compressor is ON   Pressure= 56psi  Current= 10.31 A
+12:21:54.080106 [INFO] Compressor is ON   Pressure= 59psi  Current= 10.38 A
+12:21:56.100439 [INFO] Compressor is ON   Pressure= 59psi  Current= 10.50 A
+12:21:58.120600 [INFO] Compressor is ON   Pressure= 61psi  Current= 10.53 A
+12:22:00.140271 [INFO] Compressor is ON   Pressure= 63psi  Current= 10.56 A
+12:22:02.161003 [INFO] Compressor is ON   Pressure= 65psi  Current= 10.69 A
+12:22:04.180077 [INFO] Compressor is ON   Pressure= 69psi  Current= 10.75 A
+12:22:06.200439 [INFO] Compressor is ON   Pressure= 74psi  Current= 10.91 A
+12:22:08.220367 [INFO] Compressor is ON   Pressure= 78psi  Current= 11.03 A
+12:22:10.240513 [INFO] Compressor is ON   Pressure= 83psi  Current= 11.00 A
+12:22:12.260923 [INFO] Compressor is ON   Pressure= 89psi  Current= 11.03 A
+12:22:14.280897 [INFO] Compressor is ON   Pressure= 92psi  Current= 11.19 A
+12:22:16.300801 [INFO] Compressor is ON   Pressure= 96psi  Current= 11.16 A
+12:22:18.320869 [INFO] Compressor is ON   Pressure= 101psi  Current= 11.38 A
+12:22:20.340981 [INFO] Compressor is ON   Pressure= 106psi  Current= 11.44 A
+12:22:22.360933 [INFO] Compressor is ON   Pressure= 110psi  Current= 11.44 A
+12:22:24.380929 [INFO] Compressor is ON   Pressure= 113psi  Current= 11.50 A
+12:22:26.400717 [INFO] Compressor is ON   Pressure= 116psi  Current= 11.44 A
+12:22:27.019375 [INFO] Compressor is OFF  Pressure= 119psi
+12:22:29.039578 [INFO] Compressor is OFF  Pressure= 117psi
+12:22:31.059523 [INFO] Compressor is OFF  Pressure= 117psi
+12:22:33.079835 [INFO] Compressor is OFF  Pressure= 117psi
+12:22:35.099666 [INFO] Compressor is OFF  Pressure= 116psi
+12:22:37.119496 [INFO] Compressor is OFF  Pressure= 116psi
+12:22:39.139387 [INFO] Compressor is OFF  Pressure= 116psi
+12:22:40.739381 [WARNING] Warning: Elevator motor power limit exceeded!
+12:22:41.159934 [INFO] Compressor is OFF  Pressure= 116psi
+12:22:43.179559 [INFO] Compressor is OFF  Pressure= 116psi
+12:22:45.200062 [INFO] Compressor is OFF  Pressure= 116psi
+12:22:47.219578 [INFO] Compressor is OFF  Pressure= 116psi
+12:22:49.240085 [INFO] Compressor is OFF  Pressure= 116psi
+12:22:50.533993 [INFO] <<< Drive interrupted
+12:22:50.555911 [INFO] <<< Drive ended
+12:22:50.572962 [INFO] <<< Climb interrupted
+12:22:50.589079 [INFO] <<< Climb ended
+12:22:50.609499 [INFO] <<< ElevatorMove interrupted
+12:22:50.626666 [INFO] <<< ElevatorMove ended
+12:22:50.648374 [INFO] <<< Manipulate interrupted
+12:22:50.664329 [INFO] <<< Manipulate ended
+12:22:50.691591 [INFO] ########  Robot disabled

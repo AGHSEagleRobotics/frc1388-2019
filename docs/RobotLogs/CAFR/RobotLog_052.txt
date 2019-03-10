@@ -1,0 +1,168 @@
+2019-03-07
+11:03:24.970368  Git version: 642605f (branch: master 2 files changed, 6 insertions(+), 4 deletions(-))
+11:03:25.127566  Built: Fri 03/08/2019   12:24 PM
+11:03:25.149274 [INFO] Robot.robotInit()
+11:03:26.517972 [INFO] ########  Robot disabled
+2019-03-08
+14:38:09.231577 [INFO] ########  Autonomous enabled
+14:38:09.340399 [INFO] FMS info:  CAFR Qualification match 31 replay 1;  Blue alliance,  Driver Station 2
+14:38:09.533975 [INFO] Compressor is ON   Pressure= 0psi  Current= 8.13 A
+14:38:09.587842 [INFO] >>> Drive started
+14:38:09.631548 [INFO] >>> Climb started
+14:38:09.651427 [INFO] >>> ElevatorMove started
+14:38:09.670070 [INFO] >>> Manipulate started
+14:38:09.686840 [INFO] [Manipulate] Ball grabber closing
+14:38:09.725163 [INFO] >>> AutonFollow started
+14:38:09.742939 [INFO] <<< AutonFollow ended
+14:38:10.345474 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+14:38:11.552850 [INFO] Compressor is ON   Pressure= 1psi  Current= 10.94 A
+14:38:13.572854 [INFO] Compressor is ON   Pressure= 4psi  Current= 8.06 A
+14:38:15.593110 [INFO] Compressor is ON   Pressure= 6psi  Current= 8.41 A
+14:38:17.613052 [INFO] Compressor is ON   Pressure= 9psi  Current= 8.41 A
+14:38:19.633137 [INFO] Compressor is ON   Pressure= 11psi  Current= 8.56 A
+14:38:21.653078 [INFO] Compressor is ON   Pressure= 12psi  Current= 8.78 A
+14:38:23.674206 [INFO] Compressor is ON   Pressure= 14psi  Current= 9.00 A
+14:38:24.592637 [INFO] ########  Robot disabled
+14:38:24.609691 [INFO] <<< Drive interrupted
+14:38:24.627866 [INFO] <<< Drive ended
+14:38:24.644431 [INFO] <<< Climb interrupted
+14:38:24.660939 [INFO] <<< Climb ended
+14:38:24.677727 [INFO] <<< ElevatorMove interrupted
+14:38:24.698438 [INFO] <<< ElevatorMove ended
+14:38:24.713916 [INFO] <<< Manipulate interrupted
+14:38:24.738167 [INFO] <<< Manipulate ended
+14:38:24.859501 [INFO] ########  Teleop enabled
+14:38:24.876418 [INFO] >>> Drive started
+14:38:24.889992 [INFO] >>> Climb started
+14:38:24.903755 [INFO] >>> ElevatorMove started
+14:38:24.916784 [INFO] >>> Manipulate started
+14:38:25.713344 [INFO] Compressor is ON   Pressure= 17psi  Current= 9.06 A
+14:38:27.733228 [INFO] Compressor is ON   Pressure= 19psi  Current= 9.13 A
+14:38:29.091680 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.111953 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.131653 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.156558 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.177356 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.196836 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.220471 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.240949 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.266196 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.291422 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.572150 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.596049 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.616588 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:29.793113 [INFO] Compressor is ON   Pressure= 21psi  Current= 9.25 A
+14:38:31.813342 [INFO] Compressor is ON   Pressure= 22psi  Current= 8.75 A
+14:38:33.833285 [INFO] Compressor is ON   Pressure= 24psi  Current= 9.41 A
+14:38:35.853341 [INFO] Compressor is ON   Pressure= 26psi  Current= 9.31 A
+14:38:37.873360 [INFO] Compressor is ON   Pressure= 26psi  Current= 9.50 A
+14:38:39.893557 [INFO] Compressor is ON   Pressure= 28psi  Current= 9.56 A
+14:38:41.311909 [WARNING] Warning: Elevator motor power limit exceeded!
+14:38:41.325849 [INFO] Elevator encoder held in reset; pre-reset value: -27.05798144
+14:38:41.913449 [INFO] Compressor is ON   Pressure= 34psi  Current= 9.69 A
+14:38:43.933692 [INFO] Compressor is ON   Pressure= 32psi  Current= 6.72 A
+14:38:45.133297 [INFO] [Manipulate] Ball grabber closing
+14:38:45.592962 [INFO] [Manipulate] Ball grabber opening
+14:38:45.953571 [INFO] Compressor is ON   Pressure= 35psi  Current= 9.56 A
+14:38:47.973670 [INFO] Compressor is ON   Pressure= 37psi  Current= 10.88 A
+14:38:49.672154 [INFO] Elevator encoder released from reset
+14:38:49.993602 [INFO] Compressor is ON   Pressure= 37psi  Current= 11.28 A
+14:38:52.013815 [INFO] Compressor is ON   Pressure= 40psi  Current= 9.81 A
+14:38:54.034168 [INFO] Compressor is ON   Pressure= 41psi  Current= 10.03 A
+14:38:56.053793 [INFO] Compressor is ON   Pressure= 43psi  Current= 10.16 A
+14:38:58.074020 [INFO] Compressor is ON   Pressure= 44psi  Current= 10.28 A
+14:39:00.093983 [INFO] Compressor is ON   Pressure= 47psi  Current= 6.34 A
+14:39:02.114241 [INFO] Compressor is ON   Pressure= 49psi  Current= 10.06 A
+14:39:04.133926 [INFO] Compressor is ON   Pressure= 49psi  Current= 10.88 A
+14:39:06.153939 [INFO] Compressor is ON   Pressure= 53psi  Current= 13.13 A
+14:39:08.174121 [INFO] Compressor is ON   Pressure= 53psi  Current= 11.75 A
+14:39:10.194515 [INFO] Compressor is ON   Pressure= 55psi  Current= 10.66 A
+14:39:12.214108 [INFO] Compressor is ON   Pressure= 57psi  Current= 10.66 A
+14:39:14.234571 [INFO] Compressor is ON   Pressure= 58psi  Current= 10.56 A
+14:39:16.254571 [INFO] Compressor is ON   Pressure= 61psi  Current= 7.81 A
+14:39:18.274135 [INFO] Compressor is ON   Pressure= 61psi  Current= 10.75 A
+14:39:20.294230 [INFO] Compressor is ON   Pressure= 64psi  Current= 10.81 A
+14:39:22.314447 [INFO] Compressor is ON   Pressure= 66psi  Current= 11.88 A
+14:39:24.334669 [INFO] Compressor is ON   Pressure= 70psi  Current= 10.94 A
+14:39:26.354458 [INFO] Compressor is ON   Pressure= 75psi  Current= 11.25 A
+14:39:28.374807 [INFO] Compressor is ON   Pressure= 79psi  Current= 11.16 A
+14:39:30.394583 [INFO] Compressor is ON   Pressure= 84psi  Current= 11.25 A
+14:39:32.414578 [INFO] Compressor is ON   Pressure= 88psi  Current= 11.28 A
+14:39:34.435378 [INFO] Compressor is ON   Pressure= 93psi  Current= 11.44 A
+14:39:36.454641 [INFO] Compressor is ON   Pressure= 96psi  Current= 11.56 A
+14:39:38.474700 [INFO] Compressor is ON   Pressure= 100psi  Current= 11.53 A
+14:39:40.494709 [INFO] Compressor is ON   Pressure= 104psi  Current= 11.63 A
+14:39:42.514644 [INFO] Compressor is ON   Pressure= 107psi  Current= 13.00 A
+14:39:44.535087 [INFO] Compressor is ON   Pressure= 112psi  Current= 11.56 A
+14:39:46.554832 [INFO] Compressor is ON   Pressure= 115psi  Current= 11.28 A
+14:39:48.254186 [INFO] [Manipulate] Ball grabber closing
+14:39:48.353783 [INFO] Compressor is OFF  Pressure= 118psi
+14:39:48.573841 [INFO] [Manipulate] Ball grabber opening
+14:39:50.373846 [INFO] Compressor is OFF  Pressure= 117psi
+14:39:52.393779 [INFO] Compressor is OFF  Pressure= 117psi
+14:39:54.414029 [INFO] Compressor is OFF  Pressure= 116psi
+14:39:56.433860 [INFO] Compressor is OFF  Pressure= 116psi
+14:39:58.454224 [INFO] Compressor is OFF  Pressure= 116psi
+14:39:59.173492 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.190380 [INFO] Elevator encoder held in reset; pre-reset value: -2.62728168
+14:39:59.217287 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.236093 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.255147 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.273985 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.293509 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.319550 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.338863 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.361924 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.382679 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.406235 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.432258 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.452703 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.473661 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.498225 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.518391 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.541437 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.561655 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.587400 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.613632 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.634113 [WARNING] Warning: Elevator motor power limit exceeded!
+14:39:59.765160 [INFO] Elevator encoder released from reset
+14:40:00.473986 [INFO] Compressor is OFF  Pressure= 116psi
+14:40:00.913569 [WARNING] Warning: Elevator motor power limit exceeded!
+14:40:01.053530 [WARNING] Warning: Elevator motor power limit exceeded!
+14:40:02.494011 [INFO] Compressor is OFF  Pressure= 115psi
+14:40:04.514086 [INFO] Compressor is OFF  Pressure= 115psi
+14:40:06.534138 [INFO] Compressor is OFF  Pressure= 115psi
+14:40:08.554086 [INFO] Compressor is OFF  Pressure= 109psi
+14:40:09.495304 [INFO] Compressor is ON   Pressure= 101psi  Current= 7.94 A
+14:40:11.515472 [INFO] Compressor is ON   Pressure= 107psi  Current= 11.41 A
+14:40:13.535421 [INFO] Compressor is ON   Pressure= 111psi  Current= 11.50 A
+14:40:15.555436 [INFO] Compressor is ON   Pressure= 114psi  Current= 11.69 A
+14:40:16.654314 [INFO] Compressor is OFF  Pressure= 118psi
+14:40:18.393880 [WARNING] Warning: Elevator motor power limit exceeded!
+14:40:18.674310 [INFO] Compressor is OFF  Pressure= 116psi
+14:40:18.714688 [INFO] [Climb] Lifter is Extending
+14:40:19.635603 [INFO] Compressor is ON   Pressure= 93psi  Current= 10.66 A
+14:40:21.655520 [INFO] Compressor is ON   Pressure= 41psi  Current= 8.28 A
+14:40:23.675612 [INFO] Compressor is ON   Pressure= 45psi  Current= 10.25 A
+14:40:25.696224 [INFO] Compressor is ON   Pressure= 45psi  Current= 10.25 A
+14:40:26.134053 [WARNING] Warning: Elevator motor power limit exceeded!
+14:40:27.715801 [INFO] Compressor is ON   Pressure= 45psi  Current= 10.25 A
+14:40:29.575726 [INFO] [Climb] Lifter is Retracting
+14:40:29.735714 [INFO] Compressor is ON   Pressure= 47psi  Current= 10.25 A
+14:40:31.594452 [INFO] Elevator encoder held in reset; pre-reset value: 38.5787626
+14:40:31.756279 [INFO] Compressor is ON   Pressure= 27psi  Current= 9.53 A
+14:40:33.775951 [INFO] Compressor is ON   Pressure= 29psi  Current= 9.91 A
+14:40:35.795798 [INFO] Compressor is ON   Pressure= 31psi  Current= 9.81 A
+14:40:37.816087 [INFO] Compressor is ON   Pressure= 34psi  Current= 9.91 A
+14:40:39.054764 [INFO] [Climb] Lifter is Retracting
+14:40:39.294803 [INFO] [Climb] Lifter is Retracting
+14:40:39.836017 [INFO] Compressor is ON   Pressure= 37psi  Current= 9.94 A
+14:40:40.175164 [INFO] ########  Robot disabled
+14:40:40.190015 [INFO] <<< Drive interrupted
+14:40:40.207957 [INFO] <<< Drive ended
+14:40:40.227520 [INFO] <<< Climb interrupted
+14:40:40.240245 [INFO] <<< Climb ended
+14:40:40.259462 [INFO] <<< ElevatorMove interrupted
+14:40:40.272318 [INFO] <<< ElevatorMove ended
+14:40:40.285929 [INFO] <<< Manipulate interrupted
+14:40:40.300456 [INFO] <<< Manipulate ended

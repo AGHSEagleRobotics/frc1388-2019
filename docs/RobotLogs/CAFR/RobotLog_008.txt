@@ -1,0 +1,5 @@
+2018-02-19
+18:47:48.311496  Git version: 8b1a0d4 (branch: MotorControllerBrakes)
+18:47:48.429541  Built: Mon 02/18/2019   07:27 PM
+18:47:48.446666 [INFO] Robot.robotInit()
+18:47:54.975678 [INFO] ########  Robot disabled

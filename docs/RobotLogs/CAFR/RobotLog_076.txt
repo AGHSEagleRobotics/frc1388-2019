@@ -1,0 +1,26 @@
+2019-03-07
+11:03:25.203768  Git version: 642605f (branch: master 2 files changed, 6 insertions(+), 4 deletions(-))
+11:03:25.319501  Built: Fri 03/08/2019   12:24 PM
+11:03:25.341060 [INFO] Robot.robotInit()
+11:03:26.695791 [INFO] ########  Robot disabled
+2019-03-09
+14:57:08.032996 [INFO] ########  Teleop enabled
+14:57:08.139179 [INFO] Compressor is OFF  Pressure= 115psi
+14:57:08.200952 [INFO] >>> Drive started
+14:57:08.232585 [INFO] >>> Climb started
+14:57:08.256113 [INFO] >>> ElevatorMove started
+14:57:08.274848 [INFO] >>> Manipulate started
+14:57:10.173771 [INFO] Compressor is OFF  Pressure= 115psi
+14:57:12.193947 [INFO] Compressor is OFF  Pressure= 115psi
+14:57:14.213780 [INFO] Compressor is OFF  Pressure= 115psi
+14:57:16.235274 [INFO] Compressor is OFF  Pressure= 115psi
+14:57:18.253939 [INFO] Compressor is OFF  Pressure= 115psi
+14:57:20.081633 [INFO] <<< Drive interrupted
+14:57:20.098524 [INFO] <<< Drive ended
+14:57:20.116532 [INFO] <<< Climb interrupted
+14:57:20.135572 [INFO] <<< Climb ended
+14:57:20.155371 [INFO] <<< ElevatorMove interrupted
+14:57:20.176580 [INFO] <<< ElevatorMove ended
+14:57:20.194052 [INFO] <<< Manipulate interrupted
+14:57:20.213173 [INFO] <<< Manipulate ended
+14:57:20.243096 [INFO] ########  Robot disabled

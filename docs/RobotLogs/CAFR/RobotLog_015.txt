@@ -1,0 +1,24 @@
+2019-02-19
+19:41:53.228269  Git version: d2f8797 (branch: master 1 file changed, 4 insertions(+), 3 deletions(-))
+19:41:53.410580  Built: Tue 02/19/2019   06:54 PM
+19:41:53.432197 [INFO] Robot.robotInit()
+19:42:00.068577 [INFO] ########  Robot disabled
+19:42:03.595329 [INFO] ########  Autonomous enabled
+19:42:03.608716 [INFO] FMS not connected
+19:42:03.726420 [INFO] Compressor is OFF  Pressure= 103psi
+19:42:03.804128 [INFO] >>> Drive started
+19:42:03.833454 [INFO] >>> Climb started
+19:42:03.853814 [INFO] >>> ElevatorMove started
+19:42:03.873754 [INFO] >>> Manipulate started
+19:42:05.755851 [INFO] Compressor is OFF  Pressure= 102psi
+19:42:07.775732 [INFO] Compressor is OFF  Pressure= 103psi
+19:42:10.295774 [INFO] Compressor is OFF  Pressure= 104psi
+19:42:11.216495 [INFO] ########  Robot disabled
+19:42:11.233466 [INFO] <<< Drive interrupted
+19:42:11.256273 [INFO] <<< Drive ended
+19:42:11.273244 [INFO] <<< Climb interrupted
+19:42:11.290117 [INFO] <<< Climb ended
+19:42:11.307099 [INFO] <<< ElevatorMove interrupted
+19:42:11.329668 [INFO] <<< ElevatorMove ended
+19:42:11.348313 [INFO] <<< Manipulate interrupted
+19:42:11.368521 [INFO] <<< Manipulate ended

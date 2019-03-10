@@ -1,0 +1,750 @@
+2018-02-19
+18:55:42.831644  Git version: 8b1a0d4 (branch: master 3 files changed, 12 insertions(+), 8 deletions(-))
+18:55:43.015460  Built: Mon 02/18/2019   08:11 PM
+18:55:43.028742 [INFO] Robot.robotInit()
+18:55:49.736614 [INFO] ########  Robot disabled
+2019-02-18
+20:13:07.544264 [INFO] ########  Teleop enabled
+20:13:07.747210 [INFO] Compressor is ON   Pressure= 106psi  Current= 17.78 A
+20:13:07.816519 [INFO] >>> Drive started
+20:13:07.849607 [INFO] >>> Climb started
+20:13:07.867493 [INFO] >>> ElevatorMove started
+20:13:07.887968 [INFO] >>> Manipulate started
+20:13:09.765324 [INFO] Compressor is ON   Pressure= 105psi  Current= 11.28 A
+20:13:11.785368 [INFO] Compressor is ON   Pressure= 109psi  Current= 11.50 A
+20:13:13.805472 [INFO] Compressor is ON   Pressure= 112psi  Current= 11.13 A
+20:13:15.825609 [INFO] Compressor is ON   Pressure= 117psi  Current= 11.56 A
+20:13:15.944439 [INFO] Compressor is OFF  Pressure= 116psi
+20:13:17.965813 [INFO] Compressor is ON   Pressure= 99psi  Current= 12.03 A
+20:13:19.985593 [INFO] Compressor is ON   Pressure= 105psi  Current= 11.53 A
+20:13:20.684131 [WARNING] Warning: Elevator motor power limit exceeded!
+20:13:20.715065 [INFO] Elevator encoder held in reset; pre-reset value: -37.64260476
+20:13:21.944996 [INFO] [Manipulate] Ball grabber closing
+20:13:22.006188 [INFO] Compressor is ON   Pressure= 111psi  Current= 11.63 A
+20:13:22.022944 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.050837 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.078890 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.106350 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.129800 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.149644 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.324645 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.349351 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.370407 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.390645 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.417156 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.438134 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.507586 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.528496 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.549920 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.572009 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.593455 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.629783 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.655178 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.677988 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.708563 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.729158 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.749335 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.769475 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.910014 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.930568 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.956967 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:22.983597 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.009619 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.030720 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.052072 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.074453 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.096162 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.123168 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.157610 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.179699 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.212092 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.233993 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.257636 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.284163 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.310144 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.333325 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.353994 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.375112 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.408691 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.431198 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.455275 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.482598 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.510915 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.532014 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.552295 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.572474 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.600433 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.627867 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.654286 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.675886 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.701132 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.730872 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.752731 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.775070 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.806605 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.833441 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.858670 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.886586 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.908941 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.932083 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.955256 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:23.980657 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.011906 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.033932 [INFO] Compressor is ON   Pressure= 114psi  Current= 11.94 A
+20:13:24.053409 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.073648 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.092954 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.115236 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.140085 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.169107 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.207377 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.230165 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.252436 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.274465 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.299103 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.327324 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.348979 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.370712 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.398895 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.426254 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.454439 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.476026 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.509386 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.528786 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.548961 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.568407 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.588947 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.610658 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.634556 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.656019 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.689534 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.710198 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.732451 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.753022 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.772659 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.792616 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.826033 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.848545 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.874953 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.901451 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.929614 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.947639 [INFO] Elevator encoder released from reset
+20:13:24.962061 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:24.986445 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.012103 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.194672 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.229629 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.251636 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.272648 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.295717 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.319539 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.349921 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.375991 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.395167 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.427862 [INFO] Compressor is OFF  Pressure= 116psi
+20:13:25.443721 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.469024 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.488889 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.509596 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.530142 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.555827 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.577259 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.610648 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.630687 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.652660 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.673111 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.693481 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.713530 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.754613 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.782253 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.810569 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.830483 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.853957 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.918583 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.948789 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.970703 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:25.991601 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.019449 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.052771 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.072552 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.106589 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.133598 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.154655 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.175628 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.197521 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.221739 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.253023 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.273211 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.296253 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.324296 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.350208 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.371178 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.391058 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.410974 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.441347 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.469146 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.492370 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.511516 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.531909 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.554868 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.574865 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.600516 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.631149 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.650998 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.674220 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.696382 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.722204 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.750401 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.773005 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.798135 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.830327 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.852619 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:26.877548 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:13:27.450472 [INFO] Compressor is OFF  Pressure= 116psi
+20:13:29.484856 [INFO] Compressor is OFF  Pressure= 116psi
+20:13:31.504767 [INFO] Compressor is OFF  Pressure= 116psi
+20:13:33.524788 [INFO] Compressor is OFF  Pressure= 116psi
+20:13:35.544684 [INFO] Compressor is OFF  Pressure= 100psi
+20:13:35.645899 [INFO] Compressor is ON   Pressure= 99psi  Current= 8.06 A
+20:13:37.666344 [INFO] Compressor is ON   Pressure= 104psi  Current= 11.44 A
+20:13:39.686256 [INFO] Compressor is ON   Pressure= 108psi  Current= 11.63 A
+20:13:41.846319 [INFO] Compressor is ON   Pressure= 114psi  Current= 11.50 A
+20:13:43.866218 [INFO] Compressor is ON   Pressure= 113psi  Current= 11.53 A
+20:13:45.365447 [INFO] Compressor is OFF  Pressure= 117psi
+20:13:45.825590 [INFO] [Manipulate] Ball grabber opening
+20:13:47.385056 [INFO] Compressor is OFF  Pressure= 111psi
+20:13:48.846124 [INFO] Compressor is ON   Pressure= 97psi  Current= 3.34 A
+20:13:50.604719 [WARNING] Warning: Elevator motor power limit exceeded!
+20:13:50.618106 [INFO] Elevator encoder held in reset; pre-reset value: -0.3019864
+20:13:50.866945 [INFO] Compressor is ON   Pressure= 106psi  Current= 14.25 A
+20:13:52.886174 [INFO] Compressor is ON   Pressure= 104psi  Current= 12.00 A
+20:13:53.485707 [INFO] [Manipulate] Ball grabber closing
+20:13:54.325760 [INFO] [Manipulate] Ball grabber opening
+20:13:54.907173 [INFO] Compressor is ON   Pressure= 108psi  Current= 11.81 A
+20:13:56.926474 [INFO] Compressor is ON   Pressure= 118psi  Current= 11.63 A
+20:13:58.946601 [INFO] Compressor is ON   Pressure= 117psi  Current= 11.53 A
+20:13:59.245174 [INFO] Compressor is OFF  Pressure= 116psi
+20:14:00.884836 [INFO] Elevator encoder released from reset
+20:14:01.265264 [INFO] Compressor is OFF  Pressure= 115psi
+20:14:03.285634 [INFO] Compressor is OFF  Pressure= 115psi
+20:14:05.305362 [INFO] Compressor is OFF  Pressure= 115psi
+20:14:07.325426 [INFO] Compressor is OFF  Pressure= 111psi
+20:14:08.665029 [WARNING] Warning: Elevator motor power limit exceeded!
+20:14:08.679571 [INFO] Elevator encoder held in reset; pre-reset value: -0.377483
+20:14:08.785144 [INFO] Elevator encoder released from reset
+20:14:08.905311 [INFO] Elevator encoder held in reset; pre-reset value: 0.04529796
+20:14:08.926550 [INFO] Elevator encoder released from reset
+20:14:09.345517 [INFO] Compressor is OFF  Pressure= 111psi
+20:14:11.365455 [INFO] Compressor is OFF  Pressure= 111psi
+20:14:13.385607 [INFO] Compressor is OFF  Pressure= 107psi
+20:14:15.406014 [INFO] Compressor is OFF  Pressure= 107psi
+20:14:17.425788 [INFO] Compressor is OFF  Pressure= 106psi
+20:14:19.445734 [INFO] Compressor is OFF  Pressure= 107psi
+20:14:21.465780 [INFO] Compressor is OFF  Pressure= 106psi
+20:14:23.485884 [INFO] Compressor is OFF  Pressure= 103psi
+20:14:24.407168 [INFO] Compressor is ON   Pressure= 100psi  Current= 0.81 A
+20:14:26.427138 [INFO] Compressor is ON   Pressure= 105psi  Current= 11.41 A
+20:14:28.285549 [WARNING] Warning: Elevator motor power limit exceeded!
+20:14:28.298203 [INFO] Elevator encoder held in reset; pre-reset value: -0.04529796
+20:14:28.447491 [INFO] Compressor is ON   Pressure= 109psi  Current= 12.16 A
+20:14:30.446917 [INFO] [Manipulate] Ball grabber closing
+20:14:30.470349 [INFO] Compressor is ON   Pressure= 114psi  Current= 11.53 A
+20:14:31.446524 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.469119 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.492503 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.511218 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.530403 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.552042 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.592839 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.613020 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.635818 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.661691 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.687452 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.709242 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.729281 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.751246 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.775539 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.799770 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.830945 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.851821 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.874610 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.894901 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.916868 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.942964 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.971564 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:31.992156 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.020952 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.047864 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.073047 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.094814 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.114637 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.133530 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.153426 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.173336 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.198119 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.218194 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.251240 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.271991 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.291293 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.354144 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.374930 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.394436 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.426640 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:32.495709 [INFO] Compressor is ON   Pressure= 118psi  Current= 11.56 A
+20:14:32.886003 [INFO] Compressor is OFF  Pressure= 116psi
+20:14:33.487271 [INFO] Elevator encoder released from reset
+20:14:35.046186 [INFO] Compressor is OFF  Pressure= 117psi
+20:14:37.066228 [INFO] Compressor is OFF  Pressure= 117psi
+20:14:39.086252 [INFO] Compressor is OFF  Pressure= 112psi
+20:14:40.226427 [INFO] [Manipulate] Ball grabber opening
+20:14:41.106310 [INFO] Compressor is OFF  Pressure= 108psi
+20:14:43.126648 [INFO] Compressor is OFF  Pressure= 106psi
+20:14:45.147039 [INFO] Compressor is OFF  Pressure= 107psi
+20:14:45.666494 [INFO] [Manipulate] Ball grabber opening
+20:14:46.705975 [WARNING] Warning: Elevator motor power limit exceeded!
+20:14:46.719441 [INFO] Elevator encoder held in reset; pre-reset value: -0.21139048
+20:14:46.946505 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:46.969426 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:47.166405 [INFO] Compressor is OFF  Pressure= 106psi
+20:14:47.181412 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:47.209942 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:47.231210 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:47.251694 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:47.271077 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:47.292229 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:48.126464 [INFO] [Manipulate] Ball grabber opening
+20:14:49.186495 [INFO] Compressor is OFF  Pressure= 105psi
+20:14:50.948127 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:50.971087 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:50.991608 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:51.011643 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:51.031383 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:51.052972 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:51.107125 [INFO] [Manipulate] Ball grabber closing
+20:14:51.120678 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:51.206489 [INFO] Compressor is OFF  Pressure= 104psi
+20:14:51.219515 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:51.247432 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:51.276257 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:51.300680 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:14:52.146546 [INFO] [Manipulate] Ball grabber opening
+20:14:53.226487 [INFO] Compressor is OFF  Pressure= 106psi
+20:14:53.647626 [INFO] Compressor is ON   Pressure= 104psi  Current= 6.31 A
+20:14:55.667802 [INFO] Compressor is ON   Pressure= 105psi  Current= 11.50 A
+20:14:57.688166 [INFO] Compressor is ON   Pressure= 110psi  Current= 11.56 A
+20:14:59.708038 [INFO] Compressor is ON   Pressure= 114psi  Current= 11.50 A
+20:15:00.526822 [INFO] Compressor is OFF  Pressure= 116psi
+20:15:02.546789 [INFO] Compressor is OFF  Pressure= 121psi
+20:15:04.566825 [INFO] Compressor is OFF  Pressure= 120psi
+20:15:06.587399 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:08.607007 [INFO] Compressor is OFF  Pressure= 122psi
+20:15:10.626872 [INFO] Compressor is OFF  Pressure= 118psi
+20:15:12.646997 [INFO] Compressor is OFF  Pressure= 115psi
+20:15:14.667090 [INFO] Compressor is OFF  Pressure= 115psi
+20:15:16.686992 [INFO] Compressor is OFF  Pressure= 121psi
+20:15:18.707316 [INFO] Compressor is OFF  Pressure= 121psi
+20:15:20.727287 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:20.947409 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:20.968772 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:20.988864 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.009682 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.029905 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.347906 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.387657 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.409689 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.430628 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.452429 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.473793 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.497897 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.524929 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.553708 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.575585 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.608026 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.629978 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.651386 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.672477 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.692420 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.712298 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.739350 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.766326 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.792230 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.811531 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.831015 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.853022 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.873698 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.894939 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:21.926205 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.037160 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.073154 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.093589 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.120316 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.150272 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.172925 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.194608 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.215889 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.242179 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.272111 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.293778 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.325209 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.349265 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.370076 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.391428 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.412627 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:15:22.747179 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:24.226800 [INFO] Elevator encoder released from reset
+20:15:24.767216 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:26.787669 [INFO] Compressor is OFF  Pressure= 119psi
+20:15:28.807537 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:30.827465 [INFO] Compressor is OFF  Pressure= 113psi
+20:15:32.847640 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:34.867558 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:36.887637 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:38.909211 [INFO] Compressor is OFF  Pressure= 113psi
+20:15:40.927696 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:42.947736 [INFO] Compressor is OFF  Pressure= 113psi
+20:15:44.967743 [INFO] Compressor is OFF  Pressure= 112psi
+20:15:46.987802 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:49.007775 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:51.028062 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:53.048130 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:55.067903 [INFO] Compressor is OFF  Pressure= 114psi
+20:15:57.088140 [INFO] Compressor is OFF  Pressure= 121psi
+20:15:59.107993 [INFO] Compressor is OFF  Pressure= 113psi
+20:16:01.128111 [INFO] Compressor is OFF  Pressure= 114psi
+20:16:03.148302 [INFO] Compressor is OFF  Pressure= 112psi
+20:16:05.228416 [INFO] Compressor is OFF  Pressure= 113psi
+20:16:07.009877 [INFO] Compressor is ON   Pressure= 98psi  Current= 5.41 A
+20:16:09.029817 [INFO] Compressor is ON   Pressure= 106psi  Current= 11.28 A
+20:16:11.050186 [INFO] Compressor is ON   Pressure= 108psi  Current= 11.44 A
+20:16:13.069736 [INFO] Compressor is ON   Pressure= 106psi  Current= 11.31 A
+20:16:15.089612 [INFO] Compressor is ON   Pressure= 112psi  Current= 11.56 A
+20:16:17.109712 [INFO] Compressor is ON   Pressure= 117psi  Current= 11.44 A
+20:16:17.688589 [INFO] Compressor is OFF  Pressure= 116psi
+20:16:19.708709 [INFO] Compressor is OFF  Pressure= 107psi
+20:16:20.389700 [INFO] Compressor is ON   Pressure= 99psi  Current= 0.81 A
+20:16:21.469556 [INFO] [Manipulate] Ball grabber opening
+20:16:22.409907 [INFO] Compressor is ON   Pressure= 101psi  Current= 12.19 A
+20:16:24.430183 [INFO] Compressor is ON   Pressure= 105psi  Current= 11.41 A
+20:16:24.848183 [WARNING] Warning: Elevator motor power limit exceeded!
+20:16:24.861254 [INFO] Elevator encoder held in reset; pre-reset value: -0.31708572
+20:16:24.969108 [INFO] [Manipulate] Ball grabber closing
+20:16:25.828788 [INFO] [Manipulate] Ball grabber opening
+20:16:26.450018 [INFO] Compressor is ON   Pressure= 107psi  Current= 11.88 A
+20:16:28.470586 [INFO] Compressor is ON   Pressure= 110psi  Current= 11.56 A
+20:16:30.148960 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.171909 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.210062 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.389058 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.410779 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.429489 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.449587 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.469619 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.491669 [INFO] Compressor is ON   Pressure= 116psi  Current= 11.91 A
+20:16:30.511153 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.529447 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.547773 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.570544 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.591179 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:30.610003 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:31.368846 [INFO] Compressor is OFF  Pressure= 116psi
+20:16:31.729378 [INFO] [Manipulate] Ball grabber opening
+20:16:32.649384 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:32.669892 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:32.690940 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:33.388871 [INFO] Compressor is OFF  Pressure= 112psi
+20:16:33.688950 [INFO] [Manipulate] Ball grabber opening
+20:16:35.409083 [INFO] Compressor is OFF  Pressure= 110psi
+20:16:35.609138 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:35.631297 [INFO] [Manipulate] Ball grabber closing
+20:16:35.645855 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:35.669570 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:35.769068 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:35.790055 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:35.889016 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:35.909065 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.209006 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.229116 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.249874 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.276272 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.302068 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.331152 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.352792 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.374102 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.396624 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.425476 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.451393 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.479224 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.506884 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.533766 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.554001 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.575545 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:36.599337 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.429033 [INFO] Compressor is OFF  Pressure= 109psi
+20:16:37.442395 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.467920 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.489326 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.515444 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.542590 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.574280 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.596034 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.618840 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.644205 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.669882 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.691114 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.717930 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.743967 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.768797 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.788915 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.811248 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.832817 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.853566 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.877312 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.911847 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.932394 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.962045 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:37.991580 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.012916 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.036375 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.065803 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.089105 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.114761 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.136165 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.161482 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.189649 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.210204 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.230931 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.252546 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.282344 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.309837 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.330246 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.354368 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.374274 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.394536 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.419568 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:38.450370 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:16:39.449021 [INFO] Compressor is OFF  Pressure= 109psi
+20:16:41.128630 [INFO] Elevator encoder released from reset
+20:16:41.469202 [INFO] Compressor is OFF  Pressure= 108psi
+20:16:43.489089 [INFO] Compressor is OFF  Pressure= 109psi
+20:16:45.509619 [INFO] Compressor is OFF  Pressure= 115psi
+20:16:47.529193 [INFO] Compressor is OFF  Pressure= 108psi
+20:16:49.549204 [INFO] Compressor is OFF  Pressure= 109psi
+20:16:51.569254 [INFO] Compressor is OFF  Pressure= 108psi
+20:16:53.589367 [INFO] Compressor is OFF  Pressure= 108psi
+20:16:55.609317 [INFO] Compressor is OFF  Pressure= 105psi
+20:16:56.150492 [INFO] Compressor is ON   Pressure= 97psi  Current= 3.28 A
+20:16:58.170636 [INFO] Compressor is ON   Pressure= 96psi  Current= 11.25 A
+20:17:00.190773 [INFO] Compressor is ON   Pressure= 99psi  Current= 11.50 A
+20:17:02.211082 [INFO] Compressor is ON   Pressure= 93psi  Current= 11.16 A
+20:17:04.230838 [INFO] Compressor is ON   Pressure= 93psi  Current= 11.44 A
+20:17:06.310938 [INFO] Compressor is ON   Pressure= 97psi  Current= 12.06 A
+20:17:08.331207 [INFO] Compressor is ON   Pressure= 103psi  Current= 11.50 A
+20:17:10.351051 [INFO] Compressor is ON   Pressure= 104psi  Current= 11.63 A
+20:17:12.371089 [INFO] Compressor is ON   Pressure= 107psi  Current= 11.56 A
+20:17:14.391190 [INFO] Compressor is ON   Pressure= 111psi  Current= 11.63 A
+20:17:15.049843 [INFO] [Manipulate] Ball grabber opening
+20:17:16.410998 [INFO] Compressor is ON   Pressure= 115psi  Current= 11.56 A
+20:17:18.069792 [INFO] Compressor is OFF  Pressure= 122psi
+20:17:18.869489 [WARNING] Warning: Elevator motor power limit exceeded!
+20:17:18.882566 [INFO] Elevator encoder held in reset; pre-reset value: -0.2264898
+20:17:20.090025 [INFO] Compressor is OFF  Pressure= 116psi
+20:17:20.470101 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.490385 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.511884 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.534265 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.555831 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.581194 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.607554 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.629891 [INFO] [Manipulate] Ball grabber closing
+20:17:20.644736 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.670989 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.690776 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.870104 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.890228 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.911094 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.930910 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.950895 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.970809 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:20.993506 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.013286 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.035781 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.055139 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.076173 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.098069 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.121915 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.149925 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.176593 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.199983 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.230353 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.250561 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.274389 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.297941 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.325306 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.351112 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.377720 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:21.405367 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:22.110173 [INFO] Compressor is OFF  Pressure= 115psi
+20:17:22.449522 [INFO] Elevator encoder released from reset
+20:17:23.790107 [INFO] [Manipulate] Ball grabber opening
+20:17:24.130789 [INFO] Compressor is OFF  Pressure= 120psi
+20:17:26.050609 [INFO] [Manipulate] Ball grabber closing
+20:17:26.150079 [INFO] Compressor is OFF  Pressure= 111psi
+20:17:27.110304 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:27.130645 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:27.153724 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:27.175566 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:27.211278 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:27.231127 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:27.429257 [WARNING] Warning: Elevator motor power limit exceeded!
+20:17:27.454709 [WARNING] Warning: Elevator motor power limit exceeded!
+20:17:27.469509 [INFO] Elevator encoder held in reset; pre-reset value: -0.21139048
+20:17:28.170610 [INFO] Compressor is OFF  Pressure= 111psi
+20:17:30.190173 [INFO] Compressor is OFF  Pressure= 110psi
+20:17:30.809715 [INFO] Elevator encoder released from reset
+20:17:32.210254 [INFO] Compressor is OFF  Pressure= 111psi
+20:17:34.230352 [INFO] Compressor is OFF  Pressure= 111psi
+20:17:36.250649 [INFO] Compressor is OFF  Pressure= 110psi
+20:17:37.851585 [INFO] Compressor is ON   Pressure= 98psi  Current= 1.53 A
+20:17:39.871686 [INFO] Compressor is ON   Pressure= 90psi  Current= 11.13 A
+20:17:41.891598 [INFO] Compressor is ON   Pressure= 90psi  Current= 11.16 A
+20:17:43.911682 [INFO] Compressor is ON   Pressure= 88psi  Current= 11.16 A
+20:17:44.850522 [INFO] [Manipulate] Ball grabber opening
+20:17:45.931702 [INFO] Compressor is ON   Pressure= 90psi  Current= 11.38 A
+20:17:47.953989 [INFO] Compressor is ON   Pressure= 94psi  Current= 11.50 A
+20:17:49.971919 [INFO] Compressor is ON   Pressure= 97psi  Current= 11.66 A
+20:17:51.991796 [INFO] Compressor is ON   Pressure= 100psi  Current= 11.50 A
+20:17:54.011896 [INFO] Compressor is ON   Pressure= 105psi  Current= 11.41 A
+20:17:55.050981 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.071188 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.092642 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.116453 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.144548 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.250721 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.272041 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.293086 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.314615 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.354445 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.377116 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.409247 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:55.431018 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:56.031872 [INFO] Compressor is ON   Pressure= 110psi  Current= 11.75 A
+20:17:57.110815 [INFO] [Manipulate] Ball grabber opening
+20:17:57.650802 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:57.670752 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:57.930964 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:57.950984 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:57.974318 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:57.993293 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:58.015719 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:58.039476 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:58.070916 [INFO] Compressor is ON   Pressure= 118psi  Current= 11.69 A
+20:17:58.170969 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:58.191658 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:58.212457 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:58.234248 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:58.252597 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:58.274329 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:17:58.296087 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+20:18:00.092166 [INFO] Compressor is ON   Pressure= 116psi  Current= 11.63 A
+20:18:00.350866 [INFO] Elevator encoder held in reset; pre-reset value: 0.2264898
+20:18:00.410411 [INFO] Elevator encoder released from reset
+20:18:00.450880 [INFO] [Manipulate] Ball grabber opening
+20:18:00.630735 [INFO] Elevator encoder held in reset; pre-reset value: -0.03019864
+20:18:01.091537 [INFO] [Manipulate] Ball grabber closing
+20:18:01.211024 [INFO] Compressor is OFF  Pressure= 115psi
+20:18:03.230913 [INFO] Compressor is OFF  Pressure= 113psi
+20:18:05.250940 [INFO] Compressor is OFF  Pressure= 113psi
+20:18:07.271019 [INFO] Compressor is OFF  Pressure= 112psi
+20:18:09.291321 [INFO] Compressor is OFF  Pressure= 113psi
+20:18:11.311155 [INFO] Compressor is OFF  Pressure= 115psi
+20:18:12.850672 [INFO] Elevator encoder released from reset
+20:18:13.331238 [INFO] Compressor is OFF  Pressure= 112psi
+20:18:15.351138 [INFO] Compressor is OFF  Pressure= 111psi
+20:18:17.371186 [INFO] Compressor is OFF  Pressure= 111psi
+20:18:19.391289 [INFO] Compressor is OFF  Pressure= 112psi
+20:18:21.411446 [INFO] Compressor is OFF  Pressure= 108psi
+20:18:22.471422 [INFO] [Manipulate] Ball grabber opening
+20:18:23.491591 [INFO] Compressor is OFF  Pressure= 108psi
+20:18:25.651389 [INFO] Compressor is OFF  Pressure= 101psi
+20:18:27.671437 [INFO] Compressor is OFF  Pressure= 103psi
+20:18:28.691096 [WARNING] Warning: Elevator motor power limit exceeded!
+20:18:28.704360 [INFO] Elevator encoder held in reset; pre-reset value: -0.3019864
+20:18:29.591065 [INFO] Elevator encoder released from reset
+20:18:29.691908 [INFO] Compressor is OFF  Pressure= 102psi
+20:18:30.371091 [WARNING] Warning: Elevator motor power limit exceeded!
+20:18:30.387059 [INFO] Elevator encoder held in reset; pre-reset value: -0.42278096
+20:18:31.711606 [INFO] Compressor is OFF  Pressure= 103psi
+20:18:32.472303 [INFO] [Manipulate] Ball grabber closing
+20:18:33.451671 [INFO] [Manipulate] Ball grabber opening
+20:18:33.731715 [INFO] Compressor is OFF  Pressure= 102psi
+20:18:34.132703 [INFO] Compressor is ON   Pressure= 101psi  Current= 7.03 A
+20:18:34.991181 [INFO] Elevator encoder released from reset
+20:18:36.152804 [INFO] Compressor is ON   Pressure= 105psi  Current= 11.44 A
+20:18:38.172836 [INFO] Compressor is ON   Pressure= 110psi  Current= 11.50 A
+20:18:40.193007 [INFO] Compressor is ON   Pressure= 114psi  Current= 11.41 A
+20:18:40.871460 [WARNING] Warning: Elevator motor power limit exceeded!
+20:18:40.885366 [INFO] Elevator encoder held in reset; pre-reset value: -0.3019864
+20:18:41.331879 [INFO] Compressor is OFF  Pressure= 117psi
+20:18:41.491344 [INFO] Elevator encoder released from reset
+20:18:43.353124 [INFO] Compressor is OFF  Pressure= 115psi
+20:18:45.371822 [INFO] Compressor is OFF  Pressure= 116psi
+20:18:47.392141 [INFO] Compressor is OFF  Pressure= 115psi
+20:18:49.412099 [INFO] Compressor is OFF  Pressure= 115psi
+20:18:50.971638 [WARNING] Warning: Elevator motor power limit exceeded!
+20:18:50.985474 [INFO] Elevator encoder held in reset; pre-reset value: -0.25668844
+20:18:51.432288 [INFO] Compressor is OFF  Pressure= 115psi
+20:18:53.452058 [INFO] Compressor is OFF  Pressure= 115psi
+20:18:54.112359 [INFO] [Manipulate] Ball grabber closing
+20:18:55.472161 [INFO] Compressor is OFF  Pressure= 120psi
+20:18:57.492338 [INFO] Compressor is OFF  Pressure= 115psi
+20:18:58.312776 [INFO] [Manipulate] Ball grabber opening
+20:18:59.512694 [INFO] Compressor is OFF  Pressure= 113psi
+20:18:59.572993 [INFO] [Manipulate] Ball grabber closing
+20:19:01.532316 [INFO] Compressor is OFF  Pressure= 111psi
+20:19:03.552762 [INFO] Compressor is OFF  Pressure= 111psi
+20:19:05.572461 [INFO] Compressor is OFF  Pressure= 111psi
+20:19:07.592448 [INFO] Compressor is OFF  Pressure= 111psi
+20:19:09.613066 [INFO] Compressor is OFF  Pressure= 110psi
+20:19:10.653283 [INFO] ########  Robot disabled
+20:19:10.672708 [INFO] <<< Drive interrupted
+20:19:10.707314 [INFO] <<< Drive ended
+20:19:10.724914 [INFO] <<< Climb interrupted
+20:19:10.744473 [INFO] <<< Climb ended
+20:19:10.762126 [INFO] <<< ElevatorMove interrupted
+20:19:10.782122 [INFO] <<< ElevatorMove ended
+20:19:10.804490 [INFO] <<< Manipulate interrupted
+20:19:10.822220 [INFO] <<< Manipulate ended
+20:19:10.972192 [INFO] ########  Teleop enabled
+20:19:10.985237 [INFO] >>> Drive started
+20:19:11.001940 [INFO] >>> Climb started
+20:19:11.016723 [INFO] >>> ElevatorMove started
+20:19:11.031045 [INFO] >>> Manipulate started
+20:19:11.632593 [INFO] Compressor is OFF  Pressure= 111psi
+20:19:11.646015 [INFO] <<< Drive interrupted
+20:19:11.662583 [INFO] <<< Drive ended
+20:19:11.681369 [INFO] <<< Climb interrupted
+20:19:11.694673 [INFO] <<< Climb ended
+20:19:11.710978 [INFO] <<< ElevatorMove interrupted
+20:19:11.724516 [INFO] <<< ElevatorMove ended
+20:19:11.738725 [INFO] <<< Manipulate interrupted
+20:19:11.753122 [INFO] <<< Manipulate ended
+20:19:11.773450 [INFO] ########  Robot disabled
+20:19:20.252248 [INFO] ########  Teleop enabled
+20:19:20.266133 [INFO] Compressor is OFF  Pressure= 118psi
+20:19:20.281166 [INFO] >>> Drive started
+20:19:20.298555 [INFO] >>> Climb started
+20:19:20.311711 [INFO] >>> ElevatorMove started
+20:19:20.324945 [INFO] >>> Manipulate started
+20:19:22.292735 [INFO] Compressor is OFF  Pressure= 110psi
+20:19:24.312737 [INFO] Compressor is OFF  Pressure= 111psi
+20:19:26.332837 [INFO] Compressor is OFF  Pressure= 110psi
+20:19:28.352864 [INFO] Compressor is OFF  Pressure= 111psi
+20:19:28.713800 [INFO] ########  Robot disabled
+20:19:28.731931 [INFO] <<< Drive interrupted
+20:19:28.750302 [INFO] <<< Drive ended
+20:19:28.763812 [INFO] <<< Climb interrupted
+20:19:28.777924 [INFO] <<< Climb ended
+20:19:28.792992 [INFO] <<< ElevatorMove interrupted
+20:19:28.951625 [INFO] <<< ElevatorMove ended
+20:19:28.969237 [INFO] <<< Manipulate interrupted
+20:19:28.982140 [INFO] <<< Manipulate ended

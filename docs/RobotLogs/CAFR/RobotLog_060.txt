@@ -1,0 +1,85 @@
+2019-03-07
+11:03:25.279841  Git version: 642605f (branch: master 2 files changed, 6 insertions(+), 4 deletions(-))
+11:03:28.132669  Built: Fri 03/08/2019   12:24 PM
+11:03:28.154245 [INFO] Robot.robotInit()
+11:03:29.575416 [INFO] ########  Robot disabled
+2019-03-08
+17:19:09.352649 [INFO] ########  Teleop enabled
+17:19:09.545410 [INFO] Compressor is ON   Pressure= 34psi  Current= 13.78 A
+17:19:09.708616 [INFO] >>> Drive started
+17:19:09.733593 [INFO] >>> Climb started
+17:19:09.765807 [INFO] >>> ElevatorMove started
+17:19:09.787256 [INFO] >>> Manipulate started
+17:19:11.654508 [INFO] Compressor is ON   Pressure= 37psi  Current= 9.44 A
+17:19:13.674104 [INFO] Compressor is ON   Pressure= 39psi  Current= 8.94 A
+17:19:15.694605 [INFO] Compressor is ON   Pressure= 41psi  Current= 9.69 A
+17:19:17.714239 [INFO] Compressor is ON   Pressure= 44psi  Current= 9.53 A
+17:19:19.734178 [INFO] Compressor is ON   Pressure= 45psi  Current= 9.41 A
+17:19:21.754226 [INFO] Compressor is ON   Pressure= 46psi  Current= 9.94 A
+17:19:23.774311 [INFO] Compressor is ON   Pressure= 48psi  Current= 10.03 A
+17:19:25.794145 [INFO] Compressor is ON   Pressure= 50psi  Current= 7.28 A
+17:19:27.814423 [INFO] Compressor is ON   Pressure= 51psi  Current= 10.16 A
+17:19:29.834890 [INFO] Compressor is ON   Pressure= 53psi  Current= 8.91 A
+17:19:31.854519 [INFO] Compressor is ON   Pressure= 56psi  Current= 10.41 A
+17:19:33.874323 [INFO] Compressor is ON   Pressure= 57psi  Current= 10.44 A
+17:19:35.898406 [INFO] Compressor is ON   Pressure= 59psi  Current= 10.31 A
+17:19:37.914417 [INFO] Compressor is ON   Pressure= 61psi  Current= 10.63 A
+17:19:39.934611 [INFO] Compressor is ON   Pressure= 63psi  Current= 10.53 A
+17:19:41.954690 [INFO] Compressor is ON   Pressure= 64psi  Current= 10.56 A
+17:19:43.974796 [INFO] Compressor is ON   Pressure= 67psi  Current= 10.69 A
+17:19:45.994643 [INFO] Compressor is ON   Pressure= 73psi  Current= 10.81 A
+17:19:48.014699 [INFO] Compressor is ON   Pressure= 77psi  Current= 11.03 A
+17:19:50.034806 [INFO] Compressor is ON   Pressure= 82psi  Current= 10.94 A
+17:19:52.054733 [INFO] Compressor is ON   Pressure= 86psi  Current= 11.16 A
+17:19:54.075175 [INFO] Compressor is ON   Pressure= 90psi  Current= 11.16 A
+17:19:56.094838 [INFO] Compressor is ON   Pressure= 95psi  Current= 11.19 A
+17:19:58.114787 [INFO] Compressor is ON   Pressure= 99psi  Current= 11.19 A
+17:20:00.134924 [INFO] Compressor is ON   Pressure= 103psi  Current= 11.31 A
+17:20:02.155002 [INFO] Compressor is ON   Pressure= 107psi  Current= 11.38 A
+17:20:04.175223 [INFO] Compressor is ON   Pressure= 111psi  Current= 11.44 A
+17:20:06.195027 [INFO] Compressor is ON   Pressure= 116psi  Current= 11.50 A
+17:20:07.633909 [INFO] Compressor is OFF  Pressure= 118psi
+17:20:09.653984 [INFO] Compressor is OFF  Pressure= 117psi
+17:20:11.674088 [INFO] Compressor is OFF  Pressure= 116psi
+17:20:13.694507 [INFO] Compressor is OFF  Pressure= 116psi
+17:20:15.714257 [INFO] Compressor is OFF  Pressure= 116psi
+17:20:17.734100 [INFO] Compressor is OFF  Pressure= 116psi
+17:20:19.754237 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:21.774169 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:23.794245 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:25.814458 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:27.834343 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:29.854391 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:31.874433 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:33.894412 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:35.914470 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:37.934686 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:39.954606 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:41.974640 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:43.995060 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:46.014725 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:48.034705 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:50.054798 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:52.074937 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:54.094892 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:56.114972 [INFO] Compressor is OFF  Pressure= 115psi
+17:20:58.135082 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:00.155520 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:02.175127 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:04.196407 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:06.216048 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:08.235183 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:10.255204 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:12.275311 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:14.295380 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:16.315477 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:18.335370 [INFO] Compressor is OFF  Pressure= 115psi
+17:21:19.691189 [INFO] <<< ElevatorMove interrupted
+17:21:19.705969 [INFO] <<< ElevatorMove ended
+17:21:19.721516 [INFO] <<< Manipulate interrupted
+17:21:19.737289 [INFO] <<< Manipulate ended
+17:21:19.764723 [INFO] ########  Robot disabled
+17:21:19.781365 [INFO] <<< Drive interrupted
+17:21:19.804294 [INFO] <<< Drive ended
+17:21:19.819341 [INFO] <<< Climb interrupted
+17:21:19.834548 [INFO] <<< Climb ended

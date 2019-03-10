@@ -1,0 +1,7 @@
+2019-02-18
+19:27:21.878239  Git version: 8b1a0d4 (branch: MotorControllerBrakes)
+19:27:22.107772  Built: Mon 02/18/2019   07:27 PM
+19:27:22.126611 [INFO] Robot.robotInit()
+19:27:29.015715 [INFO] ########  Robot disabled
+19:27:29.093100 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+19:29:16.578548 [INFO] Elevator encoder released from reset

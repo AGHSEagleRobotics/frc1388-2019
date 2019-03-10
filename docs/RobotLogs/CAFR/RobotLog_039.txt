@@ -1,0 +1,270 @@
+2019-03-07
+11:03:25.007602  Git version: beb22c5 (branch: master 2 files changed, 3 insertions(+), 3 deletions(-))
+11:03:25.169787  Built: Thu 03/07/2019   06:36 PM
+11:03:25.191371 [INFO] Robot.robotInit()
+11:03:26.560546 [INFO] ########  Robot disabled
+2019-03-08
+09:23:54.089320 [INFO] ########  Teleop enabled
+09:23:54.179733 [INFO] Compressor is OFF  Pressure= 0psi
+09:23:54.251699 [INFO] >>> Drive started
+09:23:54.275047 [INFO] >>> Climb started
+09:23:54.292654 [INFO] >>> ElevatorMove started
+09:23:54.310566 [INFO] >>> Manipulate started
+09:23:54.433241 [INFO] Compressor is ON   Pressure= 0psi  Current= 7.00 A
+09:23:56.450313 [INFO] Compressor is ON   Pressure= 2psi  Current= 7.41 A
+09:23:58.470386 [INFO] Compressor is ON   Pressure= 5psi  Current= 7.75 A
+09:24:00.490451 [INFO] Compressor is ON   Pressure= 8psi  Current= 7.91 A
+09:24:02.510917 [INFO] Compressor is ON   Pressure= 11psi  Current= 8.16 A
+09:24:04.530466 [INFO] Compressor is ON   Pressure= 13psi  Current= 8.28 A
+09:24:06.551306 [INFO] Compressor is ON   Pressure= 14psi  Current= 8.41 A
+09:24:08.570666 [INFO] Compressor is ON   Pressure= 17psi  Current= 8.53 A
+09:24:10.590497 [INFO] Compressor is ON   Pressure= 18psi  Current= 8.69 A
+09:24:12.610643 [INFO] Compressor is ON   Pressure= 20psi  Current= 8.81 A
+09:24:14.630626 [INFO] Compressor is ON   Pressure= 22psi  Current= 8.91 A
+09:24:16.650641 [INFO] Compressor is ON   Pressure= 25psi  Current= 9.00 A
+09:24:18.670856 [INFO] Compressor is ON   Pressure= 27psi  Current= 9.03 A
+09:24:20.690848 [INFO] Compressor is ON   Pressure= 29psi  Current= 9.13 A
+09:24:22.710790 [INFO] Compressor is ON   Pressure= 32psi  Current= 9.19 A
+09:24:24.730833 [INFO] Compressor is ON   Pressure= 36psi  Current= 9.28 A
+09:24:26.750860 [INFO] Compressor is ON   Pressure= 34psi  Current= 9.31 A
+09:24:28.770945 [INFO] Compressor is ON   Pressure= 37psi  Current= 9.41 A
+09:24:30.790963 [INFO] Compressor is ON   Pressure= 39psi  Current= 9.50 A
+09:24:32.811075 [INFO] Compressor is ON   Pressure= 41psi  Current= 9.53 A
+09:24:34.830986 [INFO] Compressor is ON   Pressure= 44psi  Current= 9.63 A
+09:24:36.850987 [INFO] Compressor is ON   Pressure= 45psi  Current= 9.66 A
+09:24:38.870978 [INFO] Compressor is ON   Pressure= 47psi  Current= 9.75 A
+09:24:40.891111 [INFO] Compressor is ON   Pressure= 49psi  Current= 9.78 A
+09:24:42.911113 [INFO] Compressor is ON   Pressure= 51psi  Current= 9.81 A
+09:24:44.931117 [INFO] Compressor is ON   Pressure= 52psi  Current= 9.94 A
+09:24:46.951265 [INFO] Compressor is ON   Pressure= 55psi  Current= 9.94 A
+09:24:48.971169 [INFO] Compressor is ON   Pressure= 60psi  Current= 10.00 A
+09:24:50.991376 [INFO] Compressor is ON   Pressure= 59psi  Current= 10.03 A
+09:24:53.011289 [INFO] Compressor is ON   Pressure= 62psi  Current= 10.25 A
+09:24:55.031341 [INFO] Compressor is ON   Pressure= 71psi  Current= 10.31 A
+09:24:57.051543 [INFO] Compressor is ON   Pressure= 69psi  Current= 10.31 A
+09:24:59.071444 [INFO] Compressor is ON   Pressure= 75psi  Current= 10.53 A
+09:25:01.091518 [INFO] Compressor is ON   Pressure= 80psi  Current= 10.53 A
+09:25:03.111505 [INFO] Compressor is ON   Pressure= 84psi  Current= 10.56 A
+09:25:05.131677 [INFO] Compressor is ON   Pressure= 90psi  Current= 10.78 A
+09:25:07.151563 [INFO] Compressor is ON   Pressure= 94psi  Current= 10.81 A
+09:25:09.171747 [INFO] Compressor is ON   Pressure= 99psi  Current= 10.88 A
+09:25:11.191627 [INFO] Compressor is ON   Pressure= 103psi  Current= 10.94 A
+09:25:13.211490 [INFO] Compressor is ON   Pressure= 106psi  Current= 11.00 A
+09:25:15.231897 [INFO] Compressor is ON   Pressure= 118psi  Current= 11.13 A
+09:25:17.251775 [INFO] Compressor is ON   Pressure= 115psi  Current= 11.13 A
+09:25:19.271820 [INFO] Compressor is ON   Pressure= 119psi  Current= 11.06 A
+09:25:19.470678 [INFO] Compressor is OFF  Pressure= 120psi
+09:25:21.490732 [INFO] Compressor is OFF  Pressure= 117psi
+09:25:23.511200 [INFO] Compressor is OFF  Pressure= 118psi
+09:25:25.530795 [INFO] Compressor is OFF  Pressure= 116psi
+09:25:27.550957 [INFO] Compressor is OFF  Pressure= 117psi
+09:25:31.970854 [INFO] Compressor is OFF  Pressure= 116psi
+09:25:33.990908 [INFO] Compressor is OFF  Pressure= 117psi
+09:25:38.131042 [INFO] Compressor is OFF  Pressure= 115psi
+09:25:40.151073 [INFO] Compressor is OFF  Pressure= 115psi
+09:25:42.171054 [INFO] Compressor is OFF  Pressure= 121psi
+09:25:44.191159 [INFO] Compressor is OFF  Pressure= 116psi
+09:25:46.211219 [INFO] Compressor is OFF  Pressure= 117psi
+09:25:48.231253 [INFO] Compressor is OFF  Pressure= 117psi
+09:25:50.251273 [INFO] Compressor is OFF  Pressure= 115psi
+09:25:52.271516 [INFO] Compressor is OFF  Pressure= 116psi
+09:25:54.291398 [INFO] Compressor is OFF  Pressure= 116psi
+09:25:56.311347 [INFO] Compressor is OFF  Pressure= 116psi
+09:25:58.331377 [INFO] Compressor is OFF  Pressure= 116psi
+09:26:00.351485 [INFO] Compressor is OFF  Pressure= 117psi
+09:26:02.531473 [INFO] Compressor is OFF  Pressure= 117psi
+09:26:04.552259 [INFO] Compressor is OFF  Pressure= 116psi
+09:26:06.571595 [INFO] Compressor is OFF  Pressure= 115psi
+09:26:08.591633 [INFO] Compressor is OFF  Pressure= 120psi
+09:26:10.611608 [INFO] Compressor is OFF  Pressure= 115psi
+09:26:12.631699 [INFO] Compressor is OFF  Pressure= 115psi
+09:26:14.651697 [INFO] Compressor is OFF  Pressure= 122psi
+09:26:16.671715 [INFO] Compressor is OFF  Pressure= 115psi
+09:26:18.512170 [INFO] [Manipulate] Ball grabber closing
+09:26:18.592874 [INFO] Compressor is ON   Pressure= 102psi  Current= 2.81 A
+09:26:19.071986 [INFO] [Manipulate] Ball grabber opening
+09:26:20.272019 [INFO] [Manipulate] Ball grabber closing
+09:26:20.612916 [INFO] Compressor is ON   Pressure= 105psi  Current= 10.63 A
+09:26:22.633019 [INFO] Compressor is ON   Pressure= 110psi  Current= 10.88 A
+09:26:23.971564 [WARNING] Warning: Elevator motor power limit exceeded!
+09:26:24.004999 [INFO] Elevator encoder held in reset; pre-reset value: -31.4065856
+09:26:24.591949 [INFO] Elevator encoder released from reset
+09:26:24.653022 [INFO] Compressor is ON   Pressure= 117psi  Current= 10.06 A
+09:26:25.571940 [INFO] Compressor is OFF  Pressure= 120psi
+09:26:26.411482 [WARNING] Warning: Elevator motor power limit exceeded!
+09:26:26.451488 [WARNING] Warning: Elevator motor power limit exceeded!
+09:26:27.592148 [INFO] Compressor is OFF  Pressure= 117psi
+09:26:29.611950 [INFO] Compressor is OFF  Pressure= 117psi
+09:26:30.512147 [INFO] [Manipulate] Ball grabber opening
+09:26:31.632006 [INFO] Compressor is OFF  Pressure= 122psi
+09:26:32.972161 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:32.992074 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.012032 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.032548 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.052286 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.093738 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.112677 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.134099 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.152804 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.171830 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.190377 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.210345 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.230182 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.255637 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.274433 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.300587 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.326369 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.348364 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.369094 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.389848 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.413457 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.433557 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.454651 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.483096 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.505998 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.529458 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.549028 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.568737 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.589627 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.610037 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.628883 [INFO] [Manipulate] Ball grabber closing using proximity sensor
+09:26:33.652437 [INFO] Compressor is OFF  Pressure= 116psi
+09:26:35.672114 [INFO] Compressor is OFF  Pressure= 115psi
+09:26:36.919329 [INFO] [Manipulate] Ball grabber closing
+09:26:38.932224 [INFO] Compressor is OFF  Pressure= 114psi
+09:26:39.592258 [INFO] [Manipulate] Ball grabber opening
+09:26:40.952227 [INFO] Compressor is OFF  Pressure= 121psi
+09:26:42.972248 [INFO] Compressor is OFF  Pressure= 110psi
+09:26:44.992374 [INFO] Compressor is OFF  Pressure= 109psi
+09:26:47.012363 [INFO] Compressor is OFF  Pressure= 109psi
+09:26:49.032516 [INFO] Compressor is OFF  Pressure= 109psi
+09:26:51.052378 [INFO] Compressor is OFF  Pressure= 116psi
+09:26:53.072477 [INFO] Compressor is OFF  Pressure= 105psi
+09:26:55.092511 [INFO] Compressor is OFF  Pressure= 103psi
+09:26:57.112499 [INFO] Compressor is OFF  Pressure= 106psi
+09:26:59.132557 [INFO] Compressor is OFF  Pressure= 104psi
+09:27:01.152634 [INFO] Compressor is OFF  Pressure= 105psi
+09:27:03.172672 [INFO] Compressor is OFF  Pressure= 104psi
+09:27:05.192720 [INFO] Compressor is OFF  Pressure= 111psi
+09:27:07.212643 [INFO] Compressor is OFF  Pressure= 105psi
+09:27:09.392741 [INFO] Compressor is OFF  Pressure= 104psi
+09:27:11.413449 [INFO] Compressor is OFF  Pressure= 105psi
+09:27:13.432986 [INFO] Compressor is OFF  Pressure= 109psi
+09:27:15.452945 [INFO] Compressor is OFF  Pressure= 105psi
+09:27:17.472901 [INFO] Compressor is OFF  Pressure= 105psi
+09:27:19.493494 [INFO] Compressor is OFF  Pressure= 104psi
+09:27:21.513247 [INFO] Compressor is OFF  Pressure= 105psi
+09:27:23.533072 [INFO] Compressor is OFF  Pressure= 105psi
+09:27:25.014556 [INFO] Compressor is ON   Pressure= 103psi  Current= 8.25 A
+09:27:27.034274 [INFO] Compressor is ON   Pressure= 94psi  Current= 10.50 A
+09:27:28.313481 [INFO] [Manipulate] Ball grabber closing
+09:27:29.054341 [INFO] Compressor is ON   Pressure= 99psi  Current= 10.63 A
+09:27:31.074473 [INFO] Compressor is ON   Pressure= 103psi  Current= 10.78 A
+09:27:33.094749 [INFO] Compressor is ON   Pressure= 108psi  Current= 10.94 A
+09:27:33.852803 [WARNING] Warning: Elevator motor power limit exceeded!
+09:27:35.114986 [INFO] Compressor is ON   Pressure= 113psi  Current= 10.81 A
+09:27:37.134597 [INFO] Compressor is ON   Pressure= 118psi  Current= 11.03 A
+09:27:37.673513 [INFO] Compressor is OFF  Pressure= 118psi
+09:27:39.693427 [INFO] Compressor is OFF  Pressure= 118psi
+09:27:40.653358 [INFO] Elevator encoder held in reset; pre-reset value: 27.13347804
+09:27:40.872889 [INFO] Elevator encoder released from reset
+09:27:41.713507 [INFO] Compressor is OFF  Pressure= 118psi
+09:27:43.733496 [INFO] Compressor is OFF  Pressure= 117psi
+09:27:45.753493 [INFO] Compressor is OFF  Pressure= 117psi
+09:27:47.773585 [INFO] Compressor is OFF  Pressure= 117psi
+09:27:49.793568 [INFO] Compressor is OFF  Pressure= 116psi
+09:27:51.813986 [INFO] Compressor is OFF  Pressure= 117psi
+09:27:53.833588 [INFO] Compressor is OFF  Pressure= 116psi
+09:27:55.853682 [INFO] Compressor is OFF  Pressure= 115psi
+09:27:57.873835 [INFO] Compressor is OFF  Pressure= 115psi
+09:27:59.893778 [INFO] Compressor is OFF  Pressure= 100psi
+09:27:59.916173 [INFO] Compressor is ON   Pressure= 106psi  Current= 11.41 A
+09:28:01.935334 [INFO] Compressor is ON   Pressure= 105psi  Current= 10.75 A
+09:28:03.954912 [INFO] Compressor is ON   Pressure= 109psi  Current= 10.88 A
+09:28:05.975003 [INFO] Compressor is ON   Pressure= 113psi  Current= 10.94 A
+09:28:07.933981 [INFO] Compressor is OFF  Pressure= 126psi
+09:28:09.953903 [INFO] Compressor is OFF  Pressure= 118psi
+09:28:11.973970 [INFO] Compressor is OFF  Pressure= 117psi
+09:28:14.033943 [INFO] Compressor is OFF  Pressure= 125psi
+09:28:16.054368 [INFO] Compressor is OFF  Pressure= 117psi
+09:28:18.074140 [INFO] Compressor is OFF  Pressure= 117psi
+09:28:20.094211 [INFO] Compressor is OFF  Pressure= 116psi
+09:28:22.114123 [INFO] Compressor is OFF  Pressure= 116psi
+09:28:23.134402 [INFO] [Manipulate] Ball grabber closing
+09:28:23.634268 [INFO] [Manipulate] Ball grabber opening
+09:28:24.134144 [INFO] Compressor is OFF  Pressure= 115psi
+09:28:26.154192 [INFO] Compressor is OFF  Pressure= 118psi
+09:28:27.393847 [WARNING] Warning: Elevator motor power limit exceeded!
+09:28:27.407674 [INFO] Elevator encoder held in reset; pre-reset value: -27.75255016
+09:28:28.174240 [INFO] Compressor is OFF  Pressure= 110psi
+09:28:29.373825 [INFO] Elevator encoder released from reset
+09:28:30.194231 [INFO] Compressor is OFF  Pressure= 111psi
+09:28:32.214300 [INFO] Compressor is OFF  Pressure= 107psi
+09:28:34.234454 [INFO] Compressor is OFF  Pressure= 104psi
+09:28:35.395519 [INFO] Compressor is ON   Pressure= 101psi  Current= 2.19 A
+09:28:37.415812 [INFO] Compressor is ON   Pressure= 105psi  Current= 10.81 A
+09:28:39.435842 [INFO] Compressor is ON   Pressure= 108psi  Current= 10.88 A
+09:28:41.455691 [INFO] Compressor is ON   Pressure= 118psi  Current= 10.94 A
+09:28:43.476078 [INFO] Compressor is ON   Pressure= 123psi  Current= 11.03 A
+09:28:44.114527 [INFO] Compressor is OFF  Pressure= 119psi
+09:28:46.135135 [INFO] Compressor is OFF  Pressure= 118psi
+09:28:48.154668 [INFO] Compressor is OFF  Pressure= 117psi
+09:28:50.174704 [INFO] Compressor is OFF  Pressure= 120psi
+09:28:50.695827 [INFO] ########  Robot disabled
+09:28:50.712957 [INFO] <<< Drive interrupted
+09:28:50.736444 [INFO] <<< Drive ended
+09:28:50.751735 [INFO] <<< Climb interrupted
+09:28:50.767725 [INFO] <<< Climb ended
+09:28:50.783616 [INFO] <<< ElevatorMove interrupted
+09:28:50.801065 [INFO] <<< ElevatorMove ended
+09:28:50.818214 [INFO] <<< Manipulate interrupted
+09:28:50.839282 [INFO] <<< Manipulate ended
+09:31:14.857148 [INFO] ########  Teleop enabled
+09:31:14.873943 [INFO] Compressor is OFF  Pressure= 114psi
+09:31:14.887643 [INFO] >>> Drive started
+09:31:14.902797 [INFO] >>> Climb started
+09:31:14.916400 [INFO] >>> ElevatorMove started
+09:31:15.058644 [INFO] >>> Manipulate started
+09:31:15.072757 [INFO] [Manipulate] Ball grabber closing
+09:31:16.897956 [INFO] Compressor is OFF  Pressure= 109psi
+09:31:18.918018 [INFO] Compressor is OFF  Pressure= 112psi
+09:31:20.937607 [INFO] Compressor is OFF  Pressure= 114psi
+09:31:22.958019 [INFO] Compressor is OFF  Pressure= 109psi
+09:31:24.978396 [INFO] Compressor is OFF  Pressure= 109psi
+09:31:26.998968 [INFO] Compressor is OFF  Pressure= 109psi
+09:31:29.018136 [INFO] Compressor is OFF  Pressure= 111psi
+09:31:30.460536 [INFO] Compressor is ON   Pressure= 99psi  Current= 9.38 A
+09:31:32.480774 [INFO] Compressor is ON   Pressure= 97psi  Current= 10.53 A
+09:31:34.499889 [INFO] Compressor is ON   Pressure= 104psi  Current= 10.69 A
+09:31:36.522023 [INFO] Compressor is ON   Pressure= 113psi  Current= 10.81 A
+09:31:38.539809 [INFO] Compressor is ON   Pressure= 112psi  Current= 10.91 A
+09:31:40.560134 [INFO] Compressor is ON   Pressure= 118psi  Current= 10.91 A
+09:31:40.858500 [INFO] Compressor is OFF  Pressure= 120psi
+09:31:42.879308 [INFO] Compressor is OFF  Pressure= 125psi
+09:31:44.898856 [INFO] Compressor is OFF  Pressure= 117psi
+09:31:46.918732 [INFO] Compressor is OFF  Pressure= 117psi
+09:31:48.938723 [INFO] Compressor is OFF  Pressure= 117psi
+09:31:50.959138 [INFO] Compressor is OFF  Pressure= 120psi
+09:31:53.039079 [INFO] Compressor is OFF  Pressure= 116psi
+09:31:55.059355 [INFO] Compressor is OFF  Pressure= 117psi
+09:31:57.078860 [INFO] Compressor is OFF  Pressure= 116psi
+09:31:59.098583 [INFO] Compressor is OFF  Pressure= 120psi
+09:32:01.119590 [INFO] Compressor is OFF  Pressure= 124psi
+09:32:03.138857 [INFO] Compressor is OFF  Pressure= 116psi
+09:32:05.159105 [INFO] Compressor is OFF  Pressure= 116psi
+09:32:07.179129 [INFO] Compressor is OFF  Pressure= 116psi
+09:32:09.199524 [INFO] Compressor is OFF  Pressure= 116psi
+09:32:11.219131 [INFO] Compressor is OFF  Pressure= 116psi
+09:32:13.239494 [INFO] Compressor is OFF  Pressure= 116psi
+09:32:15.259851 [INFO] Compressor is OFF  Pressure= 116psi
+09:32:17.279258 [INFO] Compressor is OFF  Pressure= 115psi
+09:32:19.299390 [INFO] Compressor is OFF  Pressure= 114psi
+09:32:21.100449 [INFO] ########  Robot disabled
+09:32:21.114063 [INFO] <<< Drive interrupted
+09:32:21.129783 [INFO] <<< Drive ended
+09:32:21.147915 [INFO] <<< Climb interrupted
+09:32:21.162234 [INFO] <<< Climb ended
+09:32:21.176265 [INFO] <<< ElevatorMove interrupted
+09:32:21.191034 [INFO] <<< ElevatorMove ended
+09:32:21.204923 [INFO] <<< Manipulate interrupted
+09:32:21.218725 [INFO] <<< Manipulate ended

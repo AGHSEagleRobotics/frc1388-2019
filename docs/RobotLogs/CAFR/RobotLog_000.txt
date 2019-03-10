@@ -1,0 +1,453 @@
+2019-02-18
+17:57:39.008496  Git version: 998a321 (branch: master 2 files changed, 2 insertions(+), 2 deletions(-))
+17:57:39.258131  Built: Mon 02/18/2019   05:57 PM
+17:57:39.275668 [INFO] Robot.robotInit()
+17:57:46.368891 [INFO] ########  Robot disabled
+17:57:46.440843 [INFO] Elevator encoder held in reset; pre-reset value: 0.10569524
+17:58:41.533038 [INFO] ########  Teleop enabled
+17:58:41.649498 [INFO] Compressor is OFF  Pressure= 113psi
+17:58:41.718512 [INFO] >>> Drive started
+17:58:41.742668 [INFO] >>> Climb started
+17:58:41.764944 [INFO] >>> ElevatorMove started
+17:58:41.786505 [INFO] >>> Manipulate started
+17:58:43.673179 [INFO] Compressor is OFF  Pressure= 114psi
+17:58:45.693157 [INFO] Compressor is OFF  Pressure= 115psi
+17:58:47.713208 [INFO] Compressor is OFF  Pressure= 120psi
+17:58:49.733196 [INFO] Compressor is OFF  Pressure= 114psi
+17:58:51.753147 [INFO] Compressor is OFF  Pressure= 115psi
+17:58:53.773272 [INFO] Compressor is OFF  Pressure= 115psi
+17:58:55.793154 [INFO] Compressor is OFF  Pressure= 113psi
+17:58:57.813311 [INFO] Compressor is OFF  Pressure= 114psi
+17:58:59.833501 [INFO] Compressor is OFF  Pressure= 113psi
+17:59:01.853323 [INFO] Compressor is OFF  Pressure= 114psi
+17:59:01.933553 [INFO] [Climb] Arm is Extending
+17:59:03.264981 [INFO] Compressor is ON   Pressure= 92psi  Current= 10.31 A
+17:59:03.292294 [INFO] Compressor is OFF  Pressure= 87psi
+17:59:05.313664 [INFO] Compressor is OFF  Pressure= 36psi
+17:59:07.333434 [INFO] Compressor is OFF  Pressure= 37psi
+17:59:08.154872 [INFO] Compressor is ON   Pressure= 37psi  Current= 2.69 A
+17:59:09.353495 [INFO] Compressor is OFF  Pressure= 39psi
+17:59:09.873888 [INFO] [Climb] Arm is Retracting
+17:59:11.373743 [INFO] Compressor is OFF  Pressure= 24psi
+17:59:13.393530 [INFO] Compressor is OFF  Pressure= 12psi
+17:59:14.354944 [INFO] Compressor is ON   Pressure= 12psi  Current= 7.50 A
+17:59:14.813601 [INFO] Compressor is OFF  Pressure= 12psi
+17:59:16.833655 [INFO] Compressor is OFF  Pressure= 12psi
+17:59:18.853680 [INFO] Compressor is OFF  Pressure= 12psi
+17:59:19.815314 [INFO] Compressor is ON   Pressure= 12psi  Current= 11.53 A
+17:59:20.273700 [INFO] Compressor is OFF  Pressure= 13psi
+17:59:22.293723 [INFO] Compressor is OFF  Pressure= 13psi
+17:59:24.313779 [INFO] Compressor is OFF  Pressure= 13psi
+17:59:25.275287 [INFO] Compressor is ON   Pressure= 13psi  Current= 11.94 A
+17:59:26.554302 [INFO] Compressor is OFF  Pressure= 14psi
+17:59:28.573937 [INFO] Compressor is OFF  Pressure= 14psi
+17:59:30.593889 [INFO] Compressor is OFF  Pressure= 14psi
+17:59:31.555362 [INFO] Compressor is ON   Pressure= 14psi  Current= 10.50 A
+17:59:31.733876 [INFO] Compressor is OFF  Pressure= 14psi
+17:59:31.774009 [INFO] [Climb] Arm is Retracting
+17:59:32.313797 [INFO] [Climb] Arm is Retracting
+17:59:32.822687 [INFO] [Climb] Arm is Retracting
+17:59:33.393970 [INFO] [Climb] Arm is Extending
+17:59:33.754343 [INFO] Compressor is OFF  Pressure= 12psi
+17:59:35.773980 [INFO] Compressor is OFF  Pressure= 2psi
+17:59:36.735469 [INFO] Compressor is ON   Pressure= 0psi  Current= 3.28 A
+17:59:36.754095 [INFO] Compressor is OFF  Pressure= 0psi
+17:59:38.774217 [INFO] Compressor is OFF  Pressure= 0psi
+17:59:40.794097 [INFO] Compressor is OFF  Pressure= -1psi
+17:59:41.756170 [INFO] Compressor is ON   Pressure= -1psi  Current= 7.56 A
+17:59:41.774236 [INFO] Compressor is OFF  Pressure= -1psi
+17:59:43.794259 [INFO] Compressor is OFF  Pressure= -1psi
+17:59:45.814222 [INFO] Compressor is OFF  Pressure= -1psi
+17:59:47.834271 [INFO] Compressor is OFF  Pressure= -1psi
+17:59:49.854679 [INFO] Compressor is OFF  Pressure= 0psi
+17:59:51.795691 [INFO] Compressor is ON   Pressure= 0psi  Current= 2.78 A
+17:59:53.816155 [INFO] Compressor is ON   Pressure= 1psi  Current= 8.00 A
+17:59:55.835627 [INFO] Compressor is ON   Pressure= 4psi  Current= 8.19 A
+17:59:57.855726 [INFO] Compressor is ON   Pressure= 5psi  Current= 8.41 A
+17:59:59.876125 [INFO] Compressor is ON   Pressure= 7psi  Current= 8.56 A
+18:00:01.936006 [INFO] Compressor is ON   Pressure= 9psi  Current= 8.69 A
+18:00:06.235889 [INFO] Compressor is ON   Pressure= 14psi  Current= 8.94 A
+18:00:08.256098 [INFO] Compressor is ON   Pressure= 17psi  Current= 9.13 A
+18:00:10.276083 [INFO] Compressor is ON   Pressure= 19psi  Current= 9.16 A
+18:00:12.296045 [INFO] Compressor is ON   Pressure= 19psi  Current= 9.25 A
+18:00:14.316801 [INFO] Compressor is ON   Pressure= 21psi  Current= 9.31 A
+18:00:16.336329 [INFO] Compressor is ON   Pressure= 23psi  Current= 9.44 A
+18:00:18.356549 [INFO] Compressor is ON   Pressure= 25psi  Current= 9.50 A
+18:00:20.376579 [INFO] Compressor is ON   Pressure= 30psi  Current= 9.66 A
+18:00:22.396523 [INFO] Compressor is ON   Pressure= 29psi  Current= 9.75 A
+18:00:24.416385 [INFO] Compressor is ON   Pressure= 31psi  Current= 9.75 A
+18:00:26.436557 [INFO] Compressor is ON   Pressure= 32psi  Current= 9.81 A
+18:00:28.456441 [INFO] Compressor is ON   Pressure= 35psi  Current= 9.88 A
+18:00:30.476481 [INFO] Compressor is ON   Pressure= 35psi  Current= 10.00 A
+18:00:32.496449 [INFO] Compressor is ON   Pressure= 38psi  Current= 10.03 A
+18:00:34.516770 [INFO] Compressor is ON   Pressure= 38psi  Current= 10.03 A
+18:00:36.536920 [INFO] Compressor is ON   Pressure= 41psi  Current= 10.16 A
+18:00:38.557073 [INFO] Compressor is ON   Pressure= 42psi  Current= 10.25 A
+18:00:40.576884 [INFO] Compressor is ON   Pressure= 44psi  Current= 10.28 A
+18:00:42.596894 [INFO] Compressor is ON   Pressure= 47psi  Current= 10.31 A
+18:00:44.616843 [INFO] Compressor is ON   Pressure= 47psi  Current= 10.41 A
+18:00:46.637432 [INFO] Compressor is ON   Pressure= 49psi  Current= 10.50 A
+18:00:48.657012 [INFO] Compressor is ON   Pressure= 51psi  Current= 10.56 A
+18:00:50.677450 [INFO] Compressor is ON   Pressure= 52psi  Current= 10.53 A
+18:00:52.697580 [INFO] Compressor is ON   Pressure= 54psi  Current= 10.69 A
+18:00:54.717045 [INFO] Compressor is ON   Pressure= 57psi  Current= 10.66 A
+18:00:56.737083 [INFO] Compressor is ON   Pressure= 60psi  Current= 10.69 A
+18:00:58.757109 [INFO] Compressor is ON   Pressure= 61psi  Current= 10.94 A
+18:01:00.777314 [INFO] Compressor is ON   Pressure= 66psi  Current= 10.94 A
+18:01:02.797564 [INFO] Compressor is ON   Pressure= 71psi  Current= 10.91 A
+18:01:04.817688 [INFO] Compressor is ON   Pressure= 75psi  Current= 11.13 A
+18:01:06.736057 [INFO] [Climb] Arm is Retracting
+18:01:06.837285 [INFO] Compressor is ON   Pressure= 79psi  Current= 11.28 A
+18:01:08.857979 [INFO] Compressor is ON   Pressure= 34psi  Current= 9.94 A
+18:01:10.877783 [INFO] Compressor is ON   Pressure= 31psi  Current= 9.88 A
+18:01:12.897432 [INFO] Compressor is ON   Pressure= 32psi  Current= 10.00 A
+18:01:14.917652 [INFO] Compressor is ON   Pressure= 35psi  Current= 10.00 A
+18:01:16.937708 [INFO] Compressor is ON   Pressure= 37psi  Current= 10.06 A
+18:01:18.957781 [INFO] Compressor is ON   Pressure= 39psi  Current= 10.13 A
+18:01:20.978259 [INFO] Compressor is ON   Pressure= 40psi  Current= 10.25 A
+18:01:22.997605 [INFO] Compressor is ON   Pressure= 43psi  Current= 10.31 A
+18:01:25.017647 [INFO] Compressor is ON   Pressure= 44psi  Current= 10.31 A
+18:01:27.038265 [INFO] Compressor is ON   Pressure= 46psi  Current= 10.41 A
+18:01:29.057773 [INFO] Compressor is ON   Pressure= 48psi  Current= 10.53 A
+18:01:31.077910 [INFO] Compressor is ON   Pressure= 50psi  Current= 10.53 A
+18:01:33.098401 [INFO] Compressor is ON   Pressure= 51psi  Current= 10.66 A
+18:01:35.118097 [INFO] Compressor is ON   Pressure= 56psi  Current= 10.69 A
+18:01:35.836357 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:35.856195 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:35.891717 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.156389 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.176723 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.196208 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.236332 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.256214 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.291762 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.315545 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.347659 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.375727 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.408345 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.448995 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.475760 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.495773 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.518787 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.539802 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.579534 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.599045 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.621884 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.641240 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.661067 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.684422 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.714302 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.742166 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.775442 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.796077 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.820009 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.840044 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.860750 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.882534 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.929027 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:36.981803 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.042768 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.065423 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.097093 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.118799 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.136197 [INFO] Compressor is ON   Pressure= 54psi  Current= 10.75 A
+18:01:37.163585 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.189772 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.223315 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.262019 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.281387 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.305495 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.339241 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.616250 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.656236 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.676812 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.697633 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.722341 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.742499 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.769871 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.795296 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.815947 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.835243 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.861073 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.881301 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.913951 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.933610 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.958441 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.979536 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:37.999429 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.030869 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.077062 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.104312 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.130374 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.170177 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.196923 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.218459 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.250877 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.281538 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.300170 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.320764 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.356277 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.376546 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.436302 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.456811 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.480049 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.536365 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.556479 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.596261 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.616260 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.656274 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.680362 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.701951 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.724463 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.752057 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.781304 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.801553 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.824132 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.844314 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.876327 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.896678 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.920047 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.940046 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.959401 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.979555 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:38.999889 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.020609 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.052002 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.074409 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.111136 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.141615 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.158957 [INFO] Compressor is ON   Pressure= 56psi  Current= 10.66 A
+18:01:39.376376 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.416241 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.436232 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.462265 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.486453 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.536221 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.556338 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.578046 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.600432 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.622472 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.646039 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.681671 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.700537 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.736268 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.756991 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.790777 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.817091 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.843 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.864466 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.886075 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.910708 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.935789 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.957622 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:39.998836 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.017631 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.076365 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.116416 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.176372 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.196365 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.230416 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.294494 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.317347 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.341630 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.362538 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.383379 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.406621 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.434190 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.461577 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.519424 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.541274 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.559731 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.580683 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.601802 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.621588 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.655388 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.695439 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.716600 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.741273 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.762706 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.816315 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.837709 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.876269 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.916244 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.943771 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:40.996604 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.016995 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.037367 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.100694 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.120760 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.152255 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.183689 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.200801 [INFO] Compressor is ON   Pressure= 59psi  Current= 10.81 A
+18:01:41.238239 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.261029 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.288719 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.312446 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.339449 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.358062 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.378218 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.415297 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.440941 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.473085 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.497343 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.521965 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.540448 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.574120 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.595054 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.617968 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.638206 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.662253 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:41.684946 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:43.036815 [INFO] [Climb] Arm is Retracting
+18:01:43.218012 [INFO] Compressor is ON   Pressure= 62psi  Current= 10.91 A
+18:01:43.416743 [INFO] [Climb] Arm is Extending
+18:01:44.296752 [INFO] [Climb] Arm is Retracting
+18:01:45.238233 [INFO] Compressor is ON   Pressure= 37psi  Current= 9.94 A
+18:01:47.258005 [INFO] Compressor is ON   Pressure= 38psi  Current= 10.19 A
+18:01:49.278298 [INFO] Compressor is ON   Pressure= 40psi  Current= 10.25 A
+18:01:51.298233 [INFO] Compressor is ON   Pressure= 42psi  Current= 10.25 A
+18:01:53.318983 [INFO] Compressor is ON   Pressure= 45psi  Current= 10.31 A
+18:01:55.340337 [INFO] Compressor is ON   Pressure= 49psi  Current= 10.38 A
+18:01:57.358328 [INFO] Compressor is ON   Pressure= 49psi  Current= 10.44 A
+18:01:57.656674 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.677350 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.697727 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.721299 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.742549 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.782395 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.805256 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.836379 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.858700 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.879242 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.898658 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.924106 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.947272 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.977681 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:57.997826 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.018604 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.656642 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.676882 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.697740 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.737140 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.756762 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.779 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.799049 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.836648 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.856637 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.876912 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.897095 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.976636 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:58.996703 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:59.096719 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:59.116882 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:59.158674 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:59.378286 [INFO] Compressor is ON   Pressure= 49psi  Current= 10.31 A
+18:01:59.916750 [WARNING] Warning: Elevator motor power limit exceeded!
+18:01:59.937200 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.176748 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.199440 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.261518 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.281072 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.436677 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.457037 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.483844 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.502357 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.776681 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.796747 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.817008 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.837358 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.864860 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.891256 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.916075 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.935780 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.956208 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.976079 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:00.995681 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.015475 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.041169 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.064587 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.096298 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.118067 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.137127 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.158938 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.178593 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.198581 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.230417 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.254544 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.291112 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.346050 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.369406 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.397567 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.414158 [INFO] Compressor is ON   Pressure= 50psi  Current= 10.38 A
+18:02:01.435990 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.461648 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.482905 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.513475 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.533681 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.553447 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.573379 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.592521 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.613003 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.638744 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.658352 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.682051 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.710717 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:01.733825 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:03.438324 [INFO] Compressor is ON   Pressure= 52psi  Current= 10.63 A
+18:02:05.462463 [INFO] Compressor is ON   Pressure= 54psi  Current= 10.75 A
+18:02:07.498677 [INFO] Compressor is ON   Pressure= 57psi  Current= 10.66 A
+18:02:09.518516 [INFO] Compressor is ON   Pressure= 59psi  Current= 10.78 A
+18:02:11.538625 [INFO] Compressor is ON   Pressure= 63psi  Current= 10.81 A
+18:02:13.559010 [INFO] Compressor is ON   Pressure= 66psi  Current= 11.03 A
+18:02:14.017064 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.037034 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.058030 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.079416 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.517112 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.537439 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.557386 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.581088 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.601324 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.629202 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.655236 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.675509 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.694770 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.714510 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.734291 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.771903 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.794412 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.817968 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.838058 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.857150 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.877255 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.896910 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.918367 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.945220 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.968785 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:14.995955 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.014912 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.035401 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.055806 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.075922 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.097169 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.124501 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.151904 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.177521 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.198267 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.218355 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.239598 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.258084 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.278540 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.302188 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.321127 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.348267 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.377435 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.398863 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.420032 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:15.441670 [WARNING] Warning: Elevator motor power limit exceeded!
+18:02:17.715521 [INFO] Compressor is ON   Pressure= 75psi  Current= 11.28 A
+18:02:21.951441 [INFO] Compressor is ON   Pressure= 87psi  Current= 11.31 A
+18:02:23.978934 [INFO] Compressor is ON   Pressure= 87psi  Current= 11.38 A
+18:02:25.998838 [INFO] Compressor is ON   Pressure= 96psi  Current= 11.63 A
+18:02:28.018898 [INFO] Compressor is ON   Pressure= 95psi  Current= 11.66 A
+18:02:30.039613 [INFO] Compressor is ON   Pressure= 98psi  Current= 11.53 A

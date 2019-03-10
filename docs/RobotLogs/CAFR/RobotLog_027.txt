@@ -1,0 +1,177 @@
+2019-03-07
+16:48:20.191098  Git version: 8f96a9d (branch: master 1 file changed, 1 insertion(+), 1 deletion(-))
+16:48:20.355802  Built: Thu 03/07/2019   11:25 AM
+16:48:20.377541 [INFO] Robot.robotInit()
+16:48:21.815751 [INFO] ########  Robot disabled
+16:48:37.402507 [INFO] ########  Teleop enabled
+16:48:37.494334 [INFO] Compressor is OFF  Pressure= 109psi
+16:48:37.555947 [INFO] >>> Drive started
+16:48:37.582183 [INFO] >>> Climb started
+16:48:37.600526 [INFO] >>> ElevatorMove started
+16:48:37.618844 [INFO] >>> Manipulate started
+16:48:39.522899 [INFO] Compressor is OFF  Pressure= 109psi
+16:48:41.542910 [INFO] Compressor is OFF  Pressure= 103psi
+16:48:42.007026 [INFO] Compressor is ON   Pressure= 97psi  Current= 0.81 A
+16:48:44.024224 [INFO] Compressor is ON   Pressure= 96psi  Current= 10.75 A
+16:48:46.044245 [INFO] Compressor is ON   Pressure= 102psi  Current= 10.91 A
+16:48:48.064573 [INFO] Compressor is ON   Pressure= 107psi  Current= 10.94 A
+16:48:49.234899 [INFO] Elevator encoder held in reset; pre-reset value: -4.33350484
+16:48:50.084212 [INFO] Compressor is ON   Pressure= 110psi  Current= 11.13 A
+16:48:52.104262 [INFO] Compressor is ON   Pressure= 115psi  Current= 11.16 A
+16:48:53.603126 [INFO] Compressor is OFF  Pressure= 117psi
+16:48:55.623346 [INFO] Compressor is OFF  Pressure= 117psi
+16:48:57.643219 [INFO] Compressor is OFF  Pressure= 116psi
+16:48:59.663216 [INFO] Compressor is OFF  Pressure= 116psi
+16:49:01.683306 [INFO] Compressor is OFF  Pressure= 116psi
+16:49:03.703565 [INFO] Compressor is OFF  Pressure= 116psi
+16:49:05.723275 [INFO] Compressor is OFF  Pressure= 115psi
+16:49:07.743252 [INFO] Compressor is OFF  Pressure= 115psi
+16:49:09.763429 [INFO] Compressor is OFF  Pressure= 115psi
+16:49:11.783431 [INFO] Compressor is OFF  Pressure= 115psi
+16:49:13.803433 [INFO] Compressor is OFF  Pressure= 115psi
+16:49:15.823440 [INFO] Compressor is OFF  Pressure= 115psi
+16:49:17.843487 [INFO] Compressor is OFF  Pressure= 115psi
+16:49:18.104153 [INFO] ########  Robot disabled
+16:49:18.121695 [INFO] <<< Drive interrupted
+16:49:18.139834 [INFO] <<< Drive ended
+16:49:18.156267 [INFO] <<< Climb interrupted
+16:49:18.176874 [INFO] <<< Climb ended
+16:49:18.192822 [INFO] <<< ElevatorMove interrupted
+16:49:18.212961 [INFO] <<< ElevatorMove ended
+16:49:18.229648 [INFO] <<< Manipulate interrupted
+16:49:18.245203 [INFO] <<< Manipulate ended
+16:50:31.705415 [INFO] Elevator encoder held in reset; pre-reset value: -30.4251298
+16:51:11.445623 [INFO] Elevator encoder released from reset
+16:51:18.186101 [INFO] ########  Teleop enabled
+16:51:18.199459 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:18.214647 [INFO] >>> Drive started
+16:51:18.232742 [INFO] >>> Climb started
+16:51:18.246755 [INFO] >>> ElevatorMove started
+16:51:18.259647 [INFO] >>> Manipulate started
+16:51:20.226171 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:22.246218 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:24.266298 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:26.286301 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:28.306396 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:30.326449 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:32.326075 [WARNING] Warning: Elevator motor power limit exceeded!
+16:51:32.337892 [INFO] Elevator encoder held in reset; pre-reset value: -0.06039728
+16:51:32.354176 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:34.386518 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:36.406589 [INFO] Compressor is OFF  Pressure= 115psi
+16:51:38.426601 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:40.446678 [INFO] Compressor is OFF  Pressure= 115psi
+16:51:42.466781 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:44.527226 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:46.546703 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:47.006367 [INFO] Elevator encoder released from reset
+16:51:48.566866 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:50.586837 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:52.606938 [INFO] Compressor is OFF  Pressure= 115psi
+16:51:54.627033 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:56.306548 [WARNING] Warning: Elevator motor power limit exceeded!
+16:51:56.647013 [INFO] Compressor is OFF  Pressure= 114psi
+16:51:58.667149 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:00.687074 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:02.707140 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:04.727125 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:06.747473 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:08.767207 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:10.787342 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:12.807305 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:14.827358 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:16.850149 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:18.867620 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:20.867344 [INFO] Elevator encoder held in reset; pre-reset value: 0.04529796
+16:52:20.887617 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:22.907636 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:24.927734 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:26.947769 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:28.967777 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:30.987852 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:32.267364 [INFO] Elevator encoder released from reset
+16:52:33.107917 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:34.247467 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:35.127861 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:36.647517 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:36.660225 [INFO] Elevator encoder held in reset; pre-reset value: -0.18119184
+16:52:37.127533 [INFO] Elevator encoder released from reset
+16:52:37.147991 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:38.767613 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:39.168079 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:40.247676 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:40.261051 [INFO] Elevator encoder held in reset; pre-reset value: -0.19629116
+16:52:40.607590 [INFO] Elevator encoder released from reset
+16:52:41.188073 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:41.727722 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:41.767605 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:41.887688 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:43.208099 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:43.947732 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:43.961853 [INFO] Elevator encoder held in reset; pre-reset value: -0.28688707999999996
+16:52:44.327674 [INFO] Elevator encoder released from reset
+16:52:45.228271 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:45.447694 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:45.487707 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:45.607712 [WARNING] Warning: Elevator motor power limit exceeded!
+16:52:47.248137 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:49.268411 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:51.288887 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:53.308331 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:55.328373 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:57.348441 [INFO] Compressor is OFF  Pressure= 114psi
+16:52:59.368429 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:01.388456 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:03.408488 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:05.428487 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:07.448961 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:09.469131 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:11.489129 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:13.508919 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:15.528995 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:17.548817 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:19.568834 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:21.588879 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:23.629738 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:25.650481 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:27.669389 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:29.689493 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:31.709891 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:33.729708 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:35.749826 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:37.769777 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:39.789894 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:41.809865 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:43.830211 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:45.849528 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:47.870444 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:49.889829 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:51.910757 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:53.930601 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:55.949807 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:57.970677 [INFO] Compressor is OFF  Pressure= 114psi
+16:53:59.990674 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:02.010350 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:04.031618 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:06.050814 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:08.070420 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:10.090671 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:12.111060 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:14.130003 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:16.150914 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:18.170673 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:20.190220 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:22.210834 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:24.231098 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:26.251111 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:28.271317 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:30.290888 [INFO] Compressor is OFF  Pressure= 114psi
+16:54:30.304877 [INFO] <<< Drive interrupted
+16:54:30.323354 [INFO] <<< Drive ended
+16:54:30.336571 [INFO] <<< Climb interrupted
+16:54:30.353579 [INFO] <<< Climb ended
+16:54:30.366205 [INFO] <<< ElevatorMove interrupted
+16:54:30.380501 [INFO] <<< ElevatorMove ended
+16:54:30.393383 [INFO] <<< Manipulate interrupted
+16:54:30.406302 [INFO] <<< Manipulate ended
+16:54:30.431903 [INFO] ########  Robot disabled

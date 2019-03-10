@@ -1,0 +1,61 @@
+2019-02-19
+20:27:19.370637  Git version: 8f96a9d (branch: master)
+20:27:19.533689  Built: Tue 02/19/2019   08:27 PM
+20:27:19.547196 [INFO] Robot.robotInit()
+20:27:26.723173 [INFO] ########  Robot disabled
+20:27:32.146768 [INFO] ########  Autonomous enabled
+20:27:32.163593 [INFO] FMS not connected
+20:27:32.399570 [INFO] Compressor is ON   Pressure= 100psi  Current= 9.50 A
+20:27:32.489747 [INFO] >>> Drive started
+20:27:32.519462 [INFO] >>> Climb started
+20:27:32.537637 [INFO] >>> ElevatorMove started
+20:27:32.555733 [INFO] >>> Manipulate started
+20:27:32.898778 [INFO] ########  Robot disabled
+20:27:32.915622 [INFO] <<< Drive interrupted
+20:27:32.935654 [INFO] <<< Drive ended
+20:27:32.952279 [INFO] <<< Climb interrupted
+20:27:32.969544 [INFO] <<< Climb ended
+20:27:32.989754 [INFO] <<< ElevatorMove interrupted
+20:27:33.006217 [INFO] <<< ElevatorMove ended
+20:27:33.025472 [INFO] <<< Manipulate interrupted
+20:27:33.046996 [INFO] <<< Manipulate ended
+20:27:49.867172 [INFO] ########  Autonomous enabled
+20:27:49.883942 [INFO] FMS not connected
+20:27:49.910523 [INFO] Compressor is ON   Pressure= 102psi  Current= 17.00 A
+20:27:49.924269 [INFO] >>> Drive started
+20:27:49.939669 [INFO] >>> Climb started
+20:27:49.955092 [INFO] >>> ElevatorMove started
+20:27:49.977122 [INFO] >>> Manipulate started
+20:27:51.930164 [INFO] Compressor is ON   Pressure= 110psi  Current= 10.66 A
+20:27:53.950274 [INFO] Compressor is ON   Pressure= 114psi  Current= 10.81 A
+20:27:55.970147 [INFO] Compressor is ON   Pressure= 119psi  Current= 10.88 A
+20:27:56.508536 [INFO] Compressor is OFF  Pressure= 119psi
+20:27:58.528760 [INFO] Compressor is OFF  Pressure= 118psi
+20:28:00.547972 [INFO] Compressor is OFF  Pressure= 118psi
+20:28:01.448183 [INFO] <<< Drive interrupted
+20:28:01.461558 [INFO] <<< Drive ended
+20:28:01.485156 [INFO] <<< Climb interrupted
+20:28:01.656777 [INFO] <<< Climb ended
+20:28:01.674188 [INFO] <<< ElevatorMove interrupted
+20:28:01.687648 [INFO] <<< ElevatorMove ended
+20:28:01.701181 [INFO] <<< Manipulate interrupted
+20:28:01.715040 [INFO] <<< Manipulate ended
+20:28:01.734504 [INFO] ########  Robot disabled
+20:28:05.487645 [INFO] ########  Teleop enabled
+20:28:05.502699 [INFO] Compressor is OFF  Pressure= 116psi
+20:28:05.521474 [INFO] >>> Drive started
+20:28:05.538830 [INFO] >>> Climb started
+20:28:05.553142 [INFO] >>> ElevatorMove started
+20:28:05.567363 [INFO] >>> Manipulate started
+20:28:07.528515 [INFO] Compressor is OFF  Pressure= 117psi
+20:28:09.549448 [INFO] Compressor is OFF  Pressure= 117psi
+20:28:11.567961 [INFO] Compressor is OFF  Pressure= 117psi
+20:28:12.749039 [INFO] ########  Robot disabled
+20:28:12.764699 [INFO] <<< Drive interrupted
+20:28:12.789043 [INFO] <<< Drive ended
+20:28:12.803986 [INFO] <<< Climb interrupted
+20:28:12.817639 [INFO] <<< Climb ended
+20:28:12.831098 [INFO] <<< ElevatorMove interrupted
+20:28:12.844840 [INFO] <<< ElevatorMove ended
+20:28:12.859344 [INFO] <<< Manipulate interrupted
+20:28:12.878251 [INFO] <<< Manipulate ended

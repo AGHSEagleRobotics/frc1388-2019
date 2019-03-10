@@ -1,0 +1,615 @@
+2018-02-19
+18:47:48.159333  Git version: 998a321 (branch: master 2 files changed, 2 insertions(+), 2 deletions(-))
+18:47:48.288517  Built: Mon 02/18/2019   05:57 PM
+18:47:48.305384 [INFO] Robot.robotInit()
+18:47:54.814636 [INFO] ########  Robot disabled
+18:47:54.872079 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+2019-02-18
+18:06:25.297823 [INFO] ########  Teleop enabled
+18:06:25.502392 [INFO] Compressor is ON   Pressure= 97psi  Current= 15.63 A
+18:06:25.567181 [INFO] >>> Drive started
+18:06:25.594590 [INFO] >>> Climb started
+18:06:25.616410 [INFO] >>> ElevatorMove started
+18:06:25.634443 [INFO] >>> Manipulate started
+18:06:27.518191 [INFO] Compressor is ON   Pressure= 102psi  Current= 11.44 A
+18:06:29.539944 [INFO] Compressor is ON   Pressure= 107psi  Current= 11.63 A
+18:06:31.559474 [INFO] Compressor is ON   Pressure= 111psi  Current= 11.69 A
+18:06:32.036611 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.077395 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.156799 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.179330 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.205190 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.244486 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.267072 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.296518 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.318017 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.362020 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.387770 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.411518 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.431266 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.496491 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.536528 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.556444 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.579675 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.608688 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.633169 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.654558 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.673706 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.693086 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.721395 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.749066 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.776482 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.836489 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.856454 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.956880 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:32.977485 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.056811 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.096633 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.116683 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.156476 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.196494 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.217274 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.268716 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.316579 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.396484 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.416525 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.436505 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.459232 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.496574 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.536546 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.576474 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.593515 [INFO] Compressor is ON   Pressure= 114psi  Current= 11.78 A
+18:06:33.631234 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.656510 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.696615 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.716929 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.741294 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.763205 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.796872 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.820514 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.876618 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.896479 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.917900 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.939658 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.962296 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:33.987041 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.020860 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.045873 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.073889 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.094694 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.114056 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.133476 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.154445 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.176019 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.207243 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.226563 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.398115 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.423904 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.455389 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.478368 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.503214 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.528367 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.562343 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.590637 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.614305 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.649001 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.669255 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.689050 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.716070 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.736065 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.780747 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.802305 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.828689 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.848979 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.874945 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.895902 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.915012 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.962037 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:34.995263 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:35.015553 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:35.039007 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:35.060675 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:35.618496 [INFO] Compressor is ON   Pressure= 119psi  Current= 11.88 A
+18:06:36.097595 [INFO] Compressor is OFF  Pressure= 117psi
+18:06:38.117247 [INFO] Compressor is OFF  Pressure= 123psi
+18:06:40.137313 [INFO] Compressor is OFF  Pressure= 118psi
+18:06:42.157503 [INFO] Compressor is OFF  Pressure= 117psi
+18:06:42.517529 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.554215 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.573758 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.597816 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.618385 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.639963 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.663839 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.688871 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.709277 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.733953 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.755910 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.785837 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.811661 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.832277 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.850039 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.869114 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.888686 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.912970 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.932039 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.955659 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.974973 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:42.992969 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.011761 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.032653 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.053638 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.078457 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.103227 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.131699 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.192779 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.213542 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.232741 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.251957 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.272002 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.294495 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.314517 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.337019 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.355793 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.375810 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.400482 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.424112 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.450329 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.473798 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.492837 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.515201 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.536028 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.557255 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.575160 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.596508 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.617724 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.651660 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.831323 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.852766 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.871819 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.890716 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.909694 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.929335 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.950716 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:43.985818 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.008856 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.034492 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.053296 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.074598 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.102739 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.129855 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.149310 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.172410 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.188174 [INFO] Compressor is OFF  Pressure= 116psi
+18:06:44.211257 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.230212 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.253212 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.272214 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.292490 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.311195 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.330820 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.349197 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.372180 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:44.392332 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:46.217862 [INFO] Compressor is OFF  Pressure= 117psi
+18:06:48.238035 [INFO] Compressor is OFF  Pressure= 117psi
+18:06:50.257938 [INFO] Compressor is OFF  Pressure= 117psi
+18:06:52.278105 [INFO] Compressor is OFF  Pressure= 117psi
+18:06:52.596889 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.616877 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.650833 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.669812 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.693105 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.712424 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.739558 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.797903 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.823741 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.856921 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.883992 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.910160 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.957010 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.977242 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:52.998015 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.021345 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.048403 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.068547 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.091982 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.112187 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.133825 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.154497 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.174094 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.204531 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.239140 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.297600 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.338341 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.357939 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.384826 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.410270 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.476962 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.537405 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.576923 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:53.601015 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:54.298555 [INFO] Compressor is OFF  Pressure= 116psi
+18:06:55.818496 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:55.877164 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:55.937178 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:55.962175 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:55.986156 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.008021 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.028408 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.049413 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.069940 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.249906 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.275070 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.299452 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.322938 [INFO] Compressor is OFF  Pressure= 115psi
+18:06:56.367115 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.389655 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.409942 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.430698 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.454503 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.474463 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.499699 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.522383 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.547515 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.575300 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.593145 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.612165 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.635206 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.656225 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.707914 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.729945 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.749720 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.768391 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.788852 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.809663 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.833243 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.851931 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.874815 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.904044 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.928924 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:56.990530 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.010260 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.029696 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.066415 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.088512 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.117470 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.145308 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.166910 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.187780 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.213713 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.233457 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.258191 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.281254 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.339169 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.362360 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.388402 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.410371 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.437683 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.460180 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.482287 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.508019 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.530710 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.548628 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.571277 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.591575 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.625934 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.648187 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.668714 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.690503 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.714820 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.734286 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.756913 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.795024 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.816607 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.838583 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.883545 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.915482 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.941638 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:57.980286 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:58.015209 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:58.035533 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:58.064048 [WARNING] Warning: Elevator motor power limit exceeded!
+18:06:58.338704 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:00.358215 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:02.377603 [INFO] Compressor is OFF  Pressure= 117psi
+18:07:02.857232 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:02.878651 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.009529 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.027818 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.052457 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.089158 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.110371 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.147727 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.170495 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.189895 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.212031 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.240449 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.266644 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.289039 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.307402 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.329785 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.354232 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.373283 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.396303 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.418658 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.442756 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.469050 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.488073 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.508647 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.532944 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.560095 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.587403 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.613064 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.641795 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.666174 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.693960 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.723187 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.748987 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.782008 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.809517 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.829733 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.855607 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.883569 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.925753 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.956251 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.974279 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:03.992628 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.011827 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.041054 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.070103 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.089654 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.111520 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.130289 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.149519 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.170953 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.197831 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.218187 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.248213 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.277428 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.307061 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.328479 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.349917 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.369601 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.389500 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.404477 [INFO] Compressor is OFF  Pressure= 117psi
+18:07:04.434096 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.454602 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.475774 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.496577 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.518302 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.538341 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.573486 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.591933 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.613854 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.632680 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.655054 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.674638 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.692751 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.710911 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.757461 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.778056 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.805657 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.828770 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.860972 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.897121 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.918521 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:04.979623 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.002623 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.046134 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.069083 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.113397 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.136596 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.160417 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.194507 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.213262 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.234169 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.297566 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:05.317964 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.137924 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.163201 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.207877 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.229908 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.250288 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.269122 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.289056 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.309763 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.330684 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.354232 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.373296 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.395662 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.416522 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.431633 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:06.456160 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.490230 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.511049 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.535629 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.554287 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.578516 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.597935 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:06.618231 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:07.757684 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:07.797318 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:07.837375 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:07.877993 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:07.901412 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:07.929661 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:07.978144 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:07.997381 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.017288 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.046097 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.071436 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.105502 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.129573 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.177333 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.297434 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.318396 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.377714 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:08.458936 [INFO] Compressor is OFF  Pressure= 117psi
+18:07:10.478204 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:12.498252 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:14.518960 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:16.538317 [INFO] Compressor is OFF  Pressure= 115psi
+18:07:18.558410 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:20.578898 [INFO] Compressor is OFF  Pressure= 115psi
+18:07:22.598436 [INFO] Compressor is OFF  Pressure= 117psi
+18:07:24.118148 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.158551 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.207670 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.228990 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.252496 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.271942 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.295696 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.314057 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.333407 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.353940 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.373453 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.393015 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.428010 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.449190 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.472807 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.498168 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.518028 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.540371 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.564409 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.591617 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:24.612472 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:24.636583 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:26.639613 [INFO] Compressor is OFF  Pressure= 115psi
+18:07:28.659253 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:30.679182 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:32.699108 [INFO] Compressor is OFF  Pressure= 115psi
+18:07:34.719033 [INFO] Compressor is OFF  Pressure= 123psi
+18:07:36.738422 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:38.758914 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:40.779083 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:42.799314 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:43.778629 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:43.798734 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:43.821936 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:43.847737 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:43.868750 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:43.898563 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:43.917905 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:43.946785 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:43.968365 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:43.990741 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.012011 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.032104 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.056921 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.088228 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.115330 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.138578 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.160726 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.185202 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.217473 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.242244 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.266603 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.290325 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.310514 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.331977 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.351225 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.370288 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.390251 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.415597 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.434896 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.469404 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.489491 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.514627 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.535719 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.563847 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.646499 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.682940 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.707610 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.729449 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.749974 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.774414 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.794185 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.816844 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.832450 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:44.856206 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.875711 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.896102 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.916963 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.956188 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:44.978758 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.006412 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.028876 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.050062 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.069342 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.096536 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.117276 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.149466 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.170258 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.234981 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.253023 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.273731 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.295595 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.316827 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.335520 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.397752 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.419538 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.449098 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.468687 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.488137 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.509223 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.528907 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.550954 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.575041 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.595654 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.622718 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.649414 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.674706 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.696004 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.714803 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.734610 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.764598 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.789982 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.813024 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.849209 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.869471 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.889389 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.914424 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.938709 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.958473 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:45.979015 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.029414 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.056547 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.086751 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.116298 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.135918 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.167301 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.188674 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.210238 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.245815 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.275560 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.302793 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.326779 [WARNING] Warning: Elevator motor power limit exceeded!
+18:07:46.859171 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:48.879772 [INFO] Compressor is OFF  Pressure= 117psi
+18:07:50.899109 [INFO] Compressor is OFF  Pressure= 114psi
+18:07:52.918688 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:54.939485 [INFO] Compressor is OFF  Pressure= 116psi
+18:07:56.960095 [INFO] Compressor is OFF  Pressure= 123psi
+18:07:58.980087 [INFO] Compressor is OFF  Pressure= 116psi
+18:08:00.999703 [INFO] Compressor is OFF  Pressure= 115psi
+18:08:01.720646 [INFO] ########  Robot disabled
+18:08:01.750012 [INFO] <<< Drive interrupted
+18:08:01.767956 [INFO] <<< Drive ended
+18:08:01.785823 [INFO] <<< Climb interrupted
+18:08:01.807772 [INFO] <<< Climb ended
+18:08:01.824624 [INFO] <<< ElevatorMove interrupted
+18:08:01.845927 [INFO] <<< ElevatorMove ended
+18:08:01.863106 [INFO] <<< Manipulate interrupted
+18:08:01.880064 [INFO] <<< Manipulate ended
+18:11:43.603340 [INFO] Elevator encoder released from reset
+18:11:55.483860 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+18:11:55.644018 [INFO] Elevator encoder released from reset
+18:11:55.723857 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+18:11:56.763472 [INFO] Elevator encoder released from reset
+18:11:57.403489 [INFO] Elevator encoder held in reset; pre-reset value: 0.0
+18:11:59.183706 [INFO] Elevator encoder released from reset
+18:12:02.064367 [INFO] Elevator encoder held in reset; pre-reset value: 0.01509932
+18:12:03.223634 [INFO] Elevator encoder released from reset
+18:12:29.324935 [INFO] Elevator encoder held in reset; pre-reset value: 2.8084735199999997
+18:12:35.804193 [INFO] Elevator encoder released from reset
