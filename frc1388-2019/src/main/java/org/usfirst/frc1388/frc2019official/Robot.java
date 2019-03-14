@@ -12,6 +12,7 @@
 package org.usfirst.frc1388.frc2019official;
 
 import edu.wpi.first.wpilibj.DriverStation;
+import edu.wpi.first.wpilibj.PowerDistributionPanel;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -52,6 +53,8 @@ public class Robot extends TimedRobot {
     public static Elevator elevator;
     public static Manipulator manipulator;
     public static Air air;
+    
+	public static PowerDistributionPanel pdp = new PowerDistributionPanel();
 
     public static AnalogInput exampleAnalog = new AnalogInput(0);
     int raw;
@@ -126,6 +129,8 @@ public class Robot extends TimedRobot {
         Robot.oi.rumbleOff( Robot.oi.opController );
 
         UsbLogging.info("########  Robot disabled");
+
+        UsbLogging.info(batteryInfo());
         
         //TODO:  might need to be removed or only run on a flag
         Robot.manipulator.initialize();
@@ -139,9 +144,12 @@ public class Robot extends TimedRobot {
     @Override
     public void autonomousInit() {
         UsbLogging.info("########  Autonomous enabled");
+
+        // Log battery info
+        UsbLogging.info(batteryInfo());
         
     	if (driverStation == null)
-        driverStation = DriverStation.getInstance();
+            driverStation = DriverStation.getInstance();
 
         // Get match info from FMS
     	if (driverStation.isFMSAttached()) {
@@ -157,7 +165,7 @@ public class Robot extends TimedRobot {
     		UsbLogging.info(fmsInfo);
     	} else {
     		UsbLogging.info("FMS not connected");
-    	}
+        }
         
         // if (autonomousCommand != null) autonomousCommand.cancel();
     }
@@ -173,6 +181,8 @@ public class Robot extends TimedRobot {
     @Override
     public void teleopInit() {
         UsbLogging.info("########  Teleop enabled");
+
+        UsbLogging.info(batteryInfo());
         
         // This makes sure that the autonomous stops running when
         // teleop starts running. If you want the autonomous to
@@ -230,5 +240,15 @@ public class Robot extends TimedRobot {
         SmartDashboard.putNumber("LimelightArea", lengthTShort);
         SmartDashboard.putNumber("LimelightArea", lengthTLong);
         SmartDashboard.putNumber("LimelightArea", getPipeline) ;
+    }
+
+    /**
+     * Battery info
+     */
+    public String batteryInfo() {
+        String info = "Battery: ";
+        info += String.format(" %0.02f V  ", pdp.getVoltage());
+        info += String.format(" %0.02f Wh used", pdp.getTotalEnergy() / 3600.0);
+        return info;
     }
 }
